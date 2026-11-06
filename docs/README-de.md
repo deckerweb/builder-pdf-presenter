@@ -43,6 +43,10 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 4. Den Block „Builder PDF Presenter“ einfügen und zugeordnete Dokumente verwenden. Alternativ direkt im Block eine eigene Sammlung erstellen, `[builder_pdf_presenter]` oder ein natives Bricks-Element verwenden.
 5. Seite ansehen und Lesen/Download testen. Änderungen vor dem Verlassen der Einstellungsseite speichern.
 
+**PDFs einbinden:** Unter Einstellungen → Builder PDF Presenter → PDFs einbinden werden die Einbindungswege erklärt. `[builder_pdf_presenter]` funktioniert im Shortcode-Block oder Classic Editor; die [Shortcode-Referenz](Shortcodes-de.md) enthält alle Parameter mit Beispielen. Alternativ stehen Block-Editor-Blöcke/Patterns und native Bricks-Elemente bereit.
+
+**Von einem anderen PDF-Plugin wechseln:** Unter Werkzeuge → PDF-Migration unterstützte PDF-Poster-/PDF-Embedder-Inhalte prüfen und ausgewählte Beiträge umstellen. Die [Migrationsanleitung](Migration-de.md) erklärt unterstützte Formate, Ergebnisberichte und Wiederherstellung.
+
 Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.
 
 ## Feature Highlights
@@ -127,9 +131,5 @@ Das Projekt unterstützen: [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Cof
 © 2026 David Decker – DECKERWEB. Plugin-Lizenz: [GPL v2 oder höher](../LICENSE).
 PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponenten behalten ihre Lizenzhinweise. Eigene PDF-Presenter-UI-Symbole von David Decker – DECKERWEB. Verbliebene Tabler-Hinweise: vendor/tabler/LICENSE.
 
-[Shortcode-Referenz mit allen Parametern](Shortcodes-de.md)
 
 Marketinggrafiken: eigene Vektorgrafiken von David Decker – DECKERWEB. Schriftzüge aus Bricolage Grotesque und Manrope unter SIL OFL 1.1; Lizenztexte unter .github/assets/licenses.
-
-
-[PDF-Migration: Ablauf und Grenzen](Migration-de.md)

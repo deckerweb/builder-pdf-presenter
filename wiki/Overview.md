@@ -43,6 +43,10 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 4. Insert the Builder PDF Presenter block and use the assigned documents. Alternatively create an independent collection in the block, use `[builder_pdf_presenter]` or choose a native Bricks element.
 5. Preview the page and test reading/download actions. Save changes before leaving the settings page.
 
+**Embedding PDFs:** Settings → Builder PDF Presenter → Embed PDFs shows the available ways to insert documents. Use `[builder_pdf_presenter]` in a Shortcode block or the Classic Editor; the [shortcode reference](Shortcodes) lists every parameter with examples. Block Editor blocks/patterns and native Bricks elements are alternative insertion methods.
+
+**Switching from another PDF plugin:** Under Tools → PDF migration, review supported PDF Poster/PDF Embedder content and migrate selected posts. Read the [migration guide](PDF-migration) for supported formats, result reports and recovery.
+
 Bricks and Meta Box are not required. The native Bricks integration was tested with Bricks 2.4.5. A Bricks-built page still depends on Bricks; changing the theme does not convert its layout into Block Editor.
 
 ## Feature Highlights
@@ -128,9 +132,5 @@ To support the project: [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee
 © 2026 David Decker – DECKERWEB. Plugin license: [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
 PDF.js: Apache-2.0, see vendor/pdfjs/LICENSE. Embedded deckerweb components retain their included notices. Original PDF Presenter interface glyphs by David Decker – DECKERWEB. Any retained Tabler asset notices are in vendor/tabler/LICENSE.
 
-[Complete shortcode reference](Shortcodes)
 
 Marketing artwork: original vector artwork by David Decker – DECKERWEB. Bricolage Grotesque and Manrope lettering under SIL OFL 1.1; license notices in .github/assets/licenses.
-
-
-[PDF migration: workflow and limitations](PDF-migration)

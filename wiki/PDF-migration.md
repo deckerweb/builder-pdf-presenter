@@ -31,3 +31,13 @@ Post status, passwords and other contribution settings are preserved. Media file
 ## Recovery and later edits
 
 The tool keeps the exact original contribution content and its prior PDF assignments. Use Recovery backups to restore a contribution individually. Later changes trigger a conflict and require explicit overwrite confirmation. Restoring replaces the migration-owned content and collection with the snapshot, including any later edits if you confirm overwriting; it does not delete media files. The last 20 operation reports remain available. General website backups remain useful.
+
+## The migration tool in practice
+
+![Review PDF Poster and PDF Embedder contributions under Tools](images/migration-review-en.jpg)
+
+Tools → PDF migration lists supported local PDFs and explains why unresolved or external sources cannot be selected. Review the sources before converting.
+
+![Migration outcome report and per-contribution recovery controls](images/migration-result-en.jpg)
+
+After conversion, the report lists the outcome for each contribution. Recovery backups provide a separate action for restoring an individual original. Screenshots use neutral demonstration content.

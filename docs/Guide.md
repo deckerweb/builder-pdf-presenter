@@ -36,6 +36,8 @@ Dynamic tags: `{bpp_count}`, `{bpp_id}`, `{bpp_title}`, `{bpp_url}`, `{bpp_reade
 
 ## Shortcodes and Classic Editor
 
+Settings → Builder PDF Presenter → Embed PDFs provides copyable insertion examples. Use a Shortcode block or the Classic Editor. The [dedicated shortcode reference](Shortcodes.md) explains all parameters and use cases.
+
 ```
 [builder_pdf_presenter]
 [builder_pdf_presenter post_id="123"]
@@ -52,7 +54,7 @@ Under Watermark, enable the central template and choose text/logo, position, opa
 
 ## Migration and recovery
 
-Tools → Switch from PDF Poster appears when relevant plugin/content/backups are detected. Review sources, migrate explicitly and inspect the report. Recovery works per contribution and checks for later changes before restoring snapshots. Do not uninstall the old plugin until the migrated output is reviewed. Keep normal website backups.
+Tools → PDF migration appears when a supported source plugin, matching content or recovery backups are detected. Review PDF Poster/PDF Embedder sources, migrate explicitly and inspect the report. Check the new output before removing the old plugin. The [migration guide](Migration.md) covers supported formats, limitations, result reports and recovery. Keep normal website backups.
 
 ## Troubleshooting and data
 
@@ -78,10 +80,8 @@ Removing a document removes its assignment only; Undo removal restores it before
 
 Embed PDFs offers copyable examples and documentation links. Transfer settings exports saved defaults or accepts pasted JSON with explicit source-to-target content type mapping. Import replaces plugin defaults, never documents. No PDF files, assignments or media IDs are transferred. Watermarks remain disabled after import until their text and local logo are reviewed. Save pending settings first if you want them in an export.
 
-[All shortcode parameters and examples](Shortcodes.md)
 
 
-[PDF Poster and PDF Embedder migration: workflow, limitations and recovery](Migration.md)
 
 ## Reader troubleshooting: MIME types for .mjs
 

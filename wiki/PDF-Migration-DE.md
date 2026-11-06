@@ -31,3 +31,13 @@ Beitragsstatus, Passwörter und weitere Beitragseinstellungen bleiben erhalten. 
 ## Wiederherstellung und spätere Änderungen
 
 Das Werkzeug sichert den exakten ursprünglichen Beitragsinhalt und die vorherigen PDF-Zuordnungen. Unter Wiederherstellungssicherungen einzelne Beiträge zurücksetzen. Spätere Änderungen führen zu einem Konflikt und erfordern ausdrückliche Bestätigung zum Überschreiben. Die Wiederherstellung ersetzt den gesicherten Inhalt und die Sammlung, bei bestätigtem Überschreiben einschließlich späterer Änderungen; Mediendateien werden nicht gelöscht. Die letzten 20 Ergebnisberichte bleiben abrufbar. Allgemeine Website-Sicherungen bleiben sinnvoll.
+
+## Das Migrationswerkzeug in der Praxis
+
+![PDF-Poster- und PDF-Embedder-Beiträge unter Werkzeuge prüfen](images/migration-review-de.jpg)
+
+Werkzeuge → PDF-Migration zeigt unterstützte lokale PDFs und erklärt, warum unklare oder externe Quellen nicht auswählbar sind. Die Quellen vor der Umstellung prüfen.
+
+![Ergebnisbericht und Wiederherstellung für einzelne Beiträge](images/migration-result-de.jpg)
+
+Nach der Umstellung nennt der Bericht das Ergebnis je Beitrag. Über die Wiederherstellungssicherungen lässt sich ein einzelnes Original gezielt zurücksetzen. Die Screenshots zeigen neutrale Beispieldaten.

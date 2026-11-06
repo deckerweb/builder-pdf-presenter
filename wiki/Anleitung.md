@@ -36,6 +36,8 @@ Dynamic Tags: `{bpp_count}`, `{bpp_id}`, `{bpp_title}`, `{bpp_url}`, `{bpp_reade
 
 ## Shortcodes und Classic Editor
 
+Unter Einstellungen → Builder PDF Presenter → PDFs einbinden stehen kopierbare Einbindungsbeispiele. Einen Shortcode-Block oder den Classic Editor verwenden. Die [eigene Shortcode-Referenz](Shortcodes-DE) erklärt alle Parameter und Einsatzfälle.
+
 ```
 [builder_pdf_presenter]
 [builder_pdf_presenter post_id="123"]
@@ -52,7 +54,7 @@ Unter Wasserzeichen die zentrale Vorlage aktivieren, Text/Logo, Position, Deckkr
 
 ## Migration und Wiederherstellung
 
-Werkzeuge → PDF-Migration erscheint bei erkanntem Plugin, passenden Inhalten oder Sicherungen. Quellen prüfen, ausdrücklich migrieren und Bericht ansehen. Die Wiederherstellung prüft vor dem Zurücksetzen auf spätere Änderungen. Das alte Plugin erst nach Prüfung der neuen Ausgabe entfernen. Normale Website-Sicherungen beibehalten.
+Werkzeuge → PDF-Migration erscheint bei erkanntem Quellplugin, passenden Inhalten oder Wiederherstellungssicherungen. PDF-Poster-/PDF-Embedder-Quellen prüfen, ausdrücklich migrieren und Bericht ansehen. Das alte Plugin erst nach Prüfung der neuen Ausgabe entfernen. Die [Migrationsanleitung](PDF-Migration-DE) erklärt unterstützte Formate, Grenzen, Ergebnisberichte und Wiederherstellung. Normale Website-Sicherungen beibehalten.
 
 ## Fehlerhilfe und Daten
 
@@ -78,10 +80,8 @@ Entfernen löscht nur die Zuordnung; „Entfernen rückgängig“ stellt sie vor
 
 Unter „PDFs einbinden“ stehen kopierbare Beispiele und Links. Unter „Vorgaben übertragen“ gespeicherte Einstellungen exportieren oder JSON einfügen und Quell-Inhaltstypen ausdrücklich zuordnen. Der Import ersetzt die Plugin-Vorgaben, nicht Dokumente. Keine PDF-Dateien, Zuordnungen oder Medien-IDs werden übertragen. Wasserzeichen bleiben nach Import aus, bis Text und lokales Logo geprüft sind. Vor Änderungen an der Einstellungsseite zuerst speichern, wenn diese mit exportiert werden sollen.
 
-[Alle Shortcode-Parameter und Beispiele](Shortcodes-DE)
 
 
-[PDF-Poster- und PDF-Embedder-Migration: Ablauf, Grenzen und Wiederherstellung](PDF-Migration-DE)
 
 ## Reader-Fehlerhilfe: MIME-Typen für .mjs
 
