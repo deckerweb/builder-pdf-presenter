@@ -1,0 +1,3 @@
+/* Original, theme-aware PDF Presenter glyphs. */
+.bpp-icon-document,.bpp-icon-collection{display:inline-block;width:1em;height:1em;background:currentColor;mask:url(pdf-icon.svg) center/contain no-repeat;-webkit-mask:url(pdf-icon.svg) center/contain no-repeat}
+.bpp-icon-collection{mask-image:url(pdf-collection-icon.svg);-webkit-mask-image:url(pdf-collection-icon.svg)}

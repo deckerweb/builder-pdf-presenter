@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: Builder PDF Presenter
+description: Your PDFs. Beautifully presented. / Deine PDFs. Einfach gut präsentiert.
+show_downloads: false
+exclude: [vendor, includes, languages, block, filter-block, wiki]

@@ -1,0 +1,1220 @@
+msgid ""
+msgstr "Project-Id-Version: Builder PDF Presenter 1.0.0\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "1 to under 5 MiB"
+msgstr "1 bis unter 5 MiB"
+
+msgid "5 MiB or more"
+msgstr "Ab 5 MiB"
+
+msgid "A PDF collection contains the documents added to a contribution, page or individual PDF block. It can be displayed as a grid or list and may contain just one PDF."
+msgstr "Eine PDF-Sammlung enthält die Dokumente, die einem Beitrag, einer Seite oder einem einzelnen PDF-Block hinzugefügt werden. Sie lässt sich als Raster oder Liste anzeigen und kann auch nur eine PDF enthalten."
+
+msgid "A PDF could not be assigned unambiguously. No content was changed."
+msgstr "Eine PDF konnte nicht eindeutig zugeordnet werden. Es wurden keine Inhalte geändert."
+
+msgid "A fast PDF preview with an on-demand reader."
+msgstr "Eine schnelle PDF-Vorschau mit einem Reader auf Abruf."
+
+msgid "A named PDF collection with matching search and filter controls. Add PDFs after inserting."
+msgstr "Eine benannte PDF-Sammlung mit passenden Such- und Filterfeldern. Nach dem Einfügen PDFs hinzufügen."
+
+msgid "A recovery backup already exists. Review or restore it before converting again."
+msgstr "Es besteht bereits eine Wiederherstellungssicherung. Diese vor einer erneuten Umstellung prüfen oder wiederherstellen."
+
+msgid "A responsive document layout with lightweight covers and an on-demand reader. Select PDFs after inserting."
+msgstr "Ein responsives Dokumentlayout mit schnellen Vorschaubildern und Reader auf Abruf. Nach dem Einfügen PDFs auswählen."
+
+msgid "Access denied."
+msgstr "Zugriff verweigert."
+
+msgid "Add PDF documents in the contribution panel or choose a document in this block."
+msgstr "PDF-Dokumente im Beitragsbereich hinzufügen oder ein Dokument in diesem Block auswählen."
+
+msgid "Add PDFs"
+msgstr "PDFs hinzufügen"
+
+msgid "All assigned PDFs"
+msgstr "Alle zugeordneten PDFs"
+
+msgid "All changes saved."
+msgstr "Alle Änderungen gespeichert."
+
+msgid "All shortcode parameters and examples"
+msgstr "Alle Shortcode-Parameter und Beispiele"
+
+msgid "Allow editors to turn this template on or off per document"
+msgstr "Redakteure dürfen diese Vorlage je Dokument ein- oder ausschalten"
+
+msgid "Already in this collection"
+msgstr "Bereits in dieser Sammlung"
+
+msgid "Any size"
+msgstr "Alle Größen"
+
+msgid "Apply filters"
+msgstr "Filter anwenden"
+
+msgid "Apply mapped settings"
+msgstr "Zugeordnete Vorgaben übernehmen"
+
+msgid "Apply order to collection"
+msgstr "Reihenfolge auf Sammlung anwenden"
+
+msgid "Archive"
+msgstr "Archiv"
+
+msgid "Archive verification"
+msgstr "Archivprüfung"
+
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+msgid "Automatic PDF preview generation is unavailable"
+msgstr "Automatische PDF-Vorschauerzeugung ist nicht verfügbar"
+
+msgid "Available"
+msgstr "Verfügbar"
+
+msgid "Block"
+msgstr "Block"
+
+msgid "Block Editor: blocks and patterns"
+msgstr "Block-Editor: Blöcke und Patterns"
+
+msgid "Block settings"
+msgstr "Block-Einstellungen"
+
+msgid "Block view"
+msgstr "Blockansicht"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Bricks integration"
+msgstr "Bricks-Integration"
+
+msgid "Built-in default"
+msgstr "Plugin-Vorgabe"
+
+msgid "Buttons"
+msgstr "Buttons"
+
+msgid "Card background"
+msgstr "Kartenhintergrund"
+
+msgid "Card border"
+msgstr "Kartenrahmen"
+
+msgid "Card design"
+msgstr "Kartendesign"
+
+msgid "Card padding"
+msgstr "Karteninnenabstand"
+
+msgid "Card radius"
+msgstr "Kartenrundung"
+
+msgid "Card shadow"
+msgstr "Kartenschatten"
+
+msgid "Cards and grid"
+msgstr "Karten und Raster"
+
+msgid "Catalog approval"
+msgstr "Katalogfreigabe"
+
+msgid "Catalog diagnostics require a public catalog provider."
+msgstr "Die Katalogdiagnose benötigt einen öffentlichen Kataloganbieter."
+
+msgid "Center"
+msgstr "Mitte"
+
+msgid "Changelog"
+msgstr "Änderungsverlauf"
+
+msgid "Check again"
+msgstr "Erneut prüfen"
+
+msgid "Check documents, convert selected contributions and restore saved originals."
+msgstr "Dokumente prüfen, ausgewählte Beiträge umstellen und gesicherte Originale wiederherstellen."
+
+msgid "Checks PDF Poster blocks and PDF Embedder blocks/shortcodes in contribution content. Only ordinary, unambiguous local Media Library PDFs are converted. PDF Poster shortcodes, HTML/code examples, builder data and templates need manual review. No conversion starts automatically."
+msgstr "Prüft PDF-Poster-Blöcke und PDF-Embedder-Blöcke/Shortcodes im Beitragsinhalt. Nur normale, eindeutig zugeordnete lokale Mediathek-PDFs werden umgestellt. PDF-Poster-Shortcodes, HTML-/Codebeispiele, Builder-Daten und Templates erfordern manuelle Prüfung. Es startet keine automatische Umstellung."
+
+msgid "Checksum verification"
+msgstr "Prüfsummenprüfung"
+
+msgid "Choose a different target for each source content type."
+msgstr "Für jeden Quell-Inhaltstyp ein anderes Ziel wählen."
+
+msgid "Choose a target collection ID for PDF filters."
+msgstr "Eine Ziel-Sammlungs-ID für die PDF-Filter wählen."
+
+msgid "Choose the content type, PDF selection and sorting in the block settings."
+msgstr "Inhaltstyp, PDF-Auswahl und Sortierung in den Block-Einstellungen festlegen."
+
+msgid "Choose where the PDF selection and individual settings appear. The block and shortcode are available independently."
+msgstr "Hier wird festgelegt, wo PDF-Auswahl und individuelle Einstellungen erscheinen. Block und Shortcode sind unabhängig davon verfügbar."
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Close reader"
+msgstr "Reader schließen"
+
+msgid "Collection ID"
+msgstr "Sammlungs-ID"
+
+msgid "Collection columns"
+msgstr "Spalten der Sammlung"
+
+msgid "Collection default"
+msgstr "Vorgabe der Sammlung"
+
+msgid "Collection limit (0 = website default)"
+msgstr "Sammlungslimit (0 = globale Vorgabe)"
+
+msgid "Collection limit reached. Existing documents are kept."
+msgstr "Sammlungslimit erreicht. Vorhandene Dokumente bleiben erhalten."
+
+msgid "Compact PDF cards"
+msgstr "Kompakte PDF-Karten"
+
+msgid "Compact card"
+msgstr "Kompakte Karte"
+
+msgid "Content and management"
+msgstr "Inhalt und Pflege"
+
+msgid "Content type defaults"
+msgstr "Inhaltstyp-Vorgaben"
+
+msgid "Content type overrides"
+msgstr "Ausnahmen je Inhaltstyp"
+
+msgid "Content type slug"
+msgstr "Kennung des Inhaltstyps"
+
+msgid "Content types"
+msgstr "Inhaltstypen"
+
+msgid "Contribution"
+msgstr "Beitrag"
+
+msgid "Contribution settings"
+msgstr "Beitragseinstellungen"
+
+msgid "Contributions to review"
+msgstr "Zu prüfende Beiträge"
+
+msgid "Convert selected contributions"
+msgstr "Ausgewählte Beiträge umstellen"
+
+msgid "Converted"
+msgstr "Umgestellt"
+
+msgid "Converted successfully. The original content and collection are saved for recovery."
+msgstr "Erfolgreich umgestellt. Der ursprüngliche Inhalt und die Sammlung sind für die Wiederherstellung gesichert."
+
+msgid "Copied"
+msgstr "Kopiert"
+
+msgid "Copy"
+msgstr "Kopieren"
+
+msgid "Could not access the update filesystem."
+msgstr "Auf das Dateisystem für das Update konnte nicht zugegriffen werden."
+
+msgid "Could not create the update download file."
+msgstr "Die Datei für den Update-Download konnte nicht erstellt werden."
+
+msgid "Could not prepare the GitHub release package."
+msgstr "Das GitHub-Release-Paket konnte nicht vorbereitet werden."
+
+msgid "Cover card"
+msgstr "Titelbild-Karte"
+
+msgid "Current contribution"
+msgstr "Aktueller Beitrag"
+
+msgid "Defaults per content type"
+msgstr "Vorgaben je Inhaltstyp"
+
+msgid "Descending"
+msgstr "Absteigend"
+
+msgid "Design preview"
+msgstr "Designvorschau"
+
+msgid "Direction"
+msgstr "Richtung"
+
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+msgid "Display title"
+msgstr "Anzeigetitel"
+
+msgid "Document archive"
+msgstr "Dokumentarchiv"
+
+msgid "Document card"
+msgstr "Dokumentkarte"
+
+msgid "Document contributions: query grid"
+msgstr "Dokumentbeiträge: Abfrageraster"
+
+msgid "Document list"
+msgstr "Dokumentliste"
+
+msgid "Document settings"
+msgstr "Dokumenteinstellungen"
+
+msgid "Document source"
+msgstr "Dokumentquelle"
+
+msgid "Documentation"
+msgstr "Dokumentation"
+
+msgid "Documents"
+msgstr "Dokumente"
+
+msgid "Documents and publications"
+msgstr "Dokumente und Publikationen"
+
+msgid "Documents assigned to this contribution"
+msgstr "Diesem Beitrag zugeordnete Dokumente"
+
+msgid "Documents: %d"
+msgstr "Dokumente: %d"
+
+msgid "Download"
+msgstr "Herunterladen"
+
+msgid "Download button"
+msgstr "Download-Button"
+
+msgid "Download button background"
+msgstr "Hintergrund des Download-Buttons"
+
+msgid "Download button color"
+msgstr "Textfarbe des Download-Buttons"
+
+msgid "Download button label"
+msgstr "Beschriftung des Download-Buttons"
+
+msgid "Drop PDF files here or select them from the Media Library."
+msgstr "PDF-Dateien hier ablegen oder aus der Mediathek auswählen."
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Editor controls only. This toolbar is not displayed on your website."
+msgstr "Nur Editor-Bedienung. Diese Leiste erscheint nicht auf der Website."
+
+msgid "Embed PDFs"
+msgstr "PDFs einbinden"
+
+msgid "Enable the central watermark template"
+msgstr "Zentrale Wasserzeichenvorlage aktivieren"
+
+msgid "Existing covers can still be used and a custom cover can be selected for each document. Automatic generation depends on the server image editor and PDF support; individual files may still fail."
+msgstr "Vorhandene Titelbilder bleiben nutzbar; je Dokument lässt sich ein eigenes Titelbild auswählen. Die automatische Erzeugung hängt von der Bildverarbeitung und PDF-Unterstützung des Servers ab. Einzelne Dateien können dennoch fehlschlagen."
+
+msgid "Export saved defaults only. PDFs, document assignments and media IDs stay on this website. Watermarks are disabled on import until their text or local logo is reviewed."
+msgstr "Nur gespeicherte Vorgaben exportieren. PDFs, Dokumentzuordnungen und Medien-IDs bleiben auf dieser Website. Wasserzeichen sind nach dem Import deaktiviert, bis Text und lokales Logo geprüft sind."
+
+msgid "Export saved settings"
+msgstr "Gespeicherte Vorgaben exportieren"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Fast PDF preview cards and an on-demand PDF reader for any post type, blocks and shortcodes."
+msgstr "Schnelle PDF-Vorschaukarten und ein Reader auf Abruf für beliebige Inhaltstypen, Blöcke und Shortcodes."
+
+msgid "File details"
+msgstr "Dateiangaben"
+
+msgid "File name"
+msgstr "Dateiname"
+
+msgid "File size"
+msgstr "Dateigröße"
+
+msgid "File size filter"
+msgstr "Dateigrößenfilter"
+
+msgid "Find"
+msgstr "Suchen"
+
+msgid "First available PDF"
+msgstr "Erstes verfügbares PDF"
+
+msgid "Fit width"
+msgstr "An Breite anpassen"
+
+msgid "Font size"
+msgstr "Schriftgröße"
+
+msgid "Font weight"
+msgstr "Schriftstärke"
+
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+msgid "Fullscreen is unavailable in this browser."
+msgstr "Vollbild ist in diesem Browser nicht verfügbar."
+
+msgid "Generate missing previews"
+msgstr "Fehlende Vorschauen erzeugen"
+
+msgid "Generate preview"
+msgstr "Vorschau erzeugen"
+
+msgid "Git Updater is active. If a deckerweb installation or update fails, temporarily deactivate Git Updater and retry. Reactivate it afterwards if other plugins or themes need it. Only leave it disabled when those extensions have another reliable update provider."
+msgstr "Git Updater ist aktiv. Wenn eine deckerweb-Installation oder ein Update fehlschlägt, deaktiviere Git Updater vorübergehend und versuche es erneut. Aktiviere ihn danach wieder, wenn andere Plugins oder Themes ihn benötigen. Lass ihn nur dauerhaft deaktiviert, wenn diese Erweiterungen einen anderen zuverlässigen Updateweg besitzen."
+
+msgid "GitHub release does not contain the plugin main file."
+msgstr "Der GitHub-Release enthält nicht die Hauptdatei des Plugins."
+
+msgid "Grid gap"
+msgstr "Rasterabstand"
+
+msgid "HTTP status: %d."
+msgstr "HTTP-Status: %d."
+
+msgid "Hide / disable"
+msgstr "Ausblenden / deaktivieren"
+
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgid "Import and replace saved settings"
+msgstr "Gespeicherte Vorgaben importieren und ersetzen"
+
+msgid "Individual display settings"
+msgstr "Individuelle Anzeigeeinstellungen"
+
+msgid "Inherit"
+msgstr "Übernehmen"
+
+msgid "Inherit keeps the defaults for this content type. These values apply to cards rendered from this contribution."
+msgstr "„Übernehmen“ behält die Vorgaben dieses Inhaltstyps bei. Diese Werte gelten für Karten, die diesen Beitrag darstellen."
+
+msgid "Inherit uses the website defaults. Individual contributions can override these values again."
+msgstr "„Übernehmen“ verwendet die globalen Vorgaben. Einzelne Beiträge können diese Werte erneut überschreiben."
+
+msgid "Inherited from"
+msgstr "Übernommen von"
+
+msgid "Insert Builder PDF Presenter for documents or collections, and PDF filters and search for an optional filter bar. Patterns provide ready-to-use layouts."
+msgstr "„Builder PDF Presenter“ für Dokumente oder Sammlungen einfügen; „PDF-Filter und Suche“ ergänzt eine optionale Filterleiste. Patterns bieten vorbereitete Layouts."
+
+msgid "Invalid GitHub repository URL."
+msgstr "Ungültige GitHub-Repository-URL."
+
+msgid "Invalid authentication provider."
+msgstr "Ungültiger Authentifizierungsanbieter."
+
+msgid "Landscape (4:3)"
+msgstr "Querformat (4:3)"
+
+msgid "Large"
+msgstr "Groß"
+
+msgid "Layout"
+msgstr "Anordnung"
+
+msgid "Leave empty to use the first PDF assigned to the current post, or to each post inside a query loop. This is a real document, not sample content."
+msgstr "Leer lassen, um die erste zugeordnete PDF des aktuellen Beitrags zu verwenden – in einer Abfrageschleife die des jeweiligen Beitrags. Dies ist ein echtes Dokument, kein Beispielinhalt."
+
+msgid "Line height"
+msgstr "Zeilenhöhe"
+
+msgid "Live design preview"
+msgstr "Live-Designvorschau"
+
+msgid "Loading document…"
+msgstr "Dokument wird geladen …"
+
+msgid "Loading preview…"
+msgstr "Vorschau wird geladen …"
+
+msgid "Make preview clickable"
+msgstr "Vorschaubild verlinken"
+
+msgid "Manage installed plugins"
+msgstr "Installierte Plugins verwalten"
+
+msgid "Matches on this page:"
+msgstr "Treffer auf dieser Seite:"
+
+msgid "Maximum number of PDFs per collection"
+msgstr "Maximale Anzahl PDFs pro Sammlung"
+
+msgid "Media Library title"
+msgstr "Mediathektitel"
+
+msgid "Medium"
+msgstr "Mittel"
+
+msgid "Move down"
+msgstr "Nach unten"
+
+msgid "Move up"
+msgstr "Nach oben"
+
+msgid "Next document"
+msgstr "Nächstes Dokument"
+
+msgid "Next page"
+msgstr "Nächste Seite"
+
+msgid "No PDF assigned to this source. Add a PDF to the post or select a file in Document source."
+msgstr "Dieser Quelle ist keine PDF zugeordnet. Dem Beitrag eine PDF hinzufügen oder unter „Dokumentquelle“ eine Datei auswählen."
+
+msgid "No PDFs assigned yet. Add documents to the source posts."
+msgstr "Noch keine PDFs zugeordnet. Dokumente in den Quellbeiträgen hinzufügen."
+
+msgid "No document contributions found."
+msgstr "Keine Dokumentbeiträge gefunden."
+
+msgid "No documents yet. Add your first PDF."
+msgstr "Noch keine Dokumente. Die erste PDF hinzufügen."
+
+msgid "No file selected"
+msgstr "Keine Datei ausgewählt"
+
+msgid "No matching PDFs. Try another search or reset the filters."
+msgstr "Keine passenden PDFs. Einen anderen Suchbegriff verwenden oder Filter zurücksetzen."
+
+msgid "No matching source posts found."
+msgstr "Keine passenden Quellbeiträge gefunden."
+
+msgid "No recovery backups found."
+msgstr "Keine Wiederherstellungssicherungen gefunden."
+
+msgid "No supported PDF embeds found. Other integrations need manual review."
+msgstr "Keine unterstützten PDF-Einbettungen gefunden. Andere Integrationen bitte manuell prüfen."
+
+msgid "No supported PDF references found in the checked content. Before deactivating the source plugin, also review builder templates and other integrations."
+msgstr "Keine unterstützten PDF-Referenzen im geprüften Inhalt gefunden. Vor Deaktivierung des Quellplugins auch Builder-Templates und andere Integrationen prüfen."
+
+msgid "No valid recovery backup exists for this contribution."
+msgstr "Für diesen Beitrag besteht keine gültige Wiederherstellungssicherung."
+
+msgid "Not active"
+msgstr "Nicht aktiv"
+
+msgid "Not changed"
+msgstr "Nicht geändert"
+
+msgid "Only PDF attachments can be added. The previous collection was kept."
+msgstr "Nur PDF-Anhänge sind zulässig. Die bisherige Sammlung wurde beibehalten."
+
+msgid "Opacity (%)"
+msgstr "Deckkraft (%)"
+
+msgid "Open PDF for printing"
+msgstr "PDF zum Drucken öffnen"
+
+msgid "Open document"
+msgstr "Dokument öffnen"
+
+msgid "Open guide"
+msgstr "Anleitung öffnen"
+
+msgid "Open original PDF"
+msgstr "Original-PDF öffnen"
+
+msgid "Opens the Media Library to select or upload a PDF."
+msgstr "Öffnet die Mediathek, um eine PDF auszuwählen oder hochzuladen."
+
+msgid "Opens the first document in a new tab."
+msgstr "Öffnet das erste Dokument in einem neuen Tab."
+
+msgid "Operation result"
+msgstr "Ergebnisbericht"
+
+msgid "Original content and collection restored. PDF files were not changed."
+msgstr "Ursprünglicher Inhalt und Sammlung wiederhergestellt. PDF-Dateien wurden nicht verändert."
+
+msgid "Original proportions"
+msgstr "Originalproportionen"
+
+msgid "Output sorting"
+msgstr "Ausgabesortierung"
+
+msgid "Own PDF collection"
+msgstr "Eigene PDF-Sammlung"
+
+msgid "PDF Embedder viewer options were not transferred. Review the new presentation."
+msgstr "PDF-Embedder-Vieweroptionen wurden nicht übertragen. Die neue Darstellung bitte prüfen."
+
+msgid "PDF Embedder viewer options will use the new presentation defaults."
+msgstr "Für PDF-Embedder-Vieweroptionen gelten die neuen Darstellungsvorgaben."
+
+msgid "PDF Embedder: external, missing or ambiguous PDF. This contribution was not changed."
+msgstr "PDF Embedder: externe, fehlende oder mehrdeutige PDF. Dieser Beitrag wurde nicht verändert."
+
+msgid "PDF Embedder: inline viewers become preview cards with a reading action. File order and embedding positions are preserved. Width, height, toolbar, page and zoom options are not transferred; review the new presentation before removing the old plugin. External or protected PDFs are not imported. One unresolved PDF leaves the entire contribution unchanged."
+msgstr "PDF Embedder: Aus Inline-Viewern werden Vorschaukarten mit Lesen-Aktion. Reihenfolge und Einbettungspositionen bleiben erhalten. Breite, Höhe, Toolbar, Startseite und Zoom werden nicht übertragen; neue Darstellung vor Entfernen des alten Plugins prüfen. Externe oder geschützte PDFs werden nicht importiert. Eine unklare PDF lässt den gesamten Beitrag unverändert."
+
+msgid "PDF Embedder: protected PDF skipped. This contribution was not changed."
+msgstr "PDF Embedder: geschützte PDF übersprungen. Dieser Beitrag wurde nicht verändert."
+
+msgid "PDF Presenter reader files"
+msgstr "PDF-Presenter-Reader-Dateien"
+
+msgid "PDF Presenter reader files are available"
+msgstr "PDF-Presenter-Reader-Dateien sind verfügbar"
+
+msgid "PDF Presenter reader files are incomplete"
+msgstr "PDF-Presenter-Reader-Dateien sind unvollständig"
+
+msgid "PDF Presenter: PDF migration and recovery"
+msgstr "PDF Presenter: PDF-Migration und Wiederherstellung"
+
+msgid "PDF Presenter: documentation"
+msgstr "PDF Presenter: Dokumentation"
+
+msgid "PDF Presenter: settings"
+msgstr "PDF Presenter: Einstellungen"
+
+msgid "PDF URL"
+msgstr "PDF-URL"
+
+msgid "PDF attachment ID"
+msgstr "PDF-Anhang-ID"
+
+msgid "PDF attachment ID (optional)"
+msgstr "PDF-Anhang-ID (optional)"
+
+msgid "PDF cards and comfortable on-demand reading."
+msgstr "PDF-Karten und komfortables Lesen auf Abruf."
+
+msgid "PDF collection"
+msgstr "PDF-Sammlung"
+
+msgid "PDF collection: %d columns"
+msgstr "PDF-Sammlung: %d Spalten"
+
+msgid "PDF count"
+msgstr "PDF-Anzahl"
+
+msgid "PDF cover"
+msgstr "PDF-Cover"
+
+msgid "PDF directly in a new tab"
+msgstr "PDF direkt in neuem Tab"
+
+msgid "PDF document"
+msgstr "PDF-Dokument"
+
+msgid "PDF document list"
+msgstr "PDF-Dokumentliste"
+
+msgid "PDF filters and search"
+msgstr "PDF-Filter und Suche"
+
+msgid "PDF library with filter bar"
+msgstr "PDF-Sammlung mit Filterleiste"
+
+msgid "PDF library with sidebar filters"
+msgstr "PDF-Sammlung mit Sidebar-Filtern"
+
+msgid "PDF migration"
+msgstr "PDF-Migration"
+
+msgid "PDF migration and recovery"
+msgstr "PDF-Migration und Wiederherstellung"
+
+msgid "PDF preview generation"
+msgstr "PDF-Vorschauerzeugung"
+
+msgid "PDF reader URL"
+msgstr "PDF-Reader-URL"
+
+msgid "PDF reader controls"
+msgstr "PDF-Reader-Bedienelemente"
+
+msgid "PDF result pages"
+msgstr "PDF-Ergebnisseiten"
+
+msgid "PDF title"
+msgstr "PDF-Titel"
+
+msgid "PDF unavailable: replace it or remove this entry."
+msgstr "PDF nicht verfügbar: ersetzen oder diesen Eintrag entfernen."
+
+msgid "PDF upload date"
+msgstr "PDF-Upload-Datum"
+
+msgid "PDFs assigned unambiguously; ready to convert."
+msgstr "PDFs eindeutig zugeordnet; bereit zur Umstellung."
+
+msgid "PDFs per page"
+msgstr "PDFs je Seite"
+
+msgid "PDFs per page (0: use collection default)"
+msgstr "PDFs je Seite (0: Vorgabe der Sammlung)"
+
+msgid "PDFs per source post"
+msgstr "PDFs je Quellbeitrag"
+
+msgid "Package download"
+msgstr "Paketdownload"
+
+msgid "Page"
+msgstr "Seite"
+
+msgid "Page loaded"
+msgstr "Seite geladen"
+
+msgid "Paste a shortcode where the document or collection should appear. It uses the current post unless another source is selected."
+msgstr "Den Shortcode dort einfügen, wo Dokument oder Sammlung erscheinen sollen. Ohne andere Quellenangabe gilt der aktuelle Beitrag."
+
+msgid "Paste settings JSON"
+msgstr "Vorgaben als JSON einfügen"
+
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+msgid "Plugin assignments in editable source posts"
+msgstr "Plugin-Zuordnungen in bearbeitbaren Quellbeiträgen"
+
+msgid "Plugin information"
+msgstr "Plugin-Informationen"
+
+msgid "Plugin website"
+msgstr "Plugin-Website"
+
+msgid "Portrait (3:4)"
+msgstr "Hochformat (3:4)"
+
+msgid "Portrait (A4)"
+msgstr "Hochformat (A4)"
+
+msgid "Position"
+msgstr "Position"
+
+msgid "Post menu order"
+msgstr "Beitrags-Menüreihenfolge"
+
+msgid "Post publication date"
+msgstr "Veröffentlichungsdatum des Beitrags"
+
+msgid "Present a PDF or a document collection with preview covers, reading and download buttons."
+msgstr "Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und Download-Buttons präsentieren."
+
+msgid "Preview"
+msgstr "Vorschau"
+
+msgid "Preview and document card"
+msgstr "Vorschau und Dokumentkarte"
+
+msgid "Preview could not be loaded."
+msgstr "Die Vorschau konnte nicht geladen werden."
+
+msgid "Preview frame"
+msgstr "Vorschaurahmen"
+
+msgid "Preview missing. Generate one or select a custom cover."
+msgstr "Vorschau fehlt. Eine Vorschau erzeugen oder ein eigenes Titelbild auswählen."
+
+msgid "Previous document"
+msgstr "Vorheriges Dokument"
+
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+msgid "Private mode must be boolean."
+msgstr "Der Private-Modus muss ein boolescher Wert sein."
+
+msgid "Public catalog callbacks require both providers and cannot be used in private mode."
+msgstr "Öffentliche Katalog-Callbacks benötigen beide Anbieter und können nicht im Private-Modus verwendet werden."
+
+msgid "Query document contributions"
+msgstr "Dokumentbeiträge abfragen"
+
+msgid "Read"
+msgstr "Lesen"
+
+msgid "Read %s"
+msgstr "%s lesen"
+
+msgid "Reader"
+msgstr "Reader"
+
+msgid "Reader and opening behavior"
+msgstr "Reader und Öffnungsverhalten"
+
+msgid "Reader in a modal"
+msgstr "Reader im Modal"
+
+msgid "Reader in a new tab"
+msgstr "Reader in neuem Tab"
+
+msgid "Reader watermark"
+msgstr "Reader-Wasserzeichen"
+
+msgid "Reader: download link"
+msgstr "Reader: Download-Link"
+
+msgid "Reader: fullscreen"
+msgstr "Reader: Vollbild"
+
+msgid "Reader: initial zoom"
+msgstr "Reader: anfängliche Vergrößerung"
+
+msgid "Reader: open PDF for printing"
+msgstr "Reader: PDF zum Drucken öffnen"
+
+msgid "Reader: page navigation"
+msgstr "Reader: Seitennavigation"
+
+msgid "Reader: remember page during this visit"
+msgstr "Reader: Seite während dieses Besuchs merken"
+
+msgid "Reader: search on current page"
+msgstr "Reader: Suche auf der aktuellen Seite"
+
+msgid "Reader: zoom controls"
+msgstr "Reader: Zoom-Bedienelemente"
+
+msgid "Reading and download buttons"
+msgstr "Lesen- und Download-Buttons"
+
+msgid "Reading button"
+msgstr "Lesen-Button"
+
+msgid "Reading button background"
+msgstr "Hintergrund des Lesen-Buttons"
+
+msgid "Reading button color"
+msgstr "Textfarbe des Lesen-Buttons"
+
+msgid "Reading button label"
+msgstr "Beschriftung des Lesen-Buttons"
+
+msgid "Recent operations"
+msgstr "Letzte Vorgänge"
+
+msgid "Recovery backups"
+msgstr "Wiederherstellungssicherungen"
+
+msgid "Reducing a limit never removes existing documents. Editors cannot override limits."
+msgstr "Niedrigere Limits entfernen keine vorhandenen Dokumente. Redakteure können Limits nicht überschreiben."
+
+msgid "Remove from collection"
+msgstr "Aus Sammlung entfernen"
+
+msgid "Remove selected entries"
+msgstr "Ausgewählte Einträge entfernen"
+
+msgid "Remove selection"
+msgstr "Auswahl entfernen"
+
+msgid "Removed from this collection. The Media Library file is kept."
+msgstr "Aus dieser Sammlung entfernt. Die Datei in der Mediathek bleibt erhalten."
+
+msgid "Replace PDF"
+msgstr "PDF ersetzen"
+
+msgid "Replace the current content and PDF collection with this backup, including any later edits."
+msgstr "Den aktuellen Inhalt und die PDF-Sammlung durch diese Sicherung ersetzen, einschließlich späterer Bearbeitungen."
+
+msgid "Replacing changes this assignment only. It does not overwrite the shared Media Library file."
+msgstr "Ersetzen ändert nur diese Zuordnung. Die gemeinsam verwendete Mediathekdatei wird nicht überschrieben."
+
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgid "Reset card styles"
+msgstr "Kartenstile zurücksetzen"
+
+msgid "Reset display settings"
+msgstr "Anzeigeeinstellungen zurücksetzen"
+
+msgid "Reset selected settings"
+msgstr "Ausgewählte Einstellungen zurücksetzen"
+
+msgid "Restore a contribution individually. This replaces its content and PDF collection with the saved original; media files and other contribution settings remain unchanged."
+msgstr "Beiträge einzeln wiederherstellen. Dabei werden Inhalt und PDF-Sammlung durch das gesicherte Original ersetzt; Mediendateien und andere Beitragseinstellungen bleiben unverändert."
+
+msgid "Restore this contribution"
+msgstr "Diesen Beitrag wiederherstellen"
+
+msgid "Restored"
+msgstr "Wiederhergestellt"
+
+msgid "Result pages"
+msgstr "Ergebnisseiten"
+
+msgid "Retry failed uploads"
+msgstr "Fehlgeschlagene Uploads wiederholen"
+
+msgid "Review"
+msgstr "Prüfung"
+
+msgid "Save changes"
+msgstr "Änderungen speichern"
+
+msgid "Saved order"
+msgstr "Gespeicherte Reihenfolge"
+
+msgid "Saving failed. Your changes are still here. Please try again."
+msgstr "Speichern fehlgeschlagen. Die Eingaben bleiben erhalten. Bitte erneut versuchen."
+
+msgid "Saving…"
+msgstr "Wird gespeichert …"
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Search fields"
+msgstr "Suchfelder"
+
+msgid "Search on current page"
+msgstr "Auf aktueller Seite suchen"
+
+msgid "Search titles and file names"
+msgstr "Titel und Dateinamen durchsuchen"
+
+msgid "Search titles and file names, sort and filter a named PDF collection. No PDF full-text search."
+msgstr "Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren und filtern. Keine PDF-Volltextsuche."
+
+msgid "Searches document metadata, not PDF contents. Filters apply to the whole collection before pagination."
+msgstr "Durchsucht Dokument-Metadaten, keine PDF-Inhalte. Filter gelten vor der Seitennavigation für die gesamte Sammlung."
+
+msgid "See the release on GitHub."
+msgstr "Sieh dir den Release auf GitHub an."
+
+msgid "Select"
+msgstr "Auswählen"
+
+msgid "Select / replace"
+msgstr "Auswählen / ersetzen"
+
+msgid "Select PDF"
+msgstr "PDF auswählen"
+
+msgid "Select a PDF, or use the document assigned to the current contribution."
+msgstr "Eine PDF auswählen oder das dem aktuellen Beitrag zugeordnete Dokument verwenden."
+
+msgid "Select cover"
+msgstr "Titelbild auswählen"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Settings access denied."
+msgstr "Kein Zugriff auf die Einstellungen."
+
+msgid "Settings could not be stored."
+msgstr "Die Einstellungen konnten nicht gespeichert werden."
+
+msgid "Settings export is too large."
+msgstr "Der Vorgabenexport ist zu groß."
+
+msgid "Settings imported. Review content types and watermark before use."
+msgstr "Vorgaben importiert. Vor der Verwendung Inhaltstypen und Wasserzeichen prüfen."
+
+msgid "Settings sections"
+msgstr "Einstellungsbereiche"
+
+msgid "Shortcodes: available in every editor"
+msgstr "Shortcodes: in jedem Editor verfügbar"
+
+msgid "Show / enable"
+msgstr "Anzeigen / aktivieren"
+
+msgid "Show download button"
+msgstr "Download-Button anzeigen"
+
+msgid "Show file size"
+msgstr "Dateigröße anzeigen"
+
+msgid "Show reading button"
+msgstr "Lesen-Button anzeigen"
+
+msgid "Show reset link"
+msgstr "Link zum Zurücksetzen anzeigen"
+
+msgid "Show result"
+msgstr "Ergebnis anzeigen"
+
+msgid "Show result count"
+msgstr "Trefferzahl anzeigen"
+
+msgid "Show title"
+msgstr "Titel anzeigen"
+
+msgid "Size unknown"
+msgstr "Größe unbekannt"
+
+msgid "Skip this content type"
+msgstr "Diesen Inhaltstyp überspringen"
+
+msgid "Small"
+msgstr "Klein"
+
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgid "Sort by title"
+msgstr "Nach Titel sortieren"
+
+msgid "Sort by upload date"
+msgstr "Nach Upload-Datum sortieren"
+
+msgid "Sorting"
+msgstr "Sortierung"
+
+msgid "Source"
+msgstr "Quelle"
+
+msgid "Source post ID (optional)"
+msgstr "ID des Quellbeitrags (optional)"
+
+msgid "Source post title"
+msgstr "Titel des Quellbeitrags"
+
+msgid "Source: current or selected post · first assigned PDF"
+msgstr "Quelle: aktueller oder ausgewählter Beitrag · erste zugeordnete PDF"
+
+msgid "Square"
+msgstr "Quadratisch"
+
+msgid "Target collection ID"
+msgstr "Ziel-Sammlungs-ID"
+
+msgid "Targets a plugin PDF collection. For native post query loops, use native Bricks filters instead."
+msgstr "Bezieht sich auf eine Plugin-PDF-Sammlung. Für native Beitragsschleifen die nativen Bricks-Filter verwenden."
+
+msgid "Test reader"
+msgstr "Reader testen"
+
+msgid "Text color"
+msgstr "Textfarbe"
+
+msgid "Text size (px)"
+msgstr "Textgröße (px)"
+
+msgid "The PDF could not be loaded. Open the original PDF using the link above."
+msgstr "Die PDF konnte nicht geladen werden. Über den Link oben lässt sich die Original-PDF öffnen."
+
+msgid "The PDF file is unavailable on this server. Select a custom cover instead."
+msgstr "Die PDF-Datei ist auf diesem Server nicht verfügbar. Ein eigenes Titelbild auswählen."
+
+msgid "The approved release changed. Refresh updates first."
+msgstr "Die freigegebene Version hat sich geändert. Suche zuerst erneut nach Updates."
+
+msgid "The approved release could not be verified."
+msgstr "Die freigegebene Version konnte nicht geprüft werden."
+
+msgid "The archive or plugin identity could not be verified. Installation was stopped."
+msgstr "Das Archiv oder die Pluginidentität konnte nicht geprüft werden. Die Installation wurde gestoppt."
+
+msgid "The change could not be saved. Review this contribution before trying again."
+msgstr "Die Änderung konnte nicht gespeichert werden. Den Beitrag vor einem erneuten Versuch prüfen."
+
+msgid "The collection limit was reached. Existing documents were kept."
+msgstr "Das Sammlungslimit wurde erreicht. Vorhandene Dokumente bleiben erhalten."
+
+msgid "The collection limit would be exceeded. No content was changed."
+msgstr "Das Sammlungslimit würde überschritten. Es wurden keine Inhalte geändert."
+
+msgid "The document collection could not be read."
+msgstr "Die Dokumentsammlung konnte nicht gelesen werden."
+
+msgid "The package does not match the approved checksum. Installation was stopped."
+msgstr "Das Paket entspricht nicht der freigegebenen Prüfsumme. Die Installation wurde gestoppt."
+
+msgid "The permissions do not allow this contribution to be changed."
+msgstr "Die Berechtigungen reichen zum Ändern dieses Beitrags nicht aus."
+
+msgid "The plugin must be installed in a stable slug directory."
+msgstr "Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein."
+
+msgid "The private update could not be authorized. Check the repository credentials and refresh updates."
+msgstr "Das private Update konnte nicht autorisiert werden. Prüfe die Repository-Zugangsdaten und suche erneut nach Updates."
+
+msgid "The private update download failed. Check credentials and try again."
+msgstr "Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangsdaten und versuche es erneut."
+
+msgid "The secure connection to the update server failed."
+msgstr "Die sichere Verbindung zum Updateserver ist fehlgeschlagen."
+
+msgid "The server could not generate a preview. Check PDF image processing support or select a custom cover."
+msgstr "Der Server konnte keine Vorschau erzeugen. PDF-Bildverarbeitung prüfen oder ein eigenes Titelbild auswählen."
+
+msgid "The server supports PDF preview generation"
+msgstr "Der Server unterstützt die PDF-Vorschauerzeugung"
+
+msgid "The update package identity, version or requirements could not be verified. The installed plugin was kept."
+msgstr "Identität, Version oder Anforderungen des Update-Pakets konnten nicht geprüft werden. Das installierte Plugin bleibt erhalten."
+
+msgid "The update provider did not return valid update data."
+msgstr "Der Updateanbieter hat keine gültigen Updatedaten geliefert."
+
+msgid "The update request timed out. Try again later."
+msgstr "Die Updateanfrage hat zu lange gedauert. Versuche es später erneut."
+
+msgid "The update server address could not be resolved."
+msgstr "Die Adresse des Updateservers konnte nicht aufgelöst werden."
+
+msgid "The update server could not be reached. Try again later."
+msgstr "Der Updateserver ist nicht erreichbar. Versuche es später erneut."
+
+msgid "The update server returned an unsuccessful HTTP response."
+msgstr "Der Updateserver hat eine HTTP-Fehlerantwort zurückgegeben."
+
+msgid "The watermark appears in the embedded reader only. Original files and downloaded PDFs remain unchanged."
+msgstr "Das Wasserzeichen erscheint nur im eingebetteten Reader. Originaldateien und heruntergeladene PDFs bleiben unverändert."
+
+msgid "These defaults apply wherever no individual override is set."
+msgstr "Diese Vorgaben gelten überall, wo keine individuellen Einstellungen festgelegt sind."
+
+msgid "These local files provide the on-demand reader. If files are missing, reinstall the complete plugin package. Original PDFs remain available independently."
+msgstr "Diese lokalen Dateien stellen den Reader auf Abruf bereit. Fehlen Dateien, das vollständige Plugin-Paket erneut installieren. Die Original-PDFs bleiben unabhängig davon verfügbar."
+
+msgid "This contribution was edited after migration. Explicit overwrite confirmation is required."
+msgstr "Dieser Beitrag wurde nach der Umstellung bearbeitet. Das Überschreiben muss ausdrücklich bestätigt werden."
+
+msgid "This document cannot be updated with your permissions."
+msgstr "Die Berechtigungen reichen zum Aktualisieren dieses Dokuments nicht aus."
+
+msgid "This document is unavailable or requires access to its source post."
+msgstr "Dieses Dokument ist nicht verfügbar oder erfordert Zugriff auf den zugehörigen Beitrag."
+
+msgid "This is not a supported settings export. No settings were changed."
+msgstr "Dies ist kein unterstützter Vorgabenexport. Es wurden keine Einstellungen geändert."
+
+msgid "This older backup cannot identify later edits. Explicit overwrite confirmation is required."
+msgstr "Diese ältere Sicherung kann spätere Bearbeitungen nicht erkennen. Das Überschreiben muss ausdrücklich bestätigt werden."
+
+msgid "This replaces saved plugin settings. Choose each target content type explicitly. Unmapped types are skipped. Documents and migration recovery data are not changed."
+msgstr "Ersetzt gespeicherte Plugin-Vorgaben. Jeden Ziel-Inhaltstyp ausdrücklich zuordnen; ohne Zuordnung wird er übersprungen. Dokumente und Wiederherstellungsdaten der Migration bleiben unverändert."
+
+msgid "This tool stays available while a supported source plugin is active, legacy references exist or recovery backups remain. Discovery is cached for five minutes; Check again refreshes it immediately."
+msgstr "Dieses Werkzeug bleibt verfügbar, solange ein unterstütztes Quellplugin aktiv ist, alte Referenzen oder Wiederherstellungssicherungen vorhanden sind. Die Erkennung wird fünf Minuten zwischengespeichert; „Erneut prüfen“ aktualisiert sie sofort."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Top"
+msgstr "Oben"
+
+msgid "Transfer settings"
+msgstr "Vorgaben übertragen"
+
+msgid "Typography"
+msgstr "Typografie"
+
+msgid "Under 1 MiB"
+msgstr "Unter 1 MiB"
+
+msgid "Undo removal"
+msgstr "Entfernen rückgängig"
+
+msgid "Unsaved changes"
+msgstr "Ungespeicherte Änderungen"
+
+msgid "Update stopped at %1$s: %2$s"
+msgstr "Update gestoppt bei %1$s: %2$s"
+
+msgid "Upload failed. Successful files were kept."
+msgstr "Upload fehlgeschlagen. Erfolgreich hochgeladene Dateien bleiben erhalten."
+
+msgid "Use PDF document in native post loops, PDF collection for a document library, and PDF filters and search for plugin collections. Reuse configured elements as native Components."
+msgstr "„PDF-Dokument“ in nativen Beitragsschleifen, „PDF-Sammlung“ für Dokumentbibliotheken und „PDF-Filter und Suche“ für Plugin-Sammlungen verwenden. Konfigurierte Elemente lassen sich als native Components wiederverwenden."
+
+msgid "Use a unique name, such as newsletters. Enter the same name in PDF filters and search."
+msgstr "Einen eindeutigen Namen wie gemeindebriefe vergeben. Denselben Namen unter „PDF-Filter und Suche“ eintragen."
+
+msgid "Use assigned document"
+msgstr "Zugeordnetes Dokument verwenden"
+
+msgid "Use inherited settings for this group"
+msgstr "Vorgaben für diese Gruppe übernehmen"
+
+msgid "Use reader watermark"
+msgstr "Reader-Wasserzeichen verwenden"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Vertical"
+msgstr "Vertikal"
+
+msgid "Watermark"
+msgstr "Wasserzeichen"
+
+msgid "Watermark logo"
+msgstr "Wasserzeichen-Logo"
+
+msgid "Watermark preview"
+msgstr "Wasserzeichen-Vorschau"
+
+msgid "Watermark text"
+msgstr "Wasserzeichen-Text"
+
+msgid "Website defaults"
+msgstr "Globale Vorgaben"
+
+msgid "When exceptions are disabled, the template applies to every reader. Editors cannot replace its text or logo."
+msgstr "Sind Ausnahmen deaktiviert, gilt die Vorlage für jeden Reader. Redakteure können Text und Logo nicht ersetzen."
+
+msgid "Working…"
+msgstr "Wird bearbeitet …"
+
+msgid "You cannot migrate these documents."
+msgstr "Keine Berechtigung zur Migration dieser Dokumente."
+
+msgid "Your PDFs. Beautifully presented."
+msgstr "Deine PDFs. Einfach gut präsentiert."
+
+msgid "Zoom in"
+msgstr "Vergrößern"
+
+msgid "Zoom out"
+msgstr "Verkleinern"
+
+msgctxt "block description"
+msgid "Present a PDF or a document collection with preview covers, reading and download buttons."
+msgstr "Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und Download-Buttons präsentieren."
+
+msgctxt "block description"
+msgid "Search titles and file names, sort and filter a named PDF collection. No PDF full-text search."
+msgstr "Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren und filtern. Keine PDF-Volltextsuche."
+
+msgctxt "block keyword"
+msgid "documents"
+msgstr "Dokumente"
+
+msgctxt "block keyword"
+msgid "filter"
+msgstr "Filter"
+
+msgctxt "block keyword"
+msgid "pdf"
+msgstr "pdf"
+
+msgctxt "block keyword"
+msgid "publications"
+msgstr "Publikationen"
+
+msgctxt "block keyword"
+msgid "search"
+msgstr "Suche"
+
+msgctxt "block title"
+msgid "Builder PDF Presenter"
+msgstr "Builder PDF Presenter"
+
+msgctxt "block title"
+msgid "PDF filters and search"
+msgstr "PDF-Filter und Suche"

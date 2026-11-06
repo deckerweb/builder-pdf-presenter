@@ -1,0 +1,547 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Builder PDF Presenter · Documentation</title><style>body{margin:0;background:#f4f6f7;color:#203643;font:16px/1.7 system-ui,sans-serif}nav{background:#173744;color:white;padding:18px;display:flex;gap:20px;flex-wrap:wrap}nav a{color:inherit}section{max-width:960px;margin:24px auto;padding:28px;background:white;border:1px solid #dce3e7;border-radius:10px}a{color:#17617e}h1{font-size:30px}h2{font-size:24px}h3{font-size:19px}table{border-collapse:collapse;width:100%}td,th{padding:9px;border:1px solid #dce3e7;text-align:left}pre{overflow:auto;padding:15px;background:#f0f4f6}code{background:#f0f4f6} @media(max-width:700px){section{padding:18px;margin:15px 8px}table{font-size:13px}}.bpp-doc-brand{display:flex;align-items:center;gap:18px;padding:24px;max-width:960px;margin:auto}.bpp-doc-brand strong{font-size:24px;line-height:1.3}.bpp-doc-brand p{margin:5px 0 0}.bpp-doc-brand img{flex:none;border-radius:14px}nav{background:#38265f}a{color:#594091}</style><header class="bpp-doc-brand"><img src="../assets/branding/icon.svg" width="64" height="64" alt=""><div><strong>Builder PDF Presenter</strong><p>Your PDFs. Beautifully presented.</p></div></header><nav><a href="#part-0">Overview</a><a href="#part-1">Guide</a><a href="#part-2">Examples</a><a href="#part-3">Story</a><a href="#part-4">FAQ</a><a href="#part-5">Shortcodes</a><a href="#part-6">PDF migration</a><a href="index-de.html">Deutsch</a></nav><section id="part-0"><h1 id="p0-builder-pdf-presenter">Builder PDF Presenter</h1>
+
+<p><a href="index-de.html">Deutsch</a></p>
+<h2 id="p0-about">About</h2>
+<p>Publish PDFs with less effort: lightweight cover cards for browsing and a comfortable reader that opens when needed. Suitable for club newsletters, meeting minutes, community publications and document libraries on any supported content post type.</p>
+<p><strong>Your data in your WordPress. Period.</strong> Free, without advertising, reader tracking or a Pro edition.</p>
+<p>Version <strong>1.0.0</strong> · WordPress <strong>6.9+</strong> · PHP <strong>8.3+</strong></p>
+<p><a href="#p0-getting-started">Getting started</a> · <a href="#part-1">User guide</a> · <a href="#part-4">FAQ by topic</a> · <a href="#part-2">Examples</a></p>
+<h2 id="p0-contents">Contents</h2>
+<ul>
+<li><a href="#p0-at-a-glance">At a Glance</a></li>
+<li><a href="#p0-getting-started">Getting started</a></li>
+<li><a href="#p0-feature-highlights">Feature Highlights</a></li>
+<li><a href="#p0-faq">FAQ</a></li>
+<li><a href="#p0-changelog">Changelog</a></li>
+<li><a href="#p0-about-the-project">About the project</a></li>
+<li><a href="#p0-help-security-and-support">Help, security and support</a></li>
+</ul>
+<h2 id="p0-at-a-glance">At a Glance</h2>
+<ul>
+<li>One PDF or an ordered collection per post, page or independent block.</li>
+<li>Three card designs: cover, compact and document list; responsive grids.</li>
+<li>Local PDF.js reader in a modal or new tab; direct-file opening is also available.</li>
+<li>Configurable reading/download buttons, labels, covers and reader controls.</li>
+<li>Website defaults with content type, contribution and document overrides.</li>
+<li>Document and filter blocks, eight starter patterns, shortcodes and three native Bricks elements.</li>
+<li>Optional central reader watermark; explicit PDF Poster migration with recovery.</li>
+<li>Local Site Health checks and permission-aware Command Palette shortcuts.</li>
+</ul>
+<h2 id="p0-getting-started">Getting started</h2>
+<ol>
+<li>Install and activate the plugin ZIP under Plugins → Add Plugin → Upload Plugin.</li>
+<li>Open Settings → Builder PDF Presenter. Select content types that should receive the PDF management panel and set the website defaults.</li>
+<li>In a post, select PDFs from the Media Library or upload them. Reorder entries and edit display titles where useful.</li>
+<li>Insert the Builder PDF Presenter block and use the assigned documents. Alternatively create an independent collection in the block, use <code>[builder_pdf_presenter]</code> or choose a native Bricks element.</li>
+<li>Preview the page and test reading/download actions. Save changes before leaving the settings page.</li>
+</ol>
+<p>Bricks and Meta Box are not required. The native Bricks integration was tested with Bricks 2.4.5. A Bricks-built page still depends on Bricks; changing the theme does not convert its layout into Block Editor.</p>
+<h2 id="p0-feature-highlights">Feature Highlights</h2>
+<h3 id="p0-a-fast-overview-a-reader-when-needed">A fast overview, a reader when needed</h3>
+<p>The grid displays ordinary cover images. It does not initialize a separate PDF.js reader for every visible card. Opening a document loads the reader on demand. Large source PDFs can still take time to load; the overview does not compress the original files.</p>
+<h3 id="p0-simple-document-care">Simple document care</h3>
+<p>Select or upload multiple PDFs, reorder them, change display titles, replace files or assign covers. Administrators set collection limits. Reducing a limit never removes existing entries.</p>
+<h3 id="p0-consistent-defaults-with-useful-exceptions">Consistent defaults with useful exceptions</h3>
+<p>Keep the usual settings in one place. Content types, individual contributions and documents can override inheritable settings. The fixed save bar identifies unsaved changes and keeps edits available after a save failure.</p>
+<h3 id="p0-block-editor-and-native-bricks-workflows">Block Editor and native Bricks workflows</h3>
+<p>Use Block Editor color, typography, spacing and other supported style controls for the current block. The compact “PDF Presenter · Block” toolbar belongs to the editor only. In Bricks, PDF document works inside post loops; PDF collection displays one post’s documents. Native styles, dynamic tags and conditions remain available.</p>
+<h3 id="p0-central-reader-branding">Central reader branding</h3>
+<p>Administrators enable a shared text/logo watermark and decide whether editors may disable it per document. The overlay changes the reader display only; original files and downloads are unaffected.</p>
+<h3 id="p0-a-deliberate-scope">A deliberate scope</h3>
+<p>No flipbook effects, Pro edition, advertising, reader analytics or cloud synchronization. Hiding Download is not copy protection. Document files and cover images keep the server’s existing access rules.</p>
+<h3 id="p0-sort-and-find-documents">Sort and find documents</h3>
+<p>Search named libraries by titles and file names, sort results and filter file sizes. Search covers the whole accessible collection before pagination, never PDF contents. Ready-to-use patterns connect a grid and filters, including a sidebar layout.</p>
+<h2 id="p0-faq">FAQ</h2>
+<h3 id="p0-do-i-need-a-page-builder-or-custom-field-plugin">Do I need a page builder or custom-field plugin?</h3>
+<p>No. The core works with Block Editor and shortcodes. Bricks integration is optional.</p>
+<h3 id="p0-can-one-post-contain-several-pdfs">Can one post contain several PDFs?</h3>
+<p>Yes. Add an ordered collection to the post or directly to a block and display it as cards or a list.</p>
+<h3 id="p0-can-i-create-an-archive-across-posts">Can I create an archive across posts?</h3>
+<p>Yes. Use the block’s contribution query or a native post Query Loop. The plugin query shows the first or all PDFs per source post and filters the complete accessible collection before pagination.</p>
+<h3 id="p0-why-is-a-preview-image-missing">Why is a preview image missing?</h3>
+<p>Automatic PDF previews depend on the server. Generate a missing preview where supported or select a custom cover.</p>
+<h3 id="p0-is-this-a-protected-file-or-membership-system">Is this a protected file or membership system?</h3>
+<p>No. Button visibility is not file protection. Existing server permissions still apply.</p>
+<h3 id="p0-does-the-watermark-change-downloads">Does the watermark change downloads?</h3>
+<p>No. It appears only in the embedded reader.</p>
+<h3 id="p0-is-there-a-pro-edition-or-reader-tracking">Is there a Pro edition or reader tracking?</h3>
+<p>No. There is no Pro edition, upselling or reader tracking by the plugin.</p>
+<p><a href="#part-4">Read all questions and answers →</a></p>
+<h2 id="p0-changelog">Changelog</h2>
+<h3 id="p0-100-2026-11-06">1.0.0 · 2026-11-06</h3>
+<ul>
+<li>New: PDF cards with previews, a reader and downloads for individual documents and collections.</li>
+<li>New: Global defaults and individual settings for any post type.</li>
+<li>New: Block Editor, shortcodes and native Bricks integration, including metadata filters and sorting.</li>
+<li>New: Migration from PDF Poster and PDF Embedder with outcome reports and recovery.</li>
+</ul>
+<h2 id="p0-about-the-project">About the project</h2>
+<p>For years, club and community clients needed a simple way to publish PDFs. Missing functions, upselling and awkward administration kept getting in the way. A client project in autumn 2026 finally prompted me to build a focused solution of my own.</p>
+<p>— David Decker · <a href="#part-3">Read the story</a></p>
+<h2 id="p0-help-security-and-support">Help, security and support</h2>
+<p><a href="#part-1">User guide</a> · <a href="#part-4">FAQ by topic</a> · <a href="https://deckerwebplugins.com/en/plugins/builder-pdf-presenter/">Plugin website</a></p>
+<p>Report suspected vulnerabilities privately; follow <a href="#security">SECURITY.md</a>. Do not post customer files, credentials or exploit details in public support requests.</p>
+<p>To support the project: <a href="https://ko-fi.com/deckerweb">Ko-fi</a> · <a href="https://buymeacoffee.com/daveshine">Buy Me a Coffee</a> · <a href="https://paypal.me/deckerweb">PayPal</a>.</p>
+<p>© 2026 David Decker – DECKERWEB. Plugin license: <a href="https://www.gnu.org/licenses/gpl-2.0.html">GPL v2 or later</a>.
+PDF.js: Apache-2.0, see vendor/pdfjs/LICENSE. Embedded deckerweb components retain their included notices. Original PDF Presenter interface glyphs by David Decker – DECKERWEB. Any retained Tabler asset notices are in vendor/tabler/LICENSE.</p>
+<p><a href="#part-5">Complete shortcode reference</a></p>
+<p>Marketing artwork: original vector artwork by David Decker – DECKERWEB. Bricolage Grotesque and Manrope lettering under SIL OFL 1.1; license notices in assets/branding/licenses.</p>
+<p><a href="#part-6">PDF migration: workflow and limitations</a></p></section><section id="part-1"><span id="guide"></span><h1 id="p1-user-guide">User guide</h1>
+<p><a href="index-de.html">Deutsch</a> · <a href="#part-0">Overview</a> · <a href="#part-4">FAQ by topic</a></p>
+<h2 id="p1-choose-the-workflow">Choose the workflow</h2>
+<p><strong>One post with one or several documents:</strong> Enable the post type under Settings → Builder PDF Presenter. Add PDFs in its document panel, then insert the block with “Documents assigned to this contribution”. A PDF assigned in the panel is not inserted into unrelated posts automatically.</p>
+<p><strong>An independent block:</strong> Select “Own PDF collection” and choose or upload files. These assignments belong to this block. Reorder documents and set display titles there. Removing an entry from a collection does not delete the Media Library file.</p>
+<p><strong>An archive across posts:</strong> Select Query document contributions, choose its post type and the first or all assigned PDFs. Empty assignments do not consume result slots. Configure the collection ID and page size for metadata filters and pagination.</p>
+<h2 id="p1-settings-and-saving">Settings and saving</h2>
+<p>Use the left navigation to jump between content management, cards, buttons, reader, type overrides, watermark and preview. It is one form, so switching sections keeps edits. On smaller screens the navigation appears above the sections.</p>
+<p>The fixed bottom bar shows saved/unsaved status. A dot next to Save changes also indicates unsaved edits. Saving runs without leaving the page; an error keeps your fields intact for another attempt. Leaving with unsaved changes prompts the browser warning where supported. Without JavaScript, the standard WordPress form remains available.</p>
+<p>Settings cascade from built-in defaults to website, content type, post and document/output overrides. “Inherit” follows the preceding scope. Collection limits and central watermark policy remain administrative controls. Existing documents survive a reduction of the limit.</p>
+<h2 id="p1-block-editor-appearance">Block Editor appearance</h2>
+<p>The “PDF Presenter · Block” toolbar is editor-only; its name is not a page heading. Use Edit for document care and Preview for the cards. Test reader opens an explicit test link. Block style settings affect the output, not this toolbar. Theme support determines which native Block Editor style panels are offered.</p>
+<p>Use cover, compact or list cards. Cover frames can preserve a consistent ratio or original proportions. Choose titles and file details that help visitors distinguish documents. Avoid extremely long labels in narrow columns.</p>
+<h2 id="p1-bricks">Bricks</h2>
+<p><strong>PDF document:</strong> Use inside a native post Query Loop, or select a PDF explicitly. With no explicit file, it uses the first PDF assigned to the current/selected source post. The source hint in the builder explains this. An element is not a copy of the file.</p>
+<p><strong>PDF collection:</strong> Use for all assigned documents of one source post. Let the plugin set the inner collection columns. This element does not create a query across post types.</p>
+<p>For equal-height query cards, stretch the outer grid’s children and let the loop wrapper stretch its PDF element. The plugin’s native wrapper fills that available space; action buttons stay at the bottom. No fixed pixel height is required. Custom parent alignments can still change the result.</p>
+<p>Dynamic tags: <code>{bpp_count}</code>, <code>{bpp_id}</code>, <code>{bpp_title}</code>, <code>{bpp_url}</code>, <code>{bpp_reader_url}</code>, <code>{bpp_cover}</code>. Except count, these use the first valid assigned document. For a condition such as <code>{bpp_count} &gt; 0</code>, place the condition on the PDF element inside the post loop. Native Bricks styling/classes and Component property connections remain available. Switching off Bricks pauses only its integration; the core retains assignments.</p>
+<h2 id="p1-shortcodes-and-classic-editor">Shortcodes and Classic Editor</h2>
+<pre><code>[builder_pdf_presenter]
+[builder_pdf_presenter post_id=&quot;123&quot;]
+[builder_pdf_presenter pdf_id=&quot;456&quot; mode=&quot;tab&quot; show_title=&quot;0&quot;]
+</code></pre>
+<p>IDs are WordPress post/attachment IDs from your own site. By default the shortcode uses the current post. Reading mode values: <code>modal</code>, <code>tab</code> (local reader in a new tab), <code>file</code> (original PDF). Visibility options use <code>1</code>/<code>0</code>; labels can be overridden with <code>read_label</code> and <code>download_label</code>.</p>
+<h2 id="p1-reader-and-watermark">Reader and watermark</h2>
+<p>Administrators choose navigation, zoom, current-page search, fullscreen and file links. Search applies to the current rendered page, not the entire archive. Page memory is limited to the browser session. Original PDF opening remains a fallback if the reader cannot load.</p>
+<p>Under Watermark, enable the central template and choose text/logo, position, opacity and size. Editors can only turn that template off for individual documents if the administrator explicitly permits exceptions. It is not a PDF editing or protection feature: originals, downloads and files outside the reader are not stamped.</p>
+<h2 id="p1-migration-and-recovery">Migration and recovery</h2>
+<p>Tools → Switch from PDF Poster appears when relevant plugin/content/backups are detected. Review sources, migrate explicitly and inspect the report. Recovery works per contribution and checks for later changes before restoring snapshots. Do not uninstall the old plugin until the migrated output is reviewed. Keep normal website backups.</p>
+<h2 id="p1-troubleshooting-and-data">Troubleshooting and data</h2>
+<p>Tools → Site Health reports local reader files and server PDF-preview support. Missing conversion support does not prevent using custom covers. The Command Palette offers navigation shortcuts appropriate to your permissions. It does not execute imports.</p>
+<p>Data is stored in the WordPress Media Library, post metadata and site-specific options. Deactivation/uninstall preserve documents and settings by default. There are no reader-analytics profiles. Optional deckerweb Library/Updater requests support catalogs/updates, not PDF hosting; see the included component documentation and controls.</p>
+<p><a href="#part-2">Real-world examples</a> · <a href="#part-4">FAQ by topic</a></p>
+<h2 id="p1-sorting-search-and-filters">Sorting, search and filters</h2>
+<p>Collections initially follow saved order. Apply order to collection sorts once; save the post afterward. Output sorting in a block or Bricks element persistently sorts that display without changing editorial order. Visitor sorting affects the current URL only.</p>
+<p>For archives, select Query document contributions, choose the content type, and select the first or all assigned PDFs per post. Publication date, source title and menu_order describe posts; upload date describes the Media Library PDF. menu_order is useful when your posts have meaningful values.</p>
+<p>Give a collection a unique ID such as <code>newsletters</code>. Enter the same target ID in PDF filters and search. The two filter patterns provide connected layouts, including a sidebar. Apply filters searches, sorts and filters all accessible documents before pagination. This is not PDF full-text search. Sizes use existing WordPress metadata; unknown sizes remain unknown. PDFs are never analyzed during a visitor request.</p>
+<p>Native Bricks post query loops keep native Bricks queries and filters. The additional filter element targets plugin collections, not external post loops.</p>
+<h2 id="p1-everyday-comfort-and-portable-defaults">Everyday comfort and portable defaults</h2>
+<p>Removing a document removes its assignment only; Undo removal restores it before saving. Documents added in the meantime are kept. Replace changes this assignment, not a shared Media Library file. Shared-use counts cover plugin assignments in editable source posts, not arbitrary foreign builder embeds.</p>
+<p>Embed PDFs offers copyable examples and documentation links. Transfer settings exports saved defaults or accepts pasted JSON with explicit source-to-target content type mapping. Import replaces plugin defaults, never documents. No PDF files, assignments or media IDs are transferred. Watermarks remain disabled after import until their text and local logo are reviewed. Save pending settings first if you want them in an export.</p>
+<p><a href="#part-5">All shortcode parameters and examples</a></p>
+<p><a href="#part-6">PDF Poster and PDF Embedder migration: workflow, limitations and recovery</a></p>
+<h2 id="p1-reader-troubleshooting-mime-types-for-mjs">Reader troubleshooting: MIME types for .mjs</h2>
+<p>PDF.js uses JavaScript modules. If the server delivers <code>pdf.mjs</code> or <code>pdf.worker.mjs</code> as <code>text/plain</code> or <code>application/octet-stream</code>, the browser can reject them with a strict MIME type error. This is a hosting configuration issue; other reader errors can have different causes. In the browser’s Network tools, check the actual response <code>Content-Type</code> for both files under <code>wp-content/plugins/builder-pdf-presenter/vendor/pdfjs/build/</code>. A JavaScript MIME type such as <code>text/javascript</code> or <code>application/javascript</code> is required. HTTP 200 alone does not confirm this.</p>
+<h3 id="p1-apache">Apache</h3>
+<p>In the affected virtual host, or in <code>.htaccess</code> when the host permits <code>AddType</code> (<code>AllowOverride FileInfo</code>), add:</p>
+<pre><code class="language-apache">AddType application/javascript .mjs
+</code></pre>
+<p>Keep existing rules; place this outside WordPress’s generated markers. If <code>.htaccess</code> overrides are unavailable, ask the hosting provider. See <a href="https://httpd.apache.org/docs/current/mod/mod_mime.html#addtype">Apache AddType documentation</a>.</p>
+<h3 id="p1-nginx">nginx</h3>
+<p>Have the server administrator extend the JavaScript entry in the effective MIME table, commonly <code>mime.types</code>, to include <code>mjs</code>. For example, an existing <code>application/javascript js;</code> entry becomes:</p>
+<pre><code class="language-nginx">application/javascript js mjs;
+</code></pre>
+<p>If the existing entry uses <code>text/javascript</code>, keep that type and append <code>mjs</code>. Preserve the other mappings; do not replace the full <code>types</code> table with this single line or duplicate the <code>js</code> mapping. nginx does not read <code>.htaccess</code>. Validate configuration with <code>nginx -t</code> before reloading through the server’s usual service management. See <a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#types">nginx types documentation</a>.</p>
+<h3 id="p1-hosting-panels-such-as-plesk">Hosting panels such as Plesk</h3>
+<p>For the affected domain, open <strong>Apache &amp; nginx Settings → MIME types</strong>, choose the custom value option and add <code>application/javascript .mjs</code>, preserving existing entries. Apply changes; activation may take a few minutes. Labels and availability depend on the provider. If nginx serves these files directly, its effective MIME mapping must also be correct. See <a href="https://support.plesk.com/hc/en-us/articles/12377348720023-How-to-configure-MIME-types-for-a-domain-in-Plesk">Plesk’s MIME configuration guide</a>.</p>
+<h3 id="p1-verify-and-keep-downloads-available">Verify and keep downloads available</h3>
+<p>After changing configuration, refresh affected browser/proxy caches and check both module responses again, then open the reader. The plugin does not edit server configuration automatically.</p>
+<p>If the setting cannot be changed, enable the <strong>Download button</strong> and, if appropriate, hide the <strong>Read button</strong> until the reader works. Visitors can still obtain an accessible original PDF without PDF.js. Opening the original PDF directly in a new tab is another option; browser and server determine whether it opens or downloads. Existing file access restrictions still apply. An external Google or Adobe viewer is not required for this workaround.</p></section><section id="part-2"><h1 id="p2-real-world-examples">Real-world examples</h1>
+<h2 id="p2-three-document-workflows">Three document workflows</h2>
+<ol>
+<li><strong>One PDF in a post:</strong> Attach meeting minutes, a program or an issue to the relevant post.</li>
+<li><strong>Several PDFs in one post:</strong> Display an ordered collection of documents as a grid or list.</li>
+<li><strong>An archive across posts:</strong> Query posts and present their assigned documents as cards. One post per issue is a simple model for a magazine archive.</li>
+</ol>
+<p>The source “Query document contributions” can show the first or all assigned PDFs per matching post. Named plugin collections search and sort the whole accessible result set before pagination. Native post Query Loops keep their own query and pagination; use native Bricks filters for Bricks post loops.</p>
+<h2 id="p2-everyday-publishing-scenarios">Everyday publishing scenarios</h2>
+<table>
+<thead>
+<tr>
+<th>Organization</th>
+<th>Everyday workflow</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neighborhood association</td>
+<td>Assign newsletters and meeting minutes to the relevant update or custom post type.</td>
+<td>Read documents locally and find earlier updates on an archive page.</td>
+</tr>
+<tr>
+<td>Volunteer nonprofit</td>
+<td>Publish a post for each annual or impact report.</td>
+<td>Show the organization’s work across several years.</td>
+</tr>
+<tr>
+<td>Parent-teacher organization (PTO)</td>
+<td>Collect an event schedule, family information and forms in one post.</td>
+<td>Families find the documents together.</td>
+</tr>
+<tr>
+<td>Community garden</td>
+<td>Add garden rules, workday information and season recaps to relevant posts.</td>
+<td>Volunteers manage useful documents without a complicated publishing system.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choose a PDF, publish it, find it again.</strong> Free, without advertising, reader tracking by the plugin or a Pro edition. PDF files and covers keep the access rules of the website; displaying them does not automatically protect them.</p></section><section id="part-3"><h1 id="p3-why-i-built-builder-pdf-presenter">Why I built Builder PDF Presenter</h1>
+<p>For years, clients running clubs and community organizations have asked me for something that sounds simple: a sensible way to publish a few PDFs on their WordPress website.</p>
+<p>In practice, the usual options repeatedly got in the way. Some lacked essential functions. Others had the functions, but kept them behind Pro upgrades and upselling. And even where the features were available, document management and the result on the website often felt like an afterthought.</p>
+<p>A client project in autumn 2026 brought these problems into sharp focus. Managing documents took more work than it should, PDF overviews loaded slowly, and making the result look good required too much adjustment. That was the point at which I decided to build my own plugin.</p>
+<p>Builder PDF Presenter is the result: choose a PDF, give it a clear presentation and let people read it when they want to. Lightweight cover images make document overviews practical, while a local PDF.js reader opens on demand.</p>
+<p><strong>Your data in your WordPress. Period.</strong></p>
+<p>There is no Pro edition, advertising or upselling. The plugin does not track readers or synchronize documents to a cloud service. Its purpose is straightforward document publishing, rather than flipbook effects or a membership system.</p>
+<p>— David Decker</p></section><section id="part-4"><h1 id="p4-faq-by-topic">FAQ by topic</h1>
+<h2 id="p4-getting-started">Getting started</h2>
+<h3 id="p4-is-this-a-flipbook-or-magazine-effects-plugin">Is this a flipbook or magazine-effects plugin?</h3>
+<p>No. Builder PDF Presenter focuses on simple document management, fast cover overviews and comfortable reading. It does not simulate turning pages.</p>
+<h3 id="p4-is-there-a-pro-edition-advertising-or-cloud-synchronization">Is there a Pro edition, advertising or cloud synchronization?</h3>
+<p>No. There are no paid feature locks, advertisements or cloud synchronization. Documents are managed in your WordPress Media Library.</p>
+<h3 id="p4-do-i-need-bricks-or-meta-box">Do I need Bricks or Meta Box?</h3>
+<p>No. The core, Block Editor block and shortcodes work independently. Native Bricks elements are available when Bricks is active. If Bricks is switched off, document assignments and other output methods remain available; a Bricks layout itself still needs Bricks to render.</p>
+<h2 id="p4-working-with-documents">Working with documents</h2>
+<h3 id="p4-what-is-a-collection">What is a collection?</h3>
+<p>The PDFs assigned to one post, page or independent PDF block. They can be reordered and presented as a grid or list, including a collection with just one document.</p>
+<h3 id="p4-how-do-i-build-an-archive-from-several-posts">How do I build an archive from several posts?</h3>
+<p>For one issue per post, use “Query document contributions” in the block, or a native WordPress/Bricks post Query Loop. The direct block query can display the first or all PDFs per post and applies metadata filters before pagination. In a WordPress Query Loop, the PDF block uses that loop post as its source; Bricks PDF document uses its first assigned PDF. Bricks PDF collection can display a post collection or a plugin archive.</p>
+<h3 id="p4-why-does-a-newly-inserted-bricks-element-already-show-a-pdf">Why does a newly inserted Bricks element already show a PDF?</h3>
+<p>Without an explicit file, PDF document uses the first PDF assigned to the current source post, or the current loop post. This is actual content, not a demonstration file. Inserting the element does not create another document assignment.</p>
+<h3 id="p4-is-pdf-presenter-block-part-of-my-page">Is “PDF Presenter · Block” part of my page?</h3>
+<p>No. The compact identity and Edit/Preview switch are editor controls. They do not render on the website. Document titles belong to the cards below.</p>
+<h3 id="p4-how-do-defaults-and-overrides-work">How do defaults and overrides work?</h3>
+<p>Built-in defaults → website defaults → content type defaults → contribution settings → individual document/output settings. An empty “Inherit” value keeps the setting from the preceding scope. Central collection limits and watermark policy remain under administrator control.</p>
+<h3 id="p4-why-is-my-cover-missing">Why is my cover missing?</h3>
+<p>WordPress must have a suitable PDF preview, or you can select a custom image. Automatic generation depends on the server image editor and PDF support. Use “Generate missing previews” or assign a cover manually; the frontend never generates PDF images during a visitor request.</p>
+<h2 id="p4-reader-privacy-and-access">Reader, privacy and access</h2>
+<h3 id="p4-why-pdfjs">Why PDF.js?</h3>
+<p>PDF.js is open-source PDF technology also used in Firefox. The reader’s scripts are served locally. The plugin does not require Adobe or Google Docs to display a PDF and does not fall back to those services.</p>
+<h3 id="p4-why-does-the-reader-show-a-mime-type-error-for-mjs-files">Why does the reader show a MIME type error for .mjs files?</h3>
+<p>The server may be sending the PDF.js modules as plain text rather than JavaScript. Correct the MIME mapping for <code>.mjs</code> in Apache, nginx or your hosting panel. The <a href="#part-1">MIME troubleshooting guide</a> includes configuration examples and verification steps. If this cannot be fixed, keep the Download button enabled and optionally hide Read: accessible original PDFs remain available without the reader.</p>
+<h3 id="p4-what-if-the-reader-fails-to-load">What if the reader fails to load?</h3>
+<p>A clear error message directs visitors to the original PDF link. File access rules still apply. A browser may open or download the original depending on its capabilities and server headers.</p>
+<h3 id="p4-are-documents-protected-when-i-hide-download">Are documents protected when I hide Download?</h3>
+<p>No. Hiding reader controls is not access control or copy protection. Original PDF URLs and cover images retain the server’s existing permissions. The plugin does not provide a protected document store or membership system.</p>
+<h3 id="p4-does-a-watermark-modify-my-pdf">Does a watermark modify my PDF?</h3>
+<p>No. It is a reader overlay. The original, downloads and files opened outside the reader are unchanged. Administrators define the template and can allow per-document on/off exceptions; editors cannot supply arbitrary watermark logos.</p>
+<h3 id="p4-does-the-plugin-track-readers-or-send-pdfs-to-a-cloud">Does the plugin track readers or send PDFs to a cloud?</h3>
+<p>No reader statistics, profiling or cloud synchronization are provided. The PDF reader uses local assets. Optional deckerweb update/library functions may make the separately documented catalog or update requests; that does not upload the PDFs.</p>
+<h3 id="p4-what-data-is-stored-in-my-browser">What data is stored in my browser?</h3>
+<p>The optional visit-only page memory uses session storage to remember the current page per document. It is used for reader convenience, not analytics. Clearing the session clears that memory.</p>
+<h2 id="p4-administration-and-troubleshooting">Administration and troubleshooting</h2>
+<h3 id="p4-what-does-site-health-check">What does Site Health check?</h3>
+<p>Local reader-file availability and whether WordPress reports PDF image-editor support. It does not upload documents, scan your entire library or guarantee that every PDF can be converted. Missing preview support is a recommendation; custom covers remain usable.</p>
+<h3 id="p4-what-do-the-command-palette-shortcuts-do">What do the Command Palette shortcuts do?</h3>
+<p>They open documentation, settings or the PDF Poster migration page when the current user has permission and that page is available. They do not run migrations or save changes.</p>
+<h3 id="p4-how-does-migration-work">How does migration work?</h3>
+<p>Under Tools → Switch from PDF Poster, review detected contributions and migrate explicitly. A before/after snapshot and operation report support per-contribution recovery. Later edits can cause a conflict and are not silently overwritten. The tool appears when PDF Poster or relevant embeddings/backups are detected; use the existing Media Library files.</p>
+<h3 id="p4-does-this-work-in-multisite-and-what-happens-on-uninstall">Does this work in Multisite, and what happens on uninstall?</h3>
+<p>Settings, assignments and migration reports are site-specific. Deactivation/uninstall preserve user documents and settings by default. The embedded components manage their shared temporary data separately. Keep normal backups of the website and Media Library.</p>
+<h3 id="p4-why-can-a-theme-still-affect-the-design">Why can a theme still affect the design?</h3>
+<p>The plugin provides namespaced, readable defaults. Block Editor style controls and native Bricks styling can customize each output. Extremely broad or important theme rules can still override styles; there is no guarantee against every third-party CSS rule.</p>
+<h2 id="p4-search-and-portable-defaults">Search and portable defaults</h2>
+<h3 id="p4-does-collection-search-read-pdf-contents">Does collection search read PDF contents?</h3>
+<p>No. It searches the selected display title, actual source post title, Media Library title and file name. Apply filters searches the whole accessible collection before pagination. This is separate from the reader’s optional search on its currently displayed PDF page. Search URLs are shareable; the plugin does not record search statistics.</p>
+<h3 id="p4-why-does-a-pdf-have-an-unknown-size">Why does a PDF have an unknown size?</h3>
+<p>The original WordPress attachment metadata may not contain a byte size. The plugin does not download or analyze a file to fill it during a visitor request. Unknown sizes have their own filter and sort last in either direction.</p>
+<h3 id="p4-does-settings-import-move-documents-to-another-website">Does settings import move documents to another website?</h3>
+<p>No. It transfers saved presentation defaults only. Content types must be explicitly mapped, and duplicate target mappings are rejected. Media IDs and PDF assignments are not copied. The watermark is disabled and its logo removed from the imported defaults until the administrator reviews the local template. Import replaces plugin defaults, never documents or migration recovery snapshots.</p>
+<p><a href="#part-6">PDF Poster and PDF Embedder migration: workflow, limitations and recovery</a></p></section><section id="part-5"><span id="shortcodes"></span><h1 id="p5-shortcodes">Shortcodes</h1>
+<p><a href="index-de.html">Deutsch</a> · <a href="#part-1">Guide</a></p>
+<p>Use shortcodes in the Classic Editor, a Shortcode block or suitable builder elements. Example IDs are placeholders for your own posts and Media Library. A readable source post is required; shortcodes do not bypass post visibility or passwords.</p>
+<h2 id="p5-builder_pdf_presenter">[builder_pdf_presenter]</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning, values and default</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>post_id</code></td>
+<td>Source post ID; default current post.</td>
+<td><code>post_id="123"</code></td>
+</tr>
+<tr>
+<td><code>pdf_id</code></td>
+<td>Explicit PDF attachment ID; default none. Overrides collection source.</td>
+<td><code>pdf_id="456"</code></td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>post (default) or posts (archive). custom is a block-only collection array, not a shortcode format.</td>
+<td><code>source="posts"</code></td>
+</tr>
+<tr>
+<td><code>post_type</code></td>
+<td>Selectable content type slug for source="posts"; default post.</td>
+<td><code>post_type="programm"</code></td>
+</tr>
+<tr>
+<td><code>collection_id</code></td>
+<td>Unique lowercase name, max. 64 characters: letters, digits, hyphen, underscore. Connects filters; auto-generated when absent.</td>
+<td><code>collection_id="newsletters"</code></td>
+</tr>
+<tr>
+<td><code>per_post</code></td>
+<td>first (default): first available PDF per source post; all: every assigned PDF.</td>
+<td><code>per_post="all"</code></td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>Legacy page-size fallback, 1–500; shortcode default 500, block default 12. Empty posts do not consume slots.</td>
+<td><code>limit="12"</code></td>
+</tr>
+<tr>
+<td><code>page_size</code></td>
+<td>PDFs per page, 1–500; absent/0 uses limit or 500. Filtered before pagination.</td>
+<td><code>page_size="24"</code></td>
+</tr>
+<tr>
+<td><code>orderby</code></td>
+<td>manual, title, media_title, filename, upload_date, size, date, post_title, menu_order. Default manual for collections; date for post archives.</td>
+<td><code>orderby="title"</code></td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>ASC or DESC. Default DESC for publication date, otherwise ASC. Stable ties follow saved source order.</td>
+<td><code>order="ASC"</code></td>
+</tr>
+<tr>
+<td><code>show_count</code></td>
+<td>Result count: <code>1</code> (default), <code>0</code> hides it.</td>
+<td><code>show_count="0"</code></td>
+</tr>
+<tr>
+<td><code>search_fields</code></td>
+<td>Comma-separated title,post_title,media_title,filename (all by default). Actual source post, not attachment parent; no PDF text.</td>
+<td><code>search_fields="title,filename"</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="p5-display-and-reader-inherited-defaults">Display and reader: inherited defaults</h3>
+<p>Absent values follow: built-in → website → content type → post → document → explicit output parameter. Empty values inherit. Booleans accept <code>1</code>/<code>true</code> or <code>0</code>/<code>false</code>. The table lists built-in defaults; saved website defaults can differ.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Purpose / values</th>
+<th>Built-in default</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>design</code></td>
+<td>Card design; <code>cover</code>, <code>compact</code>, <code>list</code></td>
+<td><code>cover</code></td>
+<td><code>design="cover"</code></td>
+</tr>
+<tr>
+<td><code>columns</code></td>
+<td>Collection columns; <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code></td>
+<td><code>3</code></td>
+<td><code>columns="1"</code></td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td>Open document; <code>modal</code>, <code>tab</code>, <code>file</code></td>
+<td><code>modal</code></td>
+<td><code>mode="modal"</code></td>
+</tr>
+<tr>
+<td><code>ratio</code></td>
+<td>Preview frame; <code>a4</code>, <code>portrait</code>, <code>square</code>, <code>landscape</code>, <code>auto</code></td>
+<td><code>a4</code></td>
+<td><code>ratio="a4"</code></td>
+</tr>
+<tr>
+<td><code>show_title</code></td>
+<td>Show title; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>show_title="0"</code></td>
+</tr>
+<tr>
+<td><code>show_read</code></td>
+<td>Show reading button; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>show_read="0"</code></td>
+</tr>
+<tr>
+<td><code>show_download</code></td>
+<td>Show download button; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>show_download="0"</code></td>
+</tr>
+<tr>
+<td><code>cover_link</code></td>
+<td>Make preview clickable; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>cover_link="0"</code></td>
+</tr>
+<tr>
+<td><code>show_size</code></td>
+<td>Show file size; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>show_size="0"</code></td>
+</tr>
+<tr>
+<td><code>read_label</code></td>
+<td>Reading button label; Text, max. 100 characters</td>
+<td><code>Read / Lesen</code></td>
+<td><code>read_label="Read"</code></td>
+</tr>
+<tr>
+<td><code>download_label</code></td>
+<td>Download button label; Text, max. 100 characters</td>
+<td><code>Download / Herunterladen</code></td>
+<td><code>download_label="Download"</code></td>
+</tr>
+<tr>
+<td><code>page_navigation</code></td>
+<td>Reader: page navigation; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>page_navigation="0"</code></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td>Reader: zoom controls; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>zoom="0"</code></td>
+</tr>
+<tr>
+<td><code>search</code></td>
+<td>Reader: search on current page; <code>1</code>, <code>0</code></td>
+<td><code>0</code></td>
+<td><code>search="0"</code></td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td>Reader: open PDF for printing; <code>1</code>, <code>0</code></td>
+<td><code>0</code></td>
+<td><code>print="0"</code></td>
+</tr>
+<tr>
+<td><code>fullscreen</code></td>
+<td>Reader: fullscreen; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>fullscreen="0"</code></td>
+</tr>
+<tr>
+<td><code>reader_download</code></td>
+<td>Reader: download link; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>reader_download="0"</code></td>
+</tr>
+<tr>
+<td><code>reader_watermark</code></td>
+<td>Use reader watermark; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>reader_watermark="0"</code></td>
+</tr>
+<tr>
+<td><code>remember_page</code></td>
+<td>Reader: remember page during this visit; <code>1</code>, <code>0</code></td>
+<td><code>1</code></td>
+<td><code>remember_page="0"</code></td>
+</tr>
+<tr>
+<td><code>initial_zoom</code></td>
+<td>Reader: initial zoom; <code>fit</code>, <code>1</code>, <code>1.25</code>, <code>1.5</code></td>
+<td><code>fit</code></td>
+<td><code>initial_zoom="fit"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="p5-builder_pdf_filters">[builder_pdf_filters]</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning / default</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td>Required matching collection_id; unique on the page.</td>
+<td><code>target="newsletters"</code></td>
+</tr>
+<tr>
+<td><code>layout</code></td>
+<td>horizontal (default) or vertical.</td>
+<td><code>layout="vertical"</code></td>
+</tr>
+<tr>
+<td><code>show_search</code></td>
+<td>1 (default); 0 hides search input.</td>
+<td><code>show_search="0"</code></td>
+</tr>
+<tr>
+<td><code>show_sort</code></td>
+<td>1 (default); 0 hides visitor sorting.</td>
+<td><code>show_sort="0"</code></td>
+</tr>
+<tr>
+<td><code>show_size_filter</code></td>
+<td>1 (default); 0 hides size filter.</td>
+<td><code>show_size_filter="0"</code></td>
+</tr>
+<tr>
+<td><code>show_reset</code></td>
+<td>1 (default); 0 hides the reset link.</td>
+<td><code>show_reset="0"</code></td>
+</tr>
+</tbody>
+</table>
+<p>Search covers configured titles and file names, never PDF contents. Apply reloads the page with shareable GET parameters; visitor sorting is not saved and no search analytics are collected. Size ranges: under 1 MiB, 1 to under 5 MiB, 5 MiB or more, unknown; 1 MiB = 1,048,576 bytes. Unknown sizes are never fetched from PDF files and sort last.</p>
+<h2 id="p5-complete-examples">Complete examples</h2>
+<h3 id="p5-current-post">Current post</h3>
+<pre><code class="language-text">[builder_pdf_presenter]
+</code></pre>
+<h3 id="p5-specific-source-post">Specific source post</h3>
+<pre><code class="language-text">[builder_pdf_presenter post_id=&quot;123&quot;]
+</code></pre>
+<h3 id="p5-single-pdf">Single PDF</h3>
+<pre><code class="language-text">[builder_pdf_presenter post_id=&quot;123&quot; pdf_id=&quot;456&quot; mode=&quot;tab&quot;]
+</code></pre>
+<h3 id="p5-all-pdfs-of-one-post-sorted">All PDFs of one post, sorted</h3>
+<pre><code class="language-text">[builder_pdf_presenter post_id=&quot;123&quot; collection_id=&quot;minutes&quot; orderby=&quot;title&quot; order=&quot;ASC&quot; page_size=&quot;12&quot;]
+</code></pre>
+<h3 id="p5-archive-with-filter-bar">Archive with filter bar</h3>
+<pre><code class="language-text">[builder_pdf_filters target=&quot;newsletters&quot;]
+[builder_pdf_presenter source=&quot;posts&quot; post_type=&quot;post&quot; per_post=&quot;all&quot; collection_id=&quot;newsletters&quot; page_size=&quot;12&quot; columns=&quot;3&quot;]
+</code></pre>
+<h3 id="p5-override-actions-and-reader">Override actions and reader</h3>
+<pre><code class="language-text">[builder_pdf_presenter mode=&quot;modal&quot; show_download=&quot;0&quot; reader_download=&quot;0&quot; zoom=&quot;1&quot; search=&quot;1&quot; read_label=&quot;Read now&quot;]
+</code></pre>
+<p>Give each independently filtered collection its own name. Place filters above with content between them or in another column. Patterns supply a matching name; change both linked names when inserting multiple copies on one page. Use native Bricks filters for native Bricks post query loops.</p></section><section id="part-6"><h1 id="p6-pdf-migration">PDF migration</h1>
+<p><a href="index-de.html">Deutsch</a> · <a href="#part-0">Overview</a></p>
+<h2 id="p6-decide-whether-to-switch">Decide whether to switch</h2>
+<p>Use Tools → PDF migration to review supported embeds before converting selected contributions. The tool supports PDF Poster blocks and PDF Embedder blocks/shortcodes in ordinary contribution content. It reuses local Media Library PDFs without uploading, copying or deleting them. Source plugins need not remain active for discovery. They must be available again to render restored original embeds.</p>
+<p>PDF Embedder also uses local PDF.js. Switching is useful when you want preview cards, collections and archives with reading/download actions. It is a change in presentation, not an identical viewer replacement: inline viewers become cover cards with a reading action using your current plugin defaults (for example, a modal reader). Width, height, toolbar position, hover behavior, initial page and zoom are not transferred. Check the result before removing the source plugin.</p>
+<h2 id="p6-supported-and-skipped-content">Supported and skipped content</h2>
+<ul>
+<li>PDF Poster: supported blocks; its shortcodes still need manual review.</li>
+<li>PDF Embedder: <code>pdfemb/pdf-embedder-viewer</code> blocks and real <code>[pdf-embedder url="…"]</code> shortcodes. The adapter was developed against free version 5.0.2; other formats need verification.</li>
+<li>A PDF must map unambiguously to an ordinary local Media Library PDF with an existing file. An ID/URL mismatch is not guessed away.</li>
+<li>External URLs, missing/ambiguous attachments and protected <code>securepdfs</code> documents are skipped. No remote PDF is downloaded and no protection is removed.</li>
+<li>HTML/code examples, arbitrary builder metadata, templates and Premium-specific content are not automatically converted. Escaped shortcode examples are preserved.</li>
+</ul>
+<p>One unsupported PDF reference leaves the whole contribution unchanged. Several independent contributions can still have different outcomes in one batch. The report explains each result.</p>
+<h2 id="p6-review-convert-and-verify">Review, convert and verify</h2>
+<ol>
+<li>Open Tools → PDF migration. Use Check again after changing source content.</li>
+<li>Review the listed contributions. A selectable entry has verified local PDFs; unavailable entries explain their reason. The tool does not run on activation or while viewing the page.</li>
+<li>Select up to 50 contributions and convert explicitly. Existing collection limits and permissions still apply.</li>
+<li>Check the result report, source page and any related archive. Multiple embeds retain their positions and order; each embed shows its own document, not the entire contribution collection repeatedly. Unique documents are also assigned to the contribution for archive use. Existing assignments are retained.</li>
+<li>Before deactivating/removing the old plugin, check all source pages, templates, builder integrations and any skipped results. The tool scans contribution content, not every possible storage location.</li>
+</ol>
+<p>Post status, passwords and other contribution settings are preserved. Media files keep their existing access rules. Migration does not create protected storage or copy protection.</p>
+<h2 id="p6-recovery-and-later-edits">Recovery and later edits</h2>
+<p>The tool keeps the exact original contribution content and its prior PDF assignments. Use Recovery backups to restore a contribution individually. Later changes trigger a conflict and require explicit overwrite confirmation. Restoring replaces the migration-owned content and collection with the snapshot, including any later edits if you confirm overwriting; it does not delete media files. The last 20 operation reports remain available. General website backups remain useful.</p></section><section id="security"><h1>Security / Sicherheit</h1>
+<p>Report suspected vulnerabilities privately through <a href="https://github.com/deckerweb/builder-pdf-presenter/security/advisories/new">GitHub private vulnerability reporting</a>. Include the plugin version, minimal reproduction steps and expected impact. Never post customer PDFs, passwords or exploit details in public issues. If the private form is temporarily unavailable, wait or use an already established private contact with David Decker; do not publish the details.</p>
+<p>Sicherheitslücken vertraulich über <a href="https://github.com/deckerweb/builder-pdf-presenter/security/advisories/new">GitHubs private Sicherheitsmeldungen</a> melden. Pluginversion, minimale Reproduktionsschritte und erwartete Auswirkungen nennen. Keine Kunden-PDFs, Passwörter oder Exploit-Details in öffentlichen Issues veröffentlichen. Falls das private Formular vorübergehend nicht verfügbar ist, warten oder einen bereits bekannten privaten Kontakt zu David Decker nutzen; keine Details öffentlich melden.</p></section></html>

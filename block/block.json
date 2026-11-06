@@ -1,0 +1,167 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "builder-pdf-presenter/document",
+  "version": "1.0.0",
+  "title": "Builder PDF Presenter",
+  "category": "media",
+  "icon": "media-document",
+  "description": "Present a PDF or a document collection with preview covers, reading and download buttons.",
+  "textdomain": "builder-pdf-presenter",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "attachmentId": {
+      "type": "number",
+      "default": 0
+    },
+    "postId": {
+      "type": "number",
+      "default": 0
+    },
+    "mode": {
+      "type": "string",
+      "default": ""
+    },
+    "ratio": {
+      "type": "string",
+      "default": ""
+    },
+    "show_title": {
+      "type": "string",
+      "default": ""
+    },
+    "show_read": {
+      "type": "string",
+      "default": ""
+    },
+    "show_download": {
+      "type": "string",
+      "default": ""
+    },
+    "cover_link": {
+      "type": "string",
+      "default": ""
+    },
+    "show_size": {
+      "type": "string",
+      "default": ""
+    },
+    "read_label": {
+      "type": "string",
+      "default": ""
+    },
+    "download_label": {
+      "type": "string",
+      "default": ""
+    },
+    "source": {
+      "type": "string",
+      "default": "post"
+    },
+    "documents": {
+      "type": "array",
+      "default": []
+    },
+    "design": {
+      "type": "string",
+      "default": ""
+    },
+    "columns": {
+      "type": "string",
+      "default": ""
+    },
+    "post_type": {
+      "type": "string",
+      "default": "post"
+    },
+    "limit": {
+      "type": "number",
+      "default": 12
+    },
+    "isExample": {
+      "type": "boolean",
+      "default": false
+    },
+    "cardStyles": {
+      "type": "object",
+      "default": {}
+    },
+    "reader_watermark": {
+      "type": "string",
+      "default": ""
+    },
+    "collection_id": {
+      "type": "string",
+      "default": ""
+    },
+    "orderby": {
+      "type": "string",
+      "default": ""
+    },
+    "order": {
+      "type": "string",
+      "default": ""
+    },
+    "per_post": {
+      "type": "string",
+      "default": "first"
+    },
+    "page_size": {
+      "type": "number",
+      "default": 0
+    },
+    "search_fields": {
+      "type": "string",
+      "default": "title,post_title,media_title,filename"
+    },
+    "show_count": {
+      "type": "string",
+      "default": "1"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "shadow": true
+  },
+  "editorScript": "bpp-block",
+  "style": "bpp-frontend",
+  "editorStyle": "bpp-editor",
+  "keywords": [
+    "pdf",
+    "documents",
+    "publications"
+  ],
+  "example": {
+    "attributes": {
+      "isExample": true
+    }
+  }
+}

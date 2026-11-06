@@ -1,0 +1,135 @@
+# Builder PDF Presenter
+
+![Builder PDF Presenter](../.github/assets/banner-github-de.png)
+
+[English](../README.md)
+
+## Kurzvorstellung
+
+PDFs mit wenig Aufwand veröffentlichen: leichte Titelbild-Karten zum Stöbern und ein komfortabler Reader, der bei Bedarf öffnet. Für Vereinszeitschriften, Protokolle, Gemeindebriefe und Dokumentarchive in beliebigen geeigneten Inhaltstypen.
+
+**Deine Daten in deinem WordPress. Punkt.** Kostenlos, ohne Werbung, Lesertracking oder Pro-Version.
+
+Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
+
+[Einstieg](#einstieg) · [Anleitung](Guide-de.md) · [Fragen nach Themen](FAQ-de.md) · [Anwendungsbeispiele](Examples-de.md)
+
+## Inhalt
+
+- [Auf einen Blick](#auf-einen-blick)
+- [Einstieg](#einstieg)
+- [Feature Highlights](#feature-highlights)
+- [Häufige Fragen](#häufige-fragen)
+- [Änderungsverlauf](#änderungsverlauf)
+- [Zum Projekt](#zum-projekt)
+- [Hilfe, Sicherheit und Unterstützung](#hilfe-sicherheit-und-unterstützung)
+
+## Auf einen Blick
+
+- Einzelne PDF oder sortierbare Sammlung je Beitrag, Seite oder eigenständigem Block.
+- Drei Kartendesigns: Titelbild, kompakt und Dokumentliste; responsive Raster.
+- Lokaler PDF.js-Reader im Modal oder neuen Tab; direkter Dateiaufruf ebenfalls möglich.
+- Einstellbare Lesen-/Download-Buttons, Beschriftungen, Titelbilder und Reader-Funktionen.
+- Globale Vorgaben mit Ausnahmen je Inhaltstyp, Beitrag und Dokument.
+- Block-Editor-Block, acht Patterns, Shortcodes und drei native Bricks-Elemente.
+- Optionales zentrales Reader-Wasserzeichen; ausdrückliche PDF-Poster-Migration mit Wiederherstellung.
+- Lokale Website-Zustand-Prüfungen und berechtigungsabhängige Schnellzugriffe in der Befehlspalette.
+
+## Einstieg
+
+1. Plugin-ZIP unter Plugins → Plugin hinzufügen → Plugin hochladen installieren und aktivieren.
+2. Einstellungen → Builder PDF Presenter öffnen. Inhaltstypen mit PDF-Verwaltung auswählen und globale Vorgaben festlegen.
+3. Im Beitrag PDFs aus der Mediathek wählen oder hochladen. Reihenfolge und Anzeigetitel bei Bedarf anpassen.
+4. Den Block „Builder PDF Presenter“ einfügen und zugeordnete Dokumente verwenden. Alternativ direkt im Block eine eigene Sammlung erstellen, `[builder_pdf_presenter]` oder ein natives Bricks-Element verwenden.
+5. Seite ansehen und Lesen/Download testen. Änderungen vor dem Verlassen der Einstellungsseite speichern.
+
+Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.
+
+## Feature Highlights
+
+### Schnelle Übersicht, Reader bei Bedarf
+
+Das Raster zeigt normale Titelbilder. Es startet nicht für jede Karte einen eigenen PDF.js-Reader. Der Reader lädt erst beim Öffnen eines Dokuments. Große Original-PDFs können weiterhin Ladezeit benötigen; die Übersicht komprimiert die Dateien nicht.
+
+### Einfache Dokumentpflege
+
+Mehrere PDFs auswählen oder hochladen, sortieren, Anzeigetitel bearbeiten, Dateien ersetzen und Titelbilder zuweisen. Administratoren begrenzen die Anzahl. Ein niedrigeres Limit entfernt keine vorhandenen Einträge.
+
+### Einheitliche Vorgaben und passende Ausnahmen
+
+Übliche Einstellungen an einer Stelle pflegen. Inhaltstypen, Beiträge und Dokumente können übernehmbare Werte überschreiben. Die feste Speicherleiste zeigt ungespeicherte Änderungen; nach einem Speicherfehler bleiben die Eingaben erhalten.
+
+### Block-Editor und native Bricks-Abläufe
+
+Block-Editor-Farb-, Typografie-, Abstands- und weitere unterstützte Stiloptionen gestalten den jeweiligen Block. Die kompakte Leiste „PDF Presenter · Block“ gehört nur zum Editor. In Bricks arbeitet „PDF-Dokument“ innerhalb von Beitragsabfragen, „PDF-Sammlung“ zeigt die Dokumente eines Beitrags. Native Stile, Dynamic Tags und Conditions bleiben nutzbar.
+
+### Zentrales Reader-Branding
+
+Administratoren aktivieren eine gemeinsame Wasserzeichenvorlage mit Text/Logo und erlauben bei Bedarf Ein-/Aus-Ausnahmen je Dokument. Die Einblendung betrifft nur den Reader; Originale und Downloads bleiben unverändert.
+
+### Bewusst überschaubar
+
+Keine Flipbook-Effekte, Pro-Version, Werbung, Leserstatistik oder Cloud-Synchronisierung. Ausgeblendete Download-Buttons sind kein Kopierschutz. Dokumentdateien und Titelbilder behalten die bestehenden Zugriffsregeln des Servers.
+
+### Sortieren und wiederfinden
+
+Benannte Sammlungen lassen sich nach Titeln und Dateinamen durchsuchen, sortieren und nach Dateigröße filtern. Die Suche erfasst die gesamte zugängliche Sammlung vor der Seitennavigation, keine PDF-Inhalte. Fertige Patterns verbinden Raster und Filterleiste, auch in einer Sidebar.
+
+## Häufige Fragen
+
+### Brauche ich einen Builder oder ein Custom-Field-Plugin?
+Nein. Der Kern funktioniert mit Block-Editor und Shortcodes. Bricks ist optional.
+
+### Kann ein Beitrag mehrere PDFs enthalten?
+Ja. Eine sortierbare Sammlung im Beitrag oder direkt im Block anlegen und als Karten oder Liste anzeigen.
+
+### Kann ich ein Archiv über mehrere Beiträge erstellen?
+Ja. Die Beitragsabfrage des Blocks oder einen nativen Query Loop verwenden. Die Plugin-Abfrage zeigt das erste oder alle PDFs je Quellbeitrag und filtert alle zugänglichen Ergebnisse vor der Paginierung.
+
+### Warum fehlt ein Vorschaubild?
+Automatische PDF-Vorschauen hängen vom Server ab. Eine fehlende Vorschau erzeugen, sofern unterstützt, oder ein eigenes Titelbild auswählen.
+
+### Ist das ein Dateischutz- oder Mitgliedersystem?
+Nein. Button-Sichtbarkeit schützt keine Datei. Vorhandene Server-Berechtigungen gelten weiterhin.
+
+### Verändert das Wasserzeichen die Downloads?
+Nein. Es erscheint ausschließlich im eingebetteten Reader.
+
+### Gibt es eine Pro-Version oder Lesertracking?
+Nein. Es gibt keine Pro-Version, kein Upselling und kein Lesertracking durch das Plugin.
+
+[Alle Fragen und Antworten lesen →](FAQ-de.md)
+
+## Änderungsverlauf
+
+### 1.0.0 · 2026-11-06
+
+- Neu: PDF-Karten mit Vorschau, Reader und Download für einzelne Dokumente und Sammlungen.
+- Neu: Globale Vorgaben und individuelle Einstellungen für beliebige Inhaltstypen.
+- Neu: Block-Editor, Shortcodes und native Bricks-Integration einschließlich Metadatenfiltern und Sortierung.
+- Neu: Migration von PDF Poster und PDF Embedder mit Ergebnisbericht und Wiederherstellung.
+
+
+## Zum Projekt
+
+Seit Jahren brauchten Kunden aus Vereinen und Gemeinden eine einfache PDF-Veröffentlichung. Fehlende Funktionen, Upselling und umständliche Bedienung standen immer wieder im Weg. Ein Kundenprojekt im Herbst 2026 war schließlich der Anlass für meine eigene Lösung.
+
+— David Decker · [Die Entstehungsgeschichte](About-de.md)
+
+## Hilfe, Sicherheit und Unterstützung
+
+[Anleitung](Guide-de.md) · [Fragen nach Themen](FAQ-de.md) · [Plugin-Website](https://deckerwebplugins.com/de/plugins/builder-pdf-presenter/)
+
+Sicherheitslücken vertraulich melden; dazu die [Sicherheitsrichtlinie](../SECURITY.md) beachten. Keine Kundendateien, Zugangsdaten oder Exploit-Details öffentlich in Hilfeanfragen teilen.
+
+Das Projekt unterstützen: [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb).
+
+© 2026 David Decker – DECKERWEB. Plugin-Lizenz: [GPL v2 oder höher](../LICENSE).
+PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponenten behalten ihre Lizenzhinweise. Eigene PDF-Presenter-UI-Symbole von David Decker – DECKERWEB. Verbliebene Tabler-Hinweise: vendor/tabler/LICENSE.
+
+[Shortcode-Referenz mit allen Parametern](Shortcodes-de.md)
+
+Marketinggrafiken: eigene Vektorgrafiken von David Decker – DECKERWEB. Schriftzüge aus Bricolage Grotesque und Manrope unter SIL OFL 1.1; Lizenztexte unter .github/assets/licenses.
+
+
+[PDF-Migration: Ablauf und Grenzen](Migration-de.md)

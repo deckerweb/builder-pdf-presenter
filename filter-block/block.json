@@ -1,0 +1,72 @@
+{
+  "apiVersion": 3,
+  "name": "builder-pdf-presenter/filters",
+  "version": "1.0.0",
+  "title": "PDF filters and search",
+  "category": "media",
+  "icon": "filter",
+  "description": "Search titles and file names, sort and filter a named PDF collection. No PDF full-text search.",
+  "textdomain": "builder-pdf-presenter",
+  "attributes": {
+    "target": {
+      "type": "string",
+      "default": ""
+    },
+    "layout": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "show_search": {
+      "type": "string",
+      "default": "1"
+    },
+    "show_sort": {
+      "type": "string",
+      "default": "1"
+    },
+    "show_size_filter": {
+      "type": "string",
+      "default": "1"
+    },
+    "isExample": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_reset": {
+      "type": "string",
+      "default": "1"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true
+    },
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "example": {
+    "attributes": {
+      "isExample": true,
+      "target": "documents"
+    }
+  },
+  "editorScript": "bpp-block",
+  "style": "bpp-frontend",
+  "editorStyle": "bpp-editor",
+  "keywords": [
+    "pdf",
+    "filter",
+    "search"
+  ]
+}

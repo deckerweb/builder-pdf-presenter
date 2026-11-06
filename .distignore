@@ -1,0 +1,9 @@
+.git
+.github
+wiki
+images
+docs/images
+.distignore
+_config.yml
+index.md
+assets/css
