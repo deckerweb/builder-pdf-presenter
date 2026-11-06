@@ -2,6 +2,10 @@
 
 [Deutsch](Guide-de.md) · [Overview](../README.md) · [FAQ by topic](FAQ.md)
 
+## Supported editors
+
+Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
+
 ## Choose the workflow
 
 **One post with one or several documents:** Enable the post type under Settings → Builder PDF Presenter. Add PDFs in its document panel, then insert the block with “Documents assigned to this contribution”. A PDF assigned in the panel is not inserted into unrelated posts automatically.

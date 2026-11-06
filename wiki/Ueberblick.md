@@ -47,7 +47,9 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 
 **Von einem anderen PDF-Plugin wechseln:** Unter Werkzeuge → PDF-Migration unterstützte PDF-Poster-/PDF-Embedder-Inhalte prüfen und ausgewählte Beiträge umstellen. Die [Migrationsanleitung](PDF-Migration-DE) erklärt unterstützte Formate, Ergebnisberichte und Wiederherstellung.
 
-Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.
+Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.
+
+Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet.
 
 ![Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/library-grid-de.jpg)
 
@@ -89,8 +91,8 @@ Benannte Sammlungen lassen sich nach Titeln und Dateinamen durchsuchen, sortiere
 
 ## Häufige Fragen
 
-### Brauche ich einen Builder oder ein Custom-Field-Plugin?
-Nein. Der Kern funktioniert mit Block-Editor und Shortcodes. Bricks ist optional.
+### Welche Editoren werden unterstützt?
+Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.
 
 ### Kann ein Beitrag mehrere PDFs enthalten?
 Ja. Eine sortierbare Sammlung im Beitrag oder direkt im Block anlegen und als Karten oder Liste anzeigen.

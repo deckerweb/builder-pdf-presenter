@@ -12,7 +12,7 @@ Lightweight PDF preview cards with an on-demand reader, configurable display set
 
 == Description ==
 
-Fast PDF previews and an on-demand reader. Use one PDF per contribution or an ordered collection within a contribution, independently of page builders and custom-field plugins.
+Fast PDF previews and an on-demand reader. Use one PDF per contribution or an ordered collection within a contribution. Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
 
 = At a glance =
 
@@ -33,8 +33,8 @@ Fast PDF previews and an on-demand reader. Use one PDF per contribution or an or
 == Frequently Asked Questions ==
 
 
-= Do I need a page builder or custom-field plugin? =
-No. The core works with Block Editor and shortcodes. Bricks integration is optional.
+= Which editors are supported? =
+Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
 
 = Can one post contain several PDFs? =
 Yes. Add an ordered collection to the post or directly to a block and display it as cards or a list.

@@ -8,8 +8,8 @@ No. Builder PDF Presenter focuses on simple document management, fast cover over
 ### Is there a Pro edition, advertising or cloud synchronization?
 No. There are no paid feature locks, advertisements or cloud synchronization. Documents are managed in your WordPress Media Library.
 
-### Do I need Bricks or Meta Box?
-No. The core, Block Editor block and shortcodes work independently. Native Bricks elements are available when Bricks is active. If Bricks is switched off, document assignments and other output methods remain available; a Bricks layout itself still needs Bricks to render.
+### Which editors are supported?
+Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
 
 ## Working with documents
 

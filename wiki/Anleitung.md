@@ -2,6 +2,10 @@
 
 [English](User-guide) · [Überblick](Ueberblick) · [Fragen nach Themen](Fragen)
 
+## Unterstützte Editoren
+
+Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.
+
 ## Den passenden Ablauf wählen
 
 **Ein Beitrag mit einem oder mehreren Dokumenten:** Unter Einstellungen → Builder PDF Presenter den Inhaltstyp aktivieren. PDFs im Dokumentbereich hinzufügen und den Block mit „Diesem Beitrag zugeordnete Dokumente“ einfügen. Eine Zuordnung fügt die PDF nicht automatisch in andere Beiträge ein.

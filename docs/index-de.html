@@ -37,7 +37,8 @@
 </ol>
 <p><strong>PDFs einbinden:</strong> Unter Einstellungen → Builder PDF Presenter → PDFs einbinden werden die Einbindungswege erklärt. <code>[builder_pdf_presenter]</code> funktioniert im Shortcode-Block oder Classic Editor; die <a href="#part-5">Shortcode-Referenz</a> enthält alle Parameter mit Beispielen. Alternativ stehen Block-Editor-Blöcke/Patterns und native Bricks-Elemente bereit.</p>
 <p><strong>Von einem anderen PDF-Plugin wechseln:</strong> Unter Werkzeuge → PDF-Migration unterstützte PDF-Poster-/PDF-Embedder-Inhalte prüfen und ausgewählte Beiträge umstellen. Die <a href="#part-6">Migrationsanleitung</a> erklärt unterstützte Formate, Ergebnisberichte und Wiederherstellung.</p>
-<p>Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.</p>
+<p>Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.</p>
+<p>Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet.</p>
 <p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/library-grid-de.jpg">Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.</a></p>
 <p><em>Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.</em></p>
 <h2 id="p0-feature-highlights">Feature Highlights</h2>
@@ -58,8 +59,8 @@
 <h3 id="p0-sortieren-und-wiederfinden">Sortieren und wiederfinden</h3>
 <p>Benannte Sammlungen lassen sich nach Titeln und Dateinamen durchsuchen, sortieren und nach Dateigröße filtern. Die Suche erfasst die gesamte zugängliche Sammlung vor der Seitennavigation, keine PDF-Inhalte. Fertige Patterns verbinden Raster und Filterleiste, auch in einer Sidebar.</p>
 <h2 id="p0-haufige-fragen">Häufige Fragen</h2>
-<h3 id="p0-brauche-ich-einen-builder-oder-ein-custom-field-plugin">Brauche ich einen Builder oder ein Custom-Field-Plugin?</h3>
-<p>Nein. Der Kern funktioniert mit Block-Editor und Shortcodes. Bricks ist optional.</p>
+<h3 id="p0-welche-editoren-werden-unterstutzt">Welche Editoren werden unterstützt?</h3>
+<p>Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.</p>
 <h3 id="p0-kann-ein-beitrag-mehrere-pdfs-enthalten">Kann ein Beitrag mehrere PDFs enthalten?</h3>
 <p>Ja. Eine sortierbare Sammlung im Beitrag oder direkt im Block anlegen und als Karten oder Liste anzeigen.</p>
 <h3 id="p0-kann-ich-ein-archiv-uber-mehrere-beitrage-erstellen">Kann ich ein Archiv über mehrere Beiträge erstellen?</h3>
@@ -92,6 +93,8 @@
 PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponenten behalten ihre Lizenzhinweise. Eigene PDF-Presenter-UI-Symbole von David Decker – DECKERWEB. Verbliebene Tabler-Hinweise: vendor/tabler/LICENSE.</p>
 <p>Marketinggrafiken: eigene Vektorgrafiken von David Decker – DECKERWEB. Schriftzüge aus Bricolage Grotesque und Manrope unter SIL OFL 1.1; Lizenztexte unter assets/branding/licenses.</p></section><section id="part-1"><span id="guide"></span><h1 id="p1-anleitung">Anleitung</h1>
 <p><a href="index-en.html">English</a> · <a href="#part-0">Überblick</a> · <a href="#part-4">Fragen nach Themen</a></p>
+<h2 id="p1-unterstutzte-editoren">Unterstützte Editoren</h2>
+<p>Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.</p>
 <h2 id="p1-den-passenden-ablauf-wahlen">Den passenden Ablauf wählen</h2>
 <p><strong>Ein Beitrag mit einem oder mehreren Dokumenten:</strong> Unter Einstellungen → Builder PDF Presenter den Inhaltstyp aktivieren. PDFs im Dokumentbereich hinzufügen und den Block mit „Diesem Beitrag zugeordnete Dokumente“ einfügen. Eine Zuordnung fügt die PDF nicht automatisch in andere Beiträge ein.</p>
 <p><strong>Ein eigenständiger Block:</strong> „Eigene PDF-Sammlung“ wählen und Dateien auswählen oder hochladen. Diese Zuordnungen gehören zum Block. Dokumente dort sortieren und Anzeigetitel festlegen. Das Entfernen eines Eintrags aus der Sammlung löscht nicht die Mediathek-Datei.</p>
@@ -207,8 +210,8 @@ PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponent
 <p>Nein. Im Mittelpunkt stehen einfache Dokumentpflege, schnelle Titelbild-Übersichten und komfortables Lesen. Blättereffekte gehören nicht dazu.</p>
 <h3 id="p4-gibt-es-pro-version-werbung-oder-cloud-synchronisierung">Gibt es Pro-Version, Werbung oder Cloud-Synchronisierung?</h3>
 <p>Nein. Es gibt keine gesperrten Bezahlfunktionen, Werbung oder Cloud-Synchronisierung. Die Dokumente werden in der WordPress-Mediathek verwaltet.</p>
-<h3 id="p4-brauche-ich-bricks-oder-meta-box">Brauche ich Bricks oder Meta Box?</h3>
-<p>Nein. Kern, Block-Editor-Block und Shortcodes arbeiten eigenständig. Native Bricks-Elemente stehen bei aktivem Bricks bereit. Ohne Bricks bleiben Dokumentzuordnungen und die anderen Ausgabewege erhalten; ein Bricks-Layout benötigt zum Rendern weiterhin Bricks.</p>
+<h3 id="p4-welche-editoren-werden-unterstutzt">Welche Editoren werden unterstützt?</h3>
+<p>Builder PDF Presenter unterstützt den WordPress-Block-Editor (Gutenberg): Dokumente werden mit den Blöcken und Patterns des Plugins eingebunden. Im Classic Editor erfolgt die Einbindung über Shortcodes. Ist Bricks Builder installiert und aktiv, stehen zusätzlich eigene native Elemente zur Verfügung.</p>
 <h2 id="p4-dokumente-im-alltag">Dokumente im Alltag</h2>
 <h3 id="p4-was-ist-eine-sammlung">Was ist eine Sammlung?</h3>
 <p>Die PDFs, die einem Beitrag, einer Seite oder einem eigenständigen PDF-Block zugeordnet sind. Sie lassen sich sortieren und als Raster oder Liste darstellen. Eine Sammlung kann auch nur eine PDF enthalten.</p>

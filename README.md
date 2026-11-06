@@ -47,7 +47,9 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 
 **Switching from another PDF plugin:** Under Tools → PDF migration, review supported PDF Poster/PDF Embedder content and migrate selected posts. Read the [migration guide](docs/Migration.md) for supported formats, result reports and recovery.
 
-Bricks and Meta Box are not required. The native Bricks integration was tested with Bricks 2.4.5. A Bricks-built page still depends on Bricks; changing the theme does not convert its layout into Block Editor.
+Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
+
+The native Bricks integration was tested with Bricks 2.4.5.
 
 ![A PDF collection with cover cards, reading and download buttons, metadata filters and pagination.](images/library-grid-en.jpg)
 
@@ -89,8 +91,8 @@ Search named libraries by titles and file names, sort results and filter file si
 
 ## FAQ
 
-### Do I need a page builder or custom-field plugin?
-No. The core works with Block Editor and shortcodes. Bricks integration is optional.
+### Which editors are supported?
+Use Builder PDF Presenter with the WordPress Block Editor (Gutenberg): insert documents with its blocks and patterns. The Classic Editor is supported through shortcodes. When Bricks Builder is installed and active, dedicated native elements are also available.
 
 ### Can one post contain several PDFs?
 Yes. Add an ordered collection to the post or directly to a block and display it as cards or a list.
