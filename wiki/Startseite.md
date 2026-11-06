@@ -1,6 +1,6 @@
 # Builder PDF Presenter
 
-![Builder PDF Presenter](images/branding/banner-github-de.png)
+![Builder PDF Presenter](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/branding/banner-github-de.png)
 
 **Deine Daten in deinem WordPress. Punkt.**
 

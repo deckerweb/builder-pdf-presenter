@@ -34,10 +34,10 @@ The tool keeps the exact original contribution content and its prior PDF assignm
 
 ## The migration tool in practice
 
-![Review PDF Poster and PDF Embedder contributions under Tools](images/migration-review-en.jpg)
+![Review PDF Poster and PDF Embedder contributions under Tools](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/migration-review-en.jpg)
 
 Tools → PDF migration lists supported local PDFs and explains why unresolved or external sources cannot be selected. Review the sources before converting.
 
-![Migration outcome report and per-contribution recovery controls](images/migration-result-en.jpg)
+![Migration outcome report and per-contribution recovery controls](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/migration-result-en.jpg)
 
 After conversion, the report lists the outcome for each contribution. Recovery backups provide a separate action for restoring an individual original. Screenshots use neutral demonstration content.

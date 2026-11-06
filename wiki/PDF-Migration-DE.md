@@ -34,10 +34,10 @@ Das Werkzeug sichert den exakten ursprünglichen Beitragsinhalt und die vorherig
 
 ## Das Migrationswerkzeug in der Praxis
 
-![PDF-Poster- und PDF-Embedder-Beiträge unter Werkzeuge prüfen](images/migration-review-de.jpg)
+![PDF-Poster- und PDF-Embedder-Beiträge unter Werkzeuge prüfen](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/migration-review-de.jpg)
 
 Werkzeuge → PDF-Migration zeigt unterstützte lokale PDFs und erklärt, warum unklare oder externe Quellen nicht auswählbar sind. Die Quellen vor der Umstellung prüfen.
 
-![Ergebnisbericht und Wiederherstellung für einzelne Beiträge](images/migration-result-de.jpg)
+![Ergebnisbericht und Wiederherstellung für einzelne Beiträge](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/migration-result-de.jpg)
 
 Nach der Umstellung nennt der Bericht das Ergebnis je Beitrag. Über die Wiederherstellungssicherungen lässt sich ein einzelnes Original gezielt zurücksetzen. Die Screenshots zeigen neutrale Beispieldaten.
