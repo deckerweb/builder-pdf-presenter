@@ -38,9 +38,13 @@
 <p><strong>Embedding PDFs:</strong> Settings → Builder PDF Presenter → Embed PDFs shows the available ways to insert documents. Use <code>[builder_pdf_presenter]</code> in a Shortcode block or the Classic Editor; the <a href="#part-5">shortcode reference</a> lists every parameter with examples. Block Editor blocks/patterns and native Bricks elements are alternative insertion methods.</p>
 <p><strong>Switching from another PDF plugin:</strong> Under Tools → PDF migration, review supported PDF Poster/PDF Embedder content and migrate selected posts. Read the <a href="#part-6">migration guide</a> for supported formats, result reports and recovery.</p>
 <p>Bricks and Meta Box are not required. The native Bricks integration was tested with Bricks 2.4.5. A Bricks-built page still depends on Bricks; changing the theme does not convert its layout into Block Editor.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/library-grid-en.jpg">A PDF collection with cover cards, reading and download buttons, metadata filters and pagination.</a></p>
+<p><em>A PDF collection with cover cards, reading and download buttons, metadata filters and pagination.</em></p>
 <h2 id="p0-feature-highlights">Feature Highlights</h2>
 <h3 id="p0-a-fast-overview-a-reader-when-needed">A fast overview, a reader when needed</h3>
 <p>The grid displays ordinary cover images. It does not initialize a separate PDF.js reader for every visible card. Opening a document loads the reader on demand. Large source PDFs can still take time to load; the overview does not compress the original files.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/reader-modal-en.jpg">The local PDF.js reader opens in a modal when a document is selected.</a></p>
+<p><em>The local PDF.js reader opens in a modal when a document is selected.</em></p>
 <h3 id="p0-simple-document-care">Simple document care</h3>
 <p>Select or upload multiple PDFs, reorder them, change display titles, replace files or assign covers. Administrators set collection limits. Reducing a limit never removes existing entries.</p>
 <h3 id="p0-consistent-defaults-with-useful-exceptions">Consistent defaults with useful exceptions</h3>
@@ -96,6 +100,8 @@ PDF.js: Apache-2.0, see vendor/pdfjs/LICENSE. Embedded deckerweb components reta
 <p>Use the left navigation to jump between content management, cards, buttons, reader, type overrides, watermark and preview. It is one form, so switching sections keeps edits. On smaller screens the navigation appears above the sections.</p>
 <p>The fixed bottom bar shows saved/unsaved status. A dot next to Save changes also indicates unsaved edits. Saving runs without leaving the page; an error keeps your fields intact for another attempt. Leaving with unsaved changes prompts the browser warning where supported. Without JavaScript, the standard WordPress form remains available.</p>
 <p>Settings cascade from built-in defaults to website, content type, post and document/output overrides. “Inherit” follows the preceding scope. Collection limits and central watermark policy remain administrative controls. Existing documents survive a reduction of the limit.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/settings-en.jpg">Grouped settings for content types, document cards and reader defaults.</a></p>
+<p><em>Grouped settings for content types, document cards and reader defaults.</em></p>
 <h2 id="p1-block-editor-appearance">Block Editor appearance</h2>
 <p>The “PDF Presenter · Block” toolbar is editor-only; its name is not a page heading. Use Edit for document care and Preview for the cards. Test reader opens an explicit test link. Block style settings affect the output, not this toolbar. Theme support determines which native Block Editor style panels are offered.</p>
 <p>Use cover, compact or list cards. Cover frames can preserve a consistent ratio or original proportions. Choose titles and file details that help visitors distinguish documents. Avoid extremely long labels in narrow columns.</p>
@@ -111,6 +117,8 @@ PDF.js: Apache-2.0, see vendor/pdfjs/LICENSE. Embedded deckerweb components reta
 [builder_pdf_presenter pdf_id=&quot;456&quot; mode=&quot;tab&quot; show_title=&quot;0&quot;]
 </code></pre>
 <p>IDs are WordPress post/attachment IDs from your own site. By default the shortcode uses the current post. Reading mode values: <code>modal</code>, <code>tab</code> (local reader in a new tab), <code>file</code> (original PDF). Visibility options use <code>1</code>/<code>0</code>; labels can be overridden with <code>read_label</code> and <code>download_label</code>.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/embedding-en.jpg">The embedding help provides copyable shortcodes and guidance for Block Editor blocks and patterns.</a></p>
+<p><em>The embedding help provides copyable shortcodes and guidance for Block Editor blocks and patterns.</em></p>
 <h2 id="p1-reader-and-watermark">Reader and watermark</h2>
 <p>Administrators choose navigation, zoom, current-page search, fullscreen and file links. Search applies to the current rendered page, not the entire archive. Page memory is limited to the browser session. Original PDF opening remains a fallback if the reader cannot load.</p>
 <p>Under Watermark, enable the central template and choose text/logo, position, opacity and size. Editors can only turn that template off for individual documents if the administrator explicitly permits exceptions. It is not a PDF editing or protection feature: originals, downloads and files outside the reader are not stamped.</p>
@@ -145,6 +153,8 @@ PDF.js: Apache-2.0, see vendor/pdfjs/LICENSE. Embedded deckerweb components reta
 <h3 id="p1-verify-and-keep-downloads-available">Verify and keep downloads available</h3>
 <p>After changing configuration, refresh affected browser/proxy caches and check both module responses again, then open the reader. The plugin does not edit server configuration automatically.</p>
 <p>If the setting cannot be changed, enable the <strong>Download button</strong> and, if appropriate, hide the <strong>Read button</strong> until the reader works. Visitors can still obtain an accessible original PDF without PDF.js. Opening the original PDF directly in a new tab is another option; browser and server determine whether it opens or downloads. Existing file access restrictions still apply. An external Google or Adobe viewer is not required for this workaround.</p></section><section id="part-2"><h1 id="p2-real-world-examples">Real-world examples</h1>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/minutes-list-en.jpg">A meeting minutes archive as a compact document list: search titles and file names, sort entries, read or download each PDF.</a></p>
+<p><em>A meeting minutes archive as a compact document list: search titles and file names, sort entries, read or download each PDF.</em></p>
 <h2 id="p2-three-document-workflows">Three document workflows</h2>
 <ol>
 <li><strong>One PDF in a post:</strong> Attach meeting minutes, a program or an issue to the relevant post.</li>

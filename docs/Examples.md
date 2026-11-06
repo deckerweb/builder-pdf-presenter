@@ -1,5 +1,10 @@
 # Real-world examples
 
+![A meeting minutes archive as a compact document list: search titles and file names, sort entries, read or download each PDF.](../images/minutes-list-en.jpg)
+
+*A meeting minutes archive as a compact document list: search titles and file names, sort entries, read or download each PDF.*
+
+
 ## Three document workflows
 
 1. **One PDF in a post:** Attach meeting minutes, a program or an issue to the relevant post.

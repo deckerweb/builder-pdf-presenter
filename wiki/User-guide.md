@@ -18,6 +18,10 @@ The fixed bottom bar shows saved/unsaved status. A dot next to Save changes also
 
 Settings cascade from built-in defaults to website, content type, post and document/output overrides. “Inherit” follows the preceding scope. Collection limits and central watermark policy remain administrative controls. Existing documents survive a reduction of the limit.
 
+![Grouped settings for content types, document cards and reader defaults.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/settings-en.jpg)
+
+*Grouped settings for content types, document cards and reader defaults.*
+
 ## Block Editor appearance
 
 The “PDF Presenter · Block” toolbar is editor-only; its name is not a page heading. Use Edit for document care and Preview for the cards. Test reader opens an explicit test link. Block style settings affect the output, not this toolbar. Theme support determines which native Block Editor style panels are offered.
@@ -45,6 +49,10 @@ Settings → Builder PDF Presenter → Embed PDFs provides copyable insertion ex
 ```
 
 IDs are WordPress post/attachment IDs from your own site. By default the shortcode uses the current post. Reading mode values: `modal`, `tab` (local reader in a new tab), `file` (original PDF). Visibility options use `1`/`0`; labels can be overridden with `read_label` and `download_label`.
+
+![The embedding help provides copyable shortcodes and guidance for Block Editor blocks and patterns.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/embedding-en.jpg)
+
+*The embedding help provides copyable shortcodes and guidance for Block Editor blocks and patterns.*
 
 ## Reader and watermark
 

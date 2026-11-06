@@ -18,6 +18,10 @@ Die feste untere Leiste zeigt gespeicherte oder ungespeicherte Änderungen. Ein 
 
 Die Vererbung läuft von eingebauten Vorgaben über globale und Inhaltstyp-Vorgaben zu Beitrag und Dokument/Ausgabe. „Übernehmen“ verwendet die vorherige Ebene. Sammlungslimits und Wasserzeichenrichtlinie bleiben administrative Vorgaben. Ein niedrigeres Limit entfernt keine vorhandenen Dokumente.
 
+![Gruppierte Einstellungen für Inhaltstypen, Dokumentkarten und Reader-Vorgaben.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/settings-de.jpg)
+
+*Gruppierte Einstellungen für Inhaltstypen, Dokumentkarten und Reader-Vorgaben.*
+
 ## Block-Editor gestalten
 
 Die Leiste „PDF Presenter · Block“ ist nur für die Bedienung im Editor da, keine Seitenüberschrift. „Bearbeiten“ öffnet die Dokumentpflege, „Vorschau“ zeigt die Karten. „Reader testen“ öffnet einen ausdrücklichen Testlink. Block-Stile gestalten die Ausgabe, nicht die Werkzeugleiste. Das Theme bestimmt mit, welche nativen Block-Editor-Stilbereiche angeboten werden.
@@ -45,6 +49,10 @@ Unter Einstellungen → Builder PDF Presenter → PDFs einbinden stehen kopierba
 ```
 
 IDs sind Beitrags-/Anhang-IDs der eigenen Website. Standardmäßig gilt der aktuelle Beitrag. Öffnungsarten: `modal`, `tab` (lokaler Reader in neuem Tab), `file` (Original-PDF). Sichtbarkeit verwendet `1`/`0`; Texte lassen sich mit `read_label` und `download_label` überschreiben.
+
+![Die Einbindungshilfe bietet kopierbare Shortcodes und Hinweise zu Blöcken und Patterns im Block-Editor.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/embedding-de.jpg)
+
+*Die Einbindungshilfe bietet kopierbare Shortcodes und Hinweise zu Blöcken und Patterns im Block-Editor.*
 
 ## Reader und Wasserzeichen
 

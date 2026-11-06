@@ -38,9 +38,13 @@
 <p><strong>PDFs einbinden:</strong> Unter Einstellungen → Builder PDF Presenter → PDFs einbinden werden die Einbindungswege erklärt. <code>[builder_pdf_presenter]</code> funktioniert im Shortcode-Block oder Classic Editor; die <a href="#part-5">Shortcode-Referenz</a> enthält alle Parameter mit Beispielen. Alternativ stehen Block-Editor-Blöcke/Patterns und native Bricks-Elemente bereit.</p>
 <p><strong>Von einem anderen PDF-Plugin wechseln:</strong> Unter Werkzeuge → PDF-Migration unterstützte PDF-Poster-/PDF-Embedder-Inhalte prüfen und ausgewählte Beiträge umstellen. Die <a href="#part-6">Migrationsanleitung</a> erklärt unterstützte Formate, Ergebnisberichte und Wiederherstellung.</p>
 <p>Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/library-grid-de.jpg">Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.</a></p>
+<p><em>Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.</em></p>
 <h2 id="p0-feature-highlights">Feature Highlights</h2>
 <h3 id="p0-schnelle-ubersicht-reader-bei-bedarf">Schnelle Übersicht, Reader bei Bedarf</h3>
 <p>Das Raster zeigt normale Titelbilder. Es startet nicht für jede Karte einen eigenen PDF.js-Reader. Der Reader lädt erst beim Öffnen eines Dokuments. Große Original-PDFs können weiterhin Ladezeit benötigen; die Übersicht komprimiert die Dateien nicht.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/reader-modal-de.jpg">Der lokale PDF.js-Reader öffnet sich bei Auswahl eines Dokuments im Modal.</a></p>
+<p><em>Der lokale PDF.js-Reader öffnet sich bei Auswahl eines Dokuments im Modal.</em></p>
 <h3 id="p0-einfache-dokumentpflege">Einfache Dokumentpflege</h3>
 <p>Mehrere PDFs auswählen oder hochladen, sortieren, Anzeigetitel bearbeiten, Dateien ersetzen und Titelbilder zuweisen. Administratoren begrenzen die Anzahl. Ein niedrigeres Limit entfernt keine vorhandenen Einträge.</p>
 <h3 id="p0-einheitliche-vorgaben-und-passende-ausnahmen">Einheitliche Vorgaben und passende Ausnahmen</h3>
@@ -96,6 +100,8 @@ PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponent
 <p>Die linke Navigation springt zu Inhalt/Pflege, Karten, Buttons, Reader, Inhaltstyp-Ausnahmen, Wasserzeichen und Vorschau. Alles bleibt ein Formular; ein Bereichswechsel behält die Eingaben. Auf kleinen Bildschirmen erscheint die Navigation oben.</p>
 <p>Die feste untere Leiste zeigt gespeicherte oder ungespeicherte Änderungen. Ein Punkt neben „Änderungen speichern“ kennzeichnet ebenfalls offene Eingaben. Speichern erfolgt ohne Seitenwechsel; bei einem Fehler bleiben die Felder für einen erneuten Versuch erhalten. Beim Verlassen mit offenen Änderungen warnt der Browser, soweit unterstützt. Ohne JavaScript bleibt das normale WordPress-Formular nutzbar.</p>
 <p>Die Vererbung läuft von eingebauten Vorgaben über globale und Inhaltstyp-Vorgaben zu Beitrag und Dokument/Ausgabe. „Übernehmen“ verwendet die vorherige Ebene. Sammlungslimits und Wasserzeichenrichtlinie bleiben administrative Vorgaben. Ein niedrigeres Limit entfernt keine vorhandenen Dokumente.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/settings-de.jpg">Gruppierte Einstellungen für Inhaltstypen, Dokumentkarten und Reader-Vorgaben.</a></p>
+<p><em>Gruppierte Einstellungen für Inhaltstypen, Dokumentkarten und Reader-Vorgaben.</em></p>
 <h2 id="p1-block-editor-gestalten">Block-Editor gestalten</h2>
 <p>Die Leiste „PDF Presenter · Block“ ist nur für die Bedienung im Editor da, keine Seitenüberschrift. „Bearbeiten“ öffnet die Dokumentpflege, „Vorschau“ zeigt die Karten. „Reader testen“ öffnet einen ausdrücklichen Testlink. Block-Stile gestalten die Ausgabe, nicht die Werkzeugleiste. Das Theme bestimmt mit, welche nativen Block-Editor-Stilbereiche angeboten werden.</p>
 <p>Titelbild-Karten, kompakte Karten oder Dokumentliste verwenden. Einheitliche Rahmen oder Originalproportionen wählen. Titel und Dateiangaben sollen Dokumente unterscheidbar machen. Sehr lange Buttontexte in schmalen Spalten vermeiden.</p>
@@ -111,6 +117,8 @@ PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponent
 [builder_pdf_presenter pdf_id=&quot;456&quot; mode=&quot;tab&quot; show_title=&quot;0&quot;]
 </code></pre>
 <p>IDs sind Beitrags-/Anhang-IDs der eigenen Website. Standardmäßig gilt der aktuelle Beitrag. Öffnungsarten: <code>modal</code>, <code>tab</code> (lokaler Reader in neuem Tab), <code>file</code> (Original-PDF). Sichtbarkeit verwendet <code>1</code>/<code>0</code>; Texte lassen sich mit <code>read_label</code> und <code>download_label</code> überschreiben.</p>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/embedding-de.jpg">Die Einbindungshilfe bietet kopierbare Shortcodes und Hinweise zu Blöcken und Patterns im Block-Editor.</a></p>
+<p><em>Die Einbindungshilfe bietet kopierbare Shortcodes und Hinweise zu Blöcken und Patterns im Block-Editor.</em></p>
 <h2 id="p1-reader-und-wasserzeichen">Reader und Wasserzeichen</h2>
 <p>Administratoren wählen Navigation, Zoom, Suche auf aktueller Seite, Vollbild und Dateilinks. Die Suche betrifft die gerenderte Seite, nicht das gesamte Archiv. Die Seitenerinnerung gilt während der Browsersitzung. Der Original-PDF-Link bleibt bei Reader-Problemen als Ausweg.</p>
 <p>Unter Wasserzeichen die zentrale Vorlage aktivieren, Text/Logo, Position, Deckkraft und Größe festlegen. Redakteure können sie nur bei ausdrücklich erlaubten Ausnahmen je Dokument ausschalten. Kein PDF-Bearbeitungs- oder Schutzfeature: Original, Downloads und außerhalb des Readers geöffnete Dateien werden nicht gestempelt.</p>
@@ -145,6 +153,8 @@ PDF.js: Apache-2.0, siehe vendor/pdfjs/LICENSE. Eingebundene deckerweb-Komponent
 <h3 id="p1-prufen-und-downloads-weiter-anbieten">Prüfen und Downloads weiter anbieten</h3>
 <p>Nach der Änderung betroffene Browser-/Proxy-Caches aktualisieren, beide Modulantworten erneut prüfen und den Reader öffnen. Das Plugin ändert die Serverkonfiguration nicht automatisch.</p>
 <p>Ist die Einstellung nicht änderbar, den <strong>Download-Button aktivieren</strong> und den <strong>Lesen-Button gegebenenfalls ausblenden</strong>, bis der Reader funktioniert. Ein zugängliches Original-PDF lässt sich weiterhin ohne PDF.js herunterladen. Alternativ kann das Original-PDF direkt in einem neuen Tab geöffnet werden; Browser und Server bestimmen, ob es angezeigt oder heruntergeladen wird. Vorhandene Zugriffsbeschränkungen gelten weiterhin. Für diesen Ausweichweg ist kein externer Google- oder Adobe-Viewer erforderlich.</p></section><section id="part-2"><h1 id="p2-anwendungsbeispiele">Anwendungsbeispiele</h1>
+<p><a href="https://github.com/deckerweb/builder-pdf-presenter/blob/main/images/minutes-list-de.jpg">Ein Protokollarchiv als kompakte Dokumentliste: Titel und Dateinamen durchsuchen, Einträge sortieren und jedes PDF lesen oder herunterladen.</a></p>
+<p><em>Ein Protokollarchiv als kompakte Dokumentliste: Titel und Dateinamen durchsuchen, Einträge sortieren und jedes PDF lesen oder herunterladen.</em></p>
 <h2 id="p2-drei-wege-zu-dokumenten">Drei Wege zu Dokumenten</h2>
 <ol>
 <li><strong>Eine PDF im Beitrag:</strong> Das Protokoll, Programm oder Heft direkt im passenden Beitrag anbieten.</li>

@@ -49,11 +49,19 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 
 Bricks und Meta Box sind nicht erforderlich. Die native Bricks-Integration wurde mit Bricks 2.4.5 getestet. Ein mit Bricks gebautes Layout benötigt weiterhin Bricks; ein Theme-Wechsel wandelt es nicht in Block-Editor um.
 
+![Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.](../images/library-grid-de.jpg)
+
+*Eine PDF-Sammlung mit Titelbild-Karten, Lesen- und Download-Buttons, Metadatenfiltern und Seitennavigation.*
+
 ## Feature Highlights
 
 ### Schnelle Übersicht, Reader bei Bedarf
 
 Das Raster zeigt normale Titelbilder. Es startet nicht für jede Karte einen eigenen PDF.js-Reader. Der Reader lädt erst beim Öffnen eines Dokuments. Große Original-PDFs können weiterhin Ladezeit benötigen; die Übersicht komprimiert die Dateien nicht.
+
+![Der lokale PDF.js-Reader öffnet sich bei Auswahl eines Dokuments im Modal.](../images/reader-modal-de.jpg)
+
+*Der lokale PDF.js-Reader öffnet sich bei Auswahl eines Dokuments im Modal.*
 
 ### Einfache Dokumentpflege
 

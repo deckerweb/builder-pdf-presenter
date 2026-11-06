@@ -1,5 +1,10 @@
 # Anwendungsbeispiele
 
+![Ein Protokollarchiv als kompakte Dokumentliste: Titel und Dateinamen durchsuchen, Einträge sortieren und jedes PDF lesen oder herunterladen.](../images/minutes-list-de.jpg)
+
+*Ein Protokollarchiv als kompakte Dokumentliste: Titel und Dateinamen durchsuchen, Einträge sortieren und jedes PDF lesen oder herunterladen.*
+
+
 ## Drei Wege zu Dokumenten
 
 1. **Eine PDF im Beitrag:** Das Protokoll, Programm oder Heft direkt im passenden Beitrag anbieten.

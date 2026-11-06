@@ -49,11 +49,19 @@ Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
 
 Bricks and Meta Box are not required. The native Bricks integration was tested with Bricks 2.4.5. A Bricks-built page still depends on Bricks; changing the theme does not convert its layout into Block Editor.
 
+![A PDF collection with cover cards, reading and download buttons, metadata filters and pagination.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/library-grid-en.jpg)
+
+*A PDF collection with cover cards, reading and download buttons, metadata filters and pagination.*
+
 ## Feature Highlights
 
 ### A fast overview, a reader when needed
 
 The grid displays ordinary cover images. It does not initialize a separate PDF.js reader for every visible card. Opening a document loads the reader on demand. Large source PDFs can still take time to load; the overview does not compress the original files.
+
+![The local PDF.js reader opens in a modal when a document is selected.](https://raw.githubusercontent.com/wiki/deckerweb/builder-pdf-presenter/images/reader-modal-en.jpg)
+
+*The local PDF.js reader opens in a modal when a document is selected.*
 
 ### Simple document care
 
