@@ -84,5 +84,5 @@ Nein. Übertragen werden nur gespeicherte Anzeigevorgaben. Inhaltstypen müssen 
 
 ### Warum meldet der Reader einen MIME-Typ-Fehler für .mjs-Dateien?
 
-Der Server liefert die PDF.js-Module möglicherweise als einfachen Text statt als JavaScript aus. Die MIME-Zuordnung für `.mjs` lässt sich in Apache, nginx oder der Hosting-Oberfläche korrigieren. Die [MIME-Fehlerhilfe](Guide-de.md#reader-fehlerhilfe-mime-typen-fur-mjs) enthält Beispiele und Prüfschritte. Ist keine Lösung möglich, den Download-Button aktiviert lassen und Lesen gegebenenfalls ausblenden: Zugängliche Original-PDFs bleiben ohne Reader verfügbar.
+Der Server liefert die PDF.js-Module möglicherweise als einfachen Text statt als JavaScript aus. Die MIME-Zuordnung für `.mjs` lässt sich in Apache, nginx oder der Hosting-Oberfläche korrigieren. Die [MIME-Fehlerhilfe](Guide-de.md#reader-fehlerhilfe-mime-typen-für-mjs) enthält Beispiele und Prüfschritte. Ist keine Lösung möglich, den Download-Button aktiviert lassen und Lesen gegebenenfalls ausblenden: Zugängliche Original-PDFs bleiben ohne Reader verfügbar.
 
