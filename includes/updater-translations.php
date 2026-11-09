@@ -77,6 +77,14 @@ return static function ( string $message ): string {
         case 'HTTP status: %d.':
             /* translators: %d: HTTP error status. */
             return __( 'HTTP status: %d.', 'builder-pdf-presenter' );
+        case 'Invalid private download limits.':
+            return __( 'Invalid private download limits.', 'builder-pdf-presenter' );
+        case 'Invalid package cleanup provider.':
+            return __( 'Invalid package cleanup provider.', 'builder-pdf-presenter' );
+        case 'Safe package cleanup is unavailable for this update provider.':
+            return __( 'Safe package cleanup is unavailable for this update provider.', 'builder-pdf-presenter' );
+        case 'The update package identity, version or requirements could not be verified.':
+            return __( 'The update package identity, version or requirements could not be verified.', 'builder-pdf-presenter' );
         default:
             return $message;
     }

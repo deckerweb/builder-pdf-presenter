@@ -10,7 +10,7 @@ Publish PDFs with less effort: lightweight cover cards for browsing and a comfor
 
 **Your data in your WordPress. Period.** Free, without advertising, reader tracking or a Pro edition.
 
-Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
+Version **1.0.1** · WordPress **6.9+** · PHP **8.3+**
 
 [Getting started](#getting-started) · [User guide](User-guide) · [FAQ by topic](FAQ) · [Examples](Examples)
 
@@ -116,6 +116,10 @@ No. There is no Pro edition, upselling or reader tracking by the plugin.
 
 
 ## Changelog
+
+### 1.0.1 · 2026-11-09
+
+- **Fixed:** Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
 
 ### 1.0.0 · 2026-11-06
 

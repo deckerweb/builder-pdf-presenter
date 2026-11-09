@@ -3,7 +3,7 @@
  * Plugin Name: Builder PDF Presenter
  * Plugin URI: https://deckerwebplugins.com/en/plugins/builder-pdf-presenter/
  * Description: Fast PDF preview cards and an on-demand PDF reader for any post type, blocks and shortcodes.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 6.9
  * Requires PHP: 8.3
  * Author: David Decker – DECKERWEB
@@ -23,7 +23,7 @@ namespace Deckerweb\PDFPresenter;
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'BPP_VERSION', '1.0.0' );
+define( 'BPP_VERSION', '1.0.1' );
 define( 'BPP_FILE', __FILE__ );
 define( 'BPP_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BPP_URL', plugin_dir_url( __FILE__ ) );

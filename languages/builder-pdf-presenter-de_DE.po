@@ -1,5 +1,9 @@
 msgid ""
-msgstr "Project-Id-Version: Builder PDF Presenter 1.0.0\nLanguage: de_DE\nContent-Type: text/plain; charset=UTF-8\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr ""
+"Project-Id-Version: Builder PDF Presenter 1.0.1\n"
+"Language: de_DE\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "1 to under 5 MiB"
 msgstr "1 bis unter 5 MiB"
@@ -7,29 +11,53 @@ msgstr "1 bis unter 5 MiB"
 msgid "5 MiB or more"
 msgstr "Ab 5 MiB"
 
-msgid "A PDF collection contains the documents added to a contribution, page or individual PDF block. It can be displayed as a grid or list and may contain just one PDF."
-msgstr "Eine PDF-Sammlung enthält die Dokumente, die einem Beitrag, einer Seite oder einem einzelnen PDF-Block hinzugefügt werden. Sie lässt sich als Raster oder Liste anzeigen und kann auch nur eine PDF enthalten."
+msgid ""
+"A PDF collection contains the documents added to a contribution, page or "
+"individual PDF block. It can be displayed as a grid or list and may contain "
+"just one PDF."
+msgstr ""
+"Eine PDF-Sammlung enthält die Dokumente, die einem Beitrag, einer Seite oder "
+"einem einzelnen PDF-Block hinzugefügt werden. Sie lässt sich als Raster oder "
+"Liste anzeigen und kann auch nur eine PDF enthalten."
 
 msgid "A PDF could not be assigned unambiguously. No content was changed."
-msgstr "Eine PDF konnte nicht eindeutig zugeordnet werden. Es wurden keine Inhalte geändert."
+msgstr ""
+"Eine PDF konnte nicht eindeutig zugeordnet werden. Es wurden keine Inhalte "
+"geändert."
 
 msgid "A fast PDF preview with an on-demand reader."
 msgstr "Eine schnelle PDF-Vorschau mit einem Reader auf Abruf."
 
-msgid "A named PDF collection with matching search and filter controls. Add PDFs after inserting."
-msgstr "Eine benannte PDF-Sammlung mit passenden Such- und Filterfeldern. Nach dem Einfügen PDFs hinzufügen."
+msgid ""
+"A named PDF collection with matching search and filter controls. Add PDFs "
+"after inserting."
+msgstr ""
+"Eine benannte PDF-Sammlung mit passenden Such- und Filterfeldern. Nach dem "
+"Einfügen PDFs hinzufügen."
 
-msgid "A recovery backup already exists. Review or restore it before converting again."
-msgstr "Es besteht bereits eine Wiederherstellungssicherung. Diese vor einer erneuten Umstellung prüfen oder wiederherstellen."
+msgid ""
+"A recovery backup already exists. Review or restore it before converting "
+"again."
+msgstr ""
+"Es besteht bereits eine Wiederherstellungssicherung. Diese vor einer "
+"erneuten Umstellung prüfen oder wiederherstellen."
 
-msgid "A responsive document layout with lightweight covers and an on-demand reader. Select PDFs after inserting."
-msgstr "Ein responsives Dokumentlayout mit schnellen Vorschaubildern und Reader auf Abruf. Nach dem Einfügen PDFs auswählen."
+msgid ""
+"A responsive document layout with lightweight covers and an on-demand "
+"reader. Select PDFs after inserting."
+msgstr ""
+"Ein responsives Dokumentlayout mit schnellen Vorschaubildern und Reader auf "
+"Abruf. Nach dem Einfügen PDFs auswählen."
 
 msgid "Access denied."
 msgstr "Zugriff verweigert."
 
-msgid "Add PDF documents in the contribution panel or choose a document in this block."
-msgstr "PDF-Dokumente im Beitragsbereich hinzufügen oder ein Dokument in diesem Block auswählen."
+msgid ""
+"Add PDF documents in the contribution panel or choose a document in this "
+"block."
+msgstr ""
+"PDF-Dokumente im Beitragsbereich hinzufügen oder ein Dokument in diesem "
+"Block auswählen."
 
 msgid "Add PDFs"
 msgstr "PDFs hinzufügen"
@@ -136,11 +164,23 @@ msgstr "Änderungsverlauf"
 msgid "Check again"
 msgstr "Erneut prüfen"
 
-msgid "Check documents, convert selected contributions and restore saved originals."
-msgstr "Dokumente prüfen, ausgewählte Beiträge umstellen und gesicherte Originale wiederherstellen."
+msgid ""
+"Check documents, convert selected contributions and restore saved originals."
+msgstr ""
+"Dokumente prüfen, ausgewählte Beiträge umstellen und gesicherte Originale "
+"wiederherstellen."
 
-msgid "Checks PDF Poster blocks and PDF Embedder blocks/shortcodes in contribution content. Only ordinary, unambiguous local Media Library PDFs are converted. PDF Poster shortcodes, HTML/code examples, builder data and templates need manual review. No conversion starts automatically."
-msgstr "Prüft PDF-Poster-Blöcke und PDF-Embedder-Blöcke/Shortcodes im Beitragsinhalt. Nur normale, eindeutig zugeordnete lokale Mediathek-PDFs werden umgestellt. PDF-Poster-Shortcodes, HTML-/Codebeispiele, Builder-Daten und Templates erfordern manuelle Prüfung. Es startet keine automatische Umstellung."
+msgid ""
+"Checks PDF Poster blocks and PDF Embedder blocks/shortcodes in contribution "
+"content. Only ordinary, unambiguous local Media Library PDFs are converted. "
+"PDF Poster shortcodes, HTML/code examples, builder data and templates need "
+"manual review. No conversion starts automatically."
+msgstr ""
+"Prüft PDF-Poster-Blöcke und PDF-Embedder-Blöcke/Shortcodes im "
+"Beitragsinhalt. Nur normale, eindeutig zugeordnete lokale Mediathek-PDFs "
+"werden umgestellt. PDF-Poster-Shortcodes, HTML-/Codebeispiele, Builder-Daten "
+"und Templates erfordern manuelle Prüfung. Es startet keine automatische "
+"Umstellung."
 
 msgid "Checksum verification"
 msgstr "Prüfsummenprüfung"
@@ -151,11 +191,17 @@ msgstr "Für jeden Quell-Inhaltstyp ein anderes Ziel wählen."
 msgid "Choose a target collection ID for PDF filters."
 msgstr "Eine Ziel-Sammlungs-ID für die PDF-Filter wählen."
 
-msgid "Choose the content type, PDF selection and sorting in the block settings."
-msgstr "Inhaltstyp, PDF-Auswahl und Sortierung in den Block-Einstellungen festlegen."
+msgid ""
+"Choose the content type, PDF selection and sorting in the block settings."
+msgstr ""
+"Inhaltstyp, PDF-Auswahl und Sortierung in den Block-Einstellungen festlegen."
 
-msgid "Choose where the PDF selection and individual settings appear. The block and shortcode are available independently."
-msgstr "Hier wird festgelegt, wo PDF-Auswahl und individuelle Einstellungen erscheinen. Block und Shortcode sind unabhängig davon verfügbar."
+msgid ""
+"Choose where the PDF selection and individual settings appear. The block and "
+"shortcode are available independently."
+msgstr ""
+"Hier wird festgelegt, wo PDF-Auswahl und individuelle Einstellungen "
+"erscheinen. Block und Shortcode sind unabhängig davon verfügbar."
 
 msgid "Close"
 msgstr "Schließen"
@@ -214,8 +260,12 @@ msgstr "Ausgewählte Beiträge umstellen"
 msgid "Converted"
 msgstr "Umgestellt"
 
-msgid "Converted successfully. The original content and collection are saved for recovery."
-msgstr "Erfolgreich umgestellt. Der ursprüngliche Inhalt und die Sammlung sind für die Wiederherstellung gesichert."
+msgid ""
+"Converted successfully. The original content and collection are saved for "
+"recovery."
+msgstr ""
+"Erfolgreich umgestellt. Der ursprüngliche Inhalt und die Sammlung sind für "
+"die Wiederherstellung gesichert."
 
 msgid "Copied"
 msgstr "Kopiert"
@@ -319,11 +369,24 @@ msgstr "PDFs einbinden"
 msgid "Enable the central watermark template"
 msgstr "Zentrale Wasserzeichenvorlage aktivieren"
 
-msgid "Existing covers can still be used and a custom cover can be selected for each document. Automatic generation depends on the server image editor and PDF support; individual files may still fail."
-msgstr "Vorhandene Titelbilder bleiben nutzbar; je Dokument lässt sich ein eigenes Titelbild auswählen. Die automatische Erzeugung hängt von der Bildverarbeitung und PDF-Unterstützung des Servers ab. Einzelne Dateien können dennoch fehlschlagen."
+msgid ""
+"Existing covers can still be used and a custom cover can be selected for "
+"each document. Automatic generation depends on the server image editor and "
+"PDF support; individual files may still fail."
+msgstr ""
+"Vorhandene Titelbilder bleiben nutzbar; je Dokument lässt sich ein eigenes "
+"Titelbild auswählen. Die automatische Erzeugung hängt von der "
+"Bildverarbeitung und PDF-Unterstützung des Servers ab. Einzelne Dateien "
+"können dennoch fehlschlagen."
 
-msgid "Export saved defaults only. PDFs, document assignments and media IDs stay on this website. Watermarks are disabled on import until their text or local logo is reviewed."
-msgstr "Nur gespeicherte Vorgaben exportieren. PDFs, Dokumentzuordnungen und Medien-IDs bleiben auf dieser Website. Wasserzeichen sind nach dem Import deaktiviert, bis Text und lokales Logo geprüft sind."
+msgid ""
+"Export saved defaults only. PDFs, document assignments and media IDs stay on "
+"this website. Watermarks are disabled on import until their text or local "
+"logo is reviewed."
+msgstr ""
+"Nur gespeicherte Vorgaben exportieren. PDFs, Dokumentzuordnungen und Medien-"
+"IDs bleiben auf dieser Website. Wasserzeichen sind nach dem Import "
+"deaktiviert, bis Text und lokales Logo geprüft sind."
 
 msgid "Export saved settings"
 msgstr "Gespeicherte Vorgaben exportieren"
@@ -331,8 +394,12 @@ msgstr "Gespeicherte Vorgaben exportieren"
 msgid "FAQ"
 msgstr "FAQ"
 
-msgid "Fast PDF preview cards and an on-demand PDF reader for any post type, blocks and shortcodes."
-msgstr "Schnelle PDF-Vorschaukarten und ein Reader auf Abruf für beliebige Inhaltstypen, Blöcke und Shortcodes."
+msgid ""
+"Fast PDF preview cards and an on-demand PDF reader for any post type, blocks "
+"and shortcodes."
+msgstr ""
+"Schnelle PDF-Vorschaukarten und ein Reader auf Abruf für beliebige "
+"Inhaltstypen, Blöcke und Shortcodes."
 
 msgid "File details"
 msgstr "Dateiangaben"
@@ -373,8 +440,17 @@ msgstr "Fehlende Vorschauen erzeugen"
 msgid "Generate preview"
 msgstr "Vorschau erzeugen"
 
-msgid "Git Updater is active. If a deckerweb installation or update fails, temporarily deactivate Git Updater and retry. Reactivate it afterwards if other plugins or themes need it. Only leave it disabled when those extensions have another reliable update provider."
-msgstr "Git Updater ist aktiv. Wenn eine deckerweb-Installation oder ein Update fehlschlägt, deaktiviere Git Updater vorübergehend und versuche es erneut. Aktiviere ihn danach wieder, wenn andere Plugins oder Themes ihn benötigen. Lass ihn nur dauerhaft deaktiviert, wenn diese Erweiterungen einen anderen zuverlässigen Updateweg besitzen."
+msgid ""
+"Git Updater is active. If a deckerweb installation or update fails, "
+"temporarily deactivate Git Updater and retry. Reactivate it afterwards if "
+"other plugins or themes need it. Only leave it disabled when those "
+"extensions have another reliable update provider."
+msgstr ""
+"Git Updater ist aktiv. Wenn eine deckerweb-Installation oder ein Update "
+"fehlschlägt, deaktiviere Git Updater vorübergehend und versuche es erneut. "
+"Aktiviere ihn danach wieder, wenn andere Plugins oder Themes ihn benötigen. "
+"Lass ihn nur dauerhaft deaktiviert, wenn diese Erweiterungen einen anderen "
+"zuverlässigen Updateweg besitzen."
 
 msgid "GitHub release does not contain the plugin main file."
 msgstr "Der GitHub-Release enthält nicht die Hauptdatei des Plugins."
@@ -400,17 +476,30 @@ msgstr "Individuelle Anzeigeeinstellungen"
 msgid "Inherit"
 msgstr "Übernehmen"
 
-msgid "Inherit keeps the defaults for this content type. These values apply to cards rendered from this contribution."
-msgstr "„Übernehmen“ behält die Vorgaben dieses Inhaltstyps bei. Diese Werte gelten für Karten, die diesen Beitrag darstellen."
+msgid ""
+"Inherit keeps the defaults for this content type. These values apply to "
+"cards rendered from this contribution."
+msgstr ""
+"„Übernehmen“ behält die Vorgaben dieses Inhaltstyps bei. Diese Werte gelten "
+"für Karten, die diesen Beitrag darstellen."
 
-msgid "Inherit uses the website defaults. Individual contributions can override these values again."
-msgstr "„Übernehmen“ verwendet die globalen Vorgaben. Einzelne Beiträge können diese Werte erneut überschreiben."
+msgid ""
+"Inherit uses the website defaults. Individual contributions can override "
+"these values again."
+msgstr ""
+"„Übernehmen“ verwendet die globalen Vorgaben. Einzelne Beiträge können diese "
+"Werte erneut überschreiben."
 
 msgid "Inherited from"
 msgstr "Übernommen von"
 
-msgid "Insert Builder PDF Presenter for documents or collections, and PDF filters and search for an optional filter bar. Patterns provide ready-to-use layouts."
-msgstr "„Builder PDF Presenter“ für Dokumente oder Sammlungen einfügen; „PDF-Filter und Suche“ ergänzt eine optionale Filterleiste. Patterns bieten vorbereitete Layouts."
+msgid ""
+"Insert Builder PDF Presenter for documents or collections, and PDF filters "
+"and search for an optional filter bar. Patterns provide ready-to-use layouts."
+msgstr ""
+"„Builder PDF Presenter“ für Dokumente oder Sammlungen einfügen; „PDF-Filter "
+"und Suche“ ergänzt eine optionale Filterleiste. Patterns bieten vorbereitete "
+"Layouts."
 
 msgid "Invalid GitHub repository URL."
 msgstr "Ungültige GitHub-Repository-URL."
@@ -427,8 +516,13 @@ msgstr "Groß"
 msgid "Layout"
 msgstr "Anordnung"
 
-msgid "Leave empty to use the first PDF assigned to the current post, or to each post inside a query loop. This is a real document, not sample content."
-msgstr "Leer lassen, um die erste zugeordnete PDF des aktuellen Beitrags zu verwenden – in einer Abfrageschleife die des jeweiligen Beitrags. Dies ist ein echtes Dokument, kein Beispielinhalt."
+msgid ""
+"Leave empty to use the first PDF assigned to the current post, or to each "
+"post inside a query loop. This is a real document, not sample content."
+msgstr ""
+"Leer lassen, um die erste zugeordnete PDF des aktuellen Beitrags zu "
+"verwenden – in einer Abfrageschleife die des jeweiligen Beitrags. Dies ist "
+"ein echtes Dokument, kein Beispielinhalt."
 
 msgid "Line height"
 msgstr "Zeilenhöhe"
@@ -472,11 +566,16 @@ msgstr "Nächstes Dokument"
 msgid "Next page"
 msgstr "Nächste Seite"
 
-msgid "No PDF assigned to this source. Add a PDF to the post or select a file in Document source."
-msgstr "Dieser Quelle ist keine PDF zugeordnet. Dem Beitrag eine PDF hinzufügen oder unter „Dokumentquelle“ eine Datei auswählen."
+msgid ""
+"No PDF assigned to this source. Add a PDF to the post or select a file in "
+"Document source."
+msgstr ""
+"Dieser Quelle ist keine PDF zugeordnet. Dem Beitrag eine PDF hinzufügen oder "
+"unter „Dokumentquelle“ eine Datei auswählen."
 
 msgid "No PDFs assigned yet. Add documents to the source posts."
-msgstr "Noch keine PDFs zugeordnet. Dokumente in den Quellbeiträgen hinzufügen."
+msgstr ""
+"Noch keine PDFs zugeordnet. Dokumente in den Quellbeiträgen hinzufügen."
 
 msgid "No document contributions found."
 msgstr "Keine Dokumentbeiträge gefunden."
@@ -488,7 +587,9 @@ msgid "No file selected"
 msgstr "Keine Datei ausgewählt"
 
 msgid "No matching PDFs. Try another search or reset the filters."
-msgstr "Keine passenden PDFs. Einen anderen Suchbegriff verwenden oder Filter zurücksetzen."
+msgstr ""
+"Keine passenden PDFs. Einen anderen Suchbegriff verwenden oder Filter "
+"zurücksetzen."
 
 msgid "No matching source posts found."
 msgstr "Keine passenden Quellbeiträge gefunden."
@@ -497,10 +598,18 @@ msgid "No recovery backups found."
 msgstr "Keine Wiederherstellungssicherungen gefunden."
 
 msgid "No supported PDF embeds found. Other integrations need manual review."
-msgstr "Keine unterstützten PDF-Einbettungen gefunden. Andere Integrationen bitte manuell prüfen."
+msgstr ""
+"Keine unterstützten PDF-Einbettungen gefunden. Andere Integrationen bitte "
+"manuell prüfen."
 
-msgid "No supported PDF references found in the checked content. Before deactivating the source plugin, also review builder templates and other integrations."
-msgstr "Keine unterstützten PDF-Referenzen im geprüften Inhalt gefunden. Vor Deaktivierung des Quellplugins auch Builder-Templates und andere Integrationen prüfen."
+msgid ""
+"No supported PDF references found in the checked content. Before "
+"deactivating the source plugin, also review builder templates and other "
+"integrations."
+msgstr ""
+"Keine unterstützten PDF-Referenzen im geprüften Inhalt gefunden. Vor "
+"Deaktivierung des Quellplugins auch Builder-Templates und andere "
+"Integrationen prüfen."
 
 msgid "No valid recovery backup exists for this contribution."
 msgstr "Für diesen Beitrag besteht keine gültige Wiederherstellungssicherung."
@@ -512,7 +621,8 @@ msgid "Not changed"
 msgstr "Nicht geändert"
 
 msgid "Only PDF attachments can be added. The previous collection was kept."
-msgstr "Nur PDF-Anhänge sind zulässig. Die bisherige Sammlung wurde beibehalten."
+msgstr ""
+"Nur PDF-Anhänge sind zulässig. Die bisherige Sammlung wurde beibehalten."
 
 msgid "Opacity (%)"
 msgstr "Deckkraft (%)"
@@ -539,7 +649,9 @@ msgid "Operation result"
 msgstr "Ergebnisbericht"
 
 msgid "Original content and collection restored. PDF files were not changed."
-msgstr "Ursprünglicher Inhalt und Sammlung wiederhergestellt. PDF-Dateien wurden nicht verändert."
+msgstr ""
+"Ursprünglicher Inhalt und Sammlung wiederhergestellt. PDF-Dateien wurden "
+"nicht verändert."
 
 msgid "Original proportions"
 msgstr "Originalproportionen"
@@ -550,20 +662,40 @@ msgstr "Ausgabesortierung"
 msgid "Own PDF collection"
 msgstr "Eigene PDF-Sammlung"
 
-msgid "PDF Embedder viewer options were not transferred. Review the new presentation."
-msgstr "PDF-Embedder-Vieweroptionen wurden nicht übertragen. Die neue Darstellung bitte prüfen."
+msgid ""
+"PDF Embedder viewer options were not transferred. Review the new "
+"presentation."
+msgstr ""
+"PDF-Embedder-Vieweroptionen wurden nicht übertragen. Die neue Darstellung "
+"bitte prüfen."
 
 msgid "PDF Embedder viewer options will use the new presentation defaults."
 msgstr "Für PDF-Embedder-Vieweroptionen gelten die neuen Darstellungsvorgaben."
 
-msgid "PDF Embedder: external, missing or ambiguous PDF. This contribution was not changed."
-msgstr "PDF Embedder: externe, fehlende oder mehrdeutige PDF. Dieser Beitrag wurde nicht verändert."
+msgid ""
+"PDF Embedder: external, missing or ambiguous PDF. This contribution was not "
+"changed."
+msgstr ""
+"PDF Embedder: externe, fehlende oder mehrdeutige PDF. Dieser Beitrag wurde "
+"nicht verändert."
 
-msgid "PDF Embedder: inline viewers become preview cards with a reading action. File order and embedding positions are preserved. Width, height, toolbar, page and zoom options are not transferred; review the new presentation before removing the old plugin. External or protected PDFs are not imported. One unresolved PDF leaves the entire contribution unchanged."
-msgstr "PDF Embedder: Aus Inline-Viewern werden Vorschaukarten mit Lesen-Aktion. Reihenfolge und Einbettungspositionen bleiben erhalten. Breite, Höhe, Toolbar, Startseite und Zoom werden nicht übertragen; neue Darstellung vor Entfernen des alten Plugins prüfen. Externe oder geschützte PDFs werden nicht importiert. Eine unklare PDF lässt den gesamten Beitrag unverändert."
+msgid ""
+"PDF Embedder: inline viewers become preview cards with a reading action. "
+"File order and embedding positions are preserved. Width, height, toolbar, "
+"page and zoom options are not transferred; review the new presentation "
+"before removing the old plugin. External or protected PDFs are not imported. "
+"One unresolved PDF leaves the entire contribution unchanged."
+msgstr ""
+"PDF Embedder: Aus Inline-Viewern werden Vorschaukarten mit Lesen-Aktion. "
+"Reihenfolge und Einbettungspositionen bleiben erhalten. Breite, Höhe, "
+"Toolbar, Startseite und Zoom werden nicht übertragen; neue Darstellung vor "
+"Entfernen des alten Plugins prüfen. Externe oder geschützte PDFs werden "
+"nicht importiert. Eine unklare PDF lässt den gesamten Beitrag unverändert."
 
 msgid "PDF Embedder: protected PDF skipped. This contribution was not changed."
-msgstr "PDF Embedder: geschützte PDF übersprungen. Dieser Beitrag wurde nicht verändert."
+msgstr ""
+"PDF Embedder: geschützte PDF übersprungen. Dieser Beitrag wurde nicht "
+"verändert."
 
 msgid "PDF Presenter reader files"
 msgstr "PDF-Presenter-Reader-Dateien"
@@ -673,8 +805,12 @@ msgstr "Seite"
 msgid "Page loaded"
 msgstr "Seite geladen"
 
-msgid "Paste a shortcode where the document or collection should appear. It uses the current post unless another source is selected."
-msgstr "Den Shortcode dort einfügen, wo Dokument oder Sammlung erscheinen sollen. Ohne andere Quellenangabe gilt der aktuelle Beitrag."
+msgid ""
+"Paste a shortcode where the document or collection should appear. It uses "
+"the current post unless another source is selected."
+msgstr ""
+"Den Shortcode dort einfügen, wo Dokument oder Sammlung erscheinen sollen. "
+"Ohne andere Quellenangabe gilt der aktuelle Beitrag."
 
 msgid "Paste settings JSON"
 msgstr "Vorgaben als JSON einfügen"
@@ -706,8 +842,12 @@ msgstr "Beitrags-Menüreihenfolge"
 msgid "Post publication date"
 msgstr "Veröffentlichungsdatum des Beitrags"
 
-msgid "Present a PDF or a document collection with preview covers, reading and download buttons."
-msgstr "Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und Download-Buttons präsentieren."
+msgid ""
+"Present a PDF or a document collection with preview covers, reading and "
+"download buttons."
+msgstr ""
+"Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und "
+"Download-Buttons präsentieren."
 
 msgid "Preview"
 msgstr "Vorschau"
@@ -722,7 +862,8 @@ msgid "Preview frame"
 msgstr "Vorschaurahmen"
 
 msgid "Preview missing. Generate one or select a custom cover."
-msgstr "Vorschau fehlt. Eine Vorschau erzeugen oder ein eigenes Titelbild auswählen."
+msgstr ""
+"Vorschau fehlt. Eine Vorschau erzeugen oder ein eigenes Titelbild auswählen."
 
 msgid "Previous document"
 msgstr "Vorheriges Dokument"
@@ -733,8 +874,12 @@ msgstr "Vorherige Seite"
 msgid "Private mode must be boolean."
 msgstr "Der Private-Modus muss ein boolescher Wert sein."
 
-msgid "Public catalog callbacks require both providers and cannot be used in private mode."
-msgstr "Öffentliche Katalog-Callbacks benötigen beide Anbieter und können nicht im Private-Modus verwendet werden."
+msgid ""
+"Public catalog callbacks require both providers and cannot be used in "
+"private mode."
+msgstr ""
+"Öffentliche Katalog-Callbacks benötigen beide Anbieter und können nicht im "
+"Private-Modus verwendet werden."
 
 msgid "Query document contributions"
 msgstr "Dokumentbeiträge abfragen"
@@ -805,8 +950,12 @@ msgstr "Letzte Vorgänge"
 msgid "Recovery backups"
 msgstr "Wiederherstellungssicherungen"
 
-msgid "Reducing a limit never removes existing documents. Editors cannot override limits."
-msgstr "Niedrigere Limits entfernen keine vorhandenen Dokumente. Redakteure können Limits nicht überschreiben."
+msgid ""
+"Reducing a limit never removes existing documents. Editors cannot override "
+"limits."
+msgstr ""
+"Niedrigere Limits entfernen keine vorhandenen Dokumente. Redakteure können "
+"Limits nicht überschreiben."
 
 msgid "Remove from collection"
 msgstr "Aus Sammlung entfernen"
@@ -818,16 +967,25 @@ msgid "Remove selection"
 msgstr "Auswahl entfernen"
 
 msgid "Removed from this collection. The Media Library file is kept."
-msgstr "Aus dieser Sammlung entfernt. Die Datei in der Mediathek bleibt erhalten."
+msgstr ""
+"Aus dieser Sammlung entfernt. Die Datei in der Mediathek bleibt erhalten."
 
 msgid "Replace PDF"
 msgstr "PDF ersetzen"
 
-msgid "Replace the current content and PDF collection with this backup, including any later edits."
-msgstr "Den aktuellen Inhalt und die PDF-Sammlung durch diese Sicherung ersetzen, einschließlich späterer Bearbeitungen."
+msgid ""
+"Replace the current content and PDF collection with this backup, including "
+"any later edits."
+msgstr ""
+"Den aktuellen Inhalt und die PDF-Sammlung durch diese Sicherung ersetzen, "
+"einschließlich späterer Bearbeitungen."
 
-msgid "Replacing changes this assignment only. It does not overwrite the shared Media Library file."
-msgstr "Ersetzen ändert nur diese Zuordnung. Die gemeinsam verwendete Mediathekdatei wird nicht überschrieben."
+msgid ""
+"Replacing changes this assignment only. It does not overwrite the shared "
+"Media Library file."
+msgstr ""
+"Ersetzen ändert nur diese Zuordnung. Die gemeinsam verwendete Mediathekdatei "
+"wird nicht überschrieben."
 
 msgid "Reset"
 msgstr "Zurücksetzen"
@@ -841,8 +999,14 @@ msgstr "Anzeigeeinstellungen zurücksetzen"
 msgid "Reset selected settings"
 msgstr "Ausgewählte Einstellungen zurücksetzen"
 
-msgid "Restore a contribution individually. This replaces its content and PDF collection with the saved original; media files and other contribution settings remain unchanged."
-msgstr "Beiträge einzeln wiederherstellen. Dabei werden Inhalt und PDF-Sammlung durch das gesicherte Original ersetzt; Mediendateien und andere Beitragseinstellungen bleiben unverändert."
+msgid ""
+"Restore a contribution individually. This replaces its content and PDF "
+"collection with the saved original; media files and other contribution "
+"settings remain unchanged."
+msgstr ""
+"Beiträge einzeln wiederherstellen. Dabei werden Inhalt und PDF-Sammlung "
+"durch das gesicherte Original ersetzt; Mediendateien und andere "
+"Beitragseinstellungen bleiben unverändert."
 
 msgid "Restore this contribution"
 msgstr "Diesen Beitrag wiederherstellen"
@@ -866,7 +1030,9 @@ msgid "Saved order"
 msgstr "Gespeicherte Reihenfolge"
 
 msgid "Saving failed. Your changes are still here. Please try again."
-msgstr "Speichern fehlgeschlagen. Die Eingaben bleiben erhalten. Bitte erneut versuchen."
+msgstr ""
+"Speichern fehlgeschlagen. Die Eingaben bleiben erhalten. Bitte erneut "
+"versuchen."
 
 msgid "Saving…"
 msgstr "Wird gespeichert …"
@@ -883,11 +1049,19 @@ msgstr "Auf aktueller Seite suchen"
 msgid "Search titles and file names"
 msgstr "Titel und Dateinamen durchsuchen"
 
-msgid "Search titles and file names, sort and filter a named PDF collection. No PDF full-text search."
-msgstr "Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren und filtern. Keine PDF-Volltextsuche."
+msgid ""
+"Search titles and file names, sort and filter a named PDF collection. No PDF "
+"full-text search."
+msgstr ""
+"Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren "
+"und filtern. Keine PDF-Volltextsuche."
 
-msgid "Searches document metadata, not PDF contents. Filters apply to the whole collection before pagination."
-msgstr "Durchsucht Dokument-Metadaten, keine PDF-Inhalte. Filter gelten vor der Seitennavigation für die gesamte Sammlung."
+msgid ""
+"Searches document metadata, not PDF contents. Filters apply to the whole "
+"collection before pagination."
+msgstr ""
+"Durchsucht Dokument-Metadaten, keine PDF-Inhalte. Filter gelten vor der "
+"Seitennavigation für die gesamte Sammlung."
 
 msgid "See the release on GitHub."
 msgstr "Sieh dir den Release auf GitHub an."
@@ -902,7 +1076,9 @@ msgid "Select PDF"
 msgstr "PDF auswählen"
 
 msgid "Select a PDF, or use the document assigned to the current contribution."
-msgstr "Eine PDF auswählen oder das dem aktuellen Beitrag zugeordnete Dokument verwenden."
+msgstr ""
+"Eine PDF auswählen oder das dem aktuellen Beitrag zugeordnete Dokument "
+"verwenden."
 
 msgid "Select cover"
 msgstr "Titelbild auswählen"
@@ -920,7 +1096,9 @@ msgid "Settings export is too large."
 msgstr "Der Vorgabenexport ist zu groß."
 
 msgid "Settings imported. Review content types and watermark before use."
-msgstr "Vorgaben importiert. Vor der Verwendung Inhaltstypen und Wasserzeichen prüfen."
+msgstr ""
+"Vorgaben importiert. Vor der Verwendung Inhaltstypen und Wasserzeichen "
+"prüfen."
 
 msgid "Settings sections"
 msgstr "Einstellungsbereiche"
@@ -991,8 +1169,12 @@ msgstr "Quadratisch"
 msgid "Target collection ID"
 msgstr "Ziel-Sammlungs-ID"
 
-msgid "Targets a plugin PDF collection. For native post query loops, use native Bricks filters instead."
-msgstr "Bezieht sich auf eine Plugin-PDF-Sammlung. Für native Beitragsschleifen die nativen Bricks-Filter verwenden."
+msgid ""
+"Targets a plugin PDF collection. For native post query loops, use native "
+"Bricks filters instead."
+msgstr ""
+"Bezieht sich auf eine Plugin-PDF-Sammlung. Für native Beitragsschleifen die "
+"nativen Bricks-Filter verwenden."
 
 msgid "Test reader"
 msgstr "Reader testen"
@@ -1003,59 +1185,93 @@ msgstr "Textfarbe"
 msgid "Text size (px)"
 msgstr "Textgröße (px)"
 
-msgid "The PDF could not be loaded. Open the original PDF using the link above."
-msgstr "Die PDF konnte nicht geladen werden. Über den Link oben lässt sich die Original-PDF öffnen."
+msgid ""
+"The PDF could not be loaded. Open the original PDF using the link above."
+msgstr ""
+"Die PDF konnte nicht geladen werden. Über den Link oben lässt sich die "
+"Original-PDF öffnen."
 
-msgid "The PDF file is unavailable on this server. Select a custom cover instead."
-msgstr "Die PDF-Datei ist auf diesem Server nicht verfügbar. Ein eigenes Titelbild auswählen."
+msgid ""
+"The PDF file is unavailable on this server. Select a custom cover instead."
+msgstr ""
+"Die PDF-Datei ist auf diesem Server nicht verfügbar. Ein eigenes Titelbild "
+"auswählen."
 
 msgid "The approved release changed. Refresh updates first."
-msgstr "Die freigegebene Version hat sich geändert. Suche zuerst erneut nach Updates."
+msgstr ""
+"Die freigegebene Version hat sich geändert. Suche zuerst erneut nach Updates."
 
 msgid "The approved release could not be verified."
 msgstr "Die freigegebene Version konnte nicht geprüft werden."
 
-msgid "The archive or plugin identity could not be verified. Installation was stopped."
-msgstr "Das Archiv oder die Pluginidentität konnte nicht geprüft werden. Die Installation wurde gestoppt."
+msgid ""
+"The archive or plugin identity could not be verified. Installation was "
+"stopped."
+msgstr ""
+"Das Archiv oder die Pluginidentität konnte nicht geprüft werden. Die "
+"Installation wurde gestoppt."
 
-msgid "The change could not be saved. Review this contribution before trying again."
-msgstr "Die Änderung konnte nicht gespeichert werden. Den Beitrag vor einem erneuten Versuch prüfen."
+msgid ""
+"The change could not be saved. Review this contribution before trying again."
+msgstr ""
+"Die Änderung konnte nicht gespeichert werden. Den Beitrag vor einem erneuten "
+"Versuch prüfen."
 
 msgid "The collection limit was reached. Existing documents were kept."
-msgstr "Das Sammlungslimit wurde erreicht. Vorhandene Dokumente bleiben erhalten."
+msgstr ""
+"Das Sammlungslimit wurde erreicht. Vorhandene Dokumente bleiben erhalten."
 
 msgid "The collection limit would be exceeded. No content was changed."
-msgstr "Das Sammlungslimit würde überschritten. Es wurden keine Inhalte geändert."
+msgstr ""
+"Das Sammlungslimit würde überschritten. Es wurden keine Inhalte geändert."
 
 msgid "The document collection could not be read."
 msgstr "Die Dokumentsammlung konnte nicht gelesen werden."
 
-msgid "The package does not match the approved checksum. Installation was stopped."
-msgstr "Das Paket entspricht nicht der freigegebenen Prüfsumme. Die Installation wurde gestoppt."
+msgid ""
+"The package does not match the approved checksum. Installation was stopped."
+msgstr ""
+"Das Paket entspricht nicht der freigegebenen Prüfsumme. Die Installation "
+"wurde gestoppt."
 
 msgid "The permissions do not allow this contribution to be changed."
 msgstr "Die Berechtigungen reichen zum Ändern dieses Beitrags nicht aus."
 
 msgid "The plugin must be installed in a stable slug directory."
-msgstr "Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein."
+msgstr ""
+"Das Plugin muss in einem Verzeichnis mit einem festen Slug installiert sein."
 
-msgid "The private update could not be authorized. Check the repository credentials and refresh updates."
-msgstr "Das private Update konnte nicht autorisiert werden. Prüfe die Repository-Zugangsdaten und suche erneut nach Updates."
+msgid ""
+"The private update could not be authorized. Check the repository credentials "
+"and refresh updates."
+msgstr ""
+"Das private Update konnte nicht autorisiert werden. Prüfe die Repository-"
+"Zugangsdaten und suche erneut nach Updates."
 
 msgid "The private update download failed. Check credentials and try again."
-msgstr "Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangsdaten und versuche es erneut."
+msgstr ""
+"Der Download des privaten Updates ist fehlgeschlagen. Prüfe die Zugangsdaten "
+"und versuche es erneut."
 
 msgid "The secure connection to the update server failed."
 msgstr "Die sichere Verbindung zum Updateserver ist fehlgeschlagen."
 
-msgid "The server could not generate a preview. Check PDF image processing support or select a custom cover."
-msgstr "Der Server konnte keine Vorschau erzeugen. PDF-Bildverarbeitung prüfen oder ein eigenes Titelbild auswählen."
+msgid ""
+"The server could not generate a preview. Check PDF image processing support "
+"or select a custom cover."
+msgstr ""
+"Der Server konnte keine Vorschau erzeugen. PDF-Bildverarbeitung prüfen oder "
+"ein eigenes Titelbild auswählen."
 
 msgid "The server supports PDF preview generation"
 msgstr "Der Server unterstützt die PDF-Vorschauerzeugung"
 
-msgid "The update package identity, version or requirements could not be verified. The installed plugin was kept."
-msgstr "Identität, Version oder Anforderungen des Update-Pakets konnten nicht geprüft werden. Das installierte Plugin bleibt erhalten."
+msgid ""
+"The update package identity, version or requirements could not be verified. "
+"The installed plugin was kept."
+msgstr ""
+"Identität, Version oder Anforderungen des Update-Pakets konnten nicht "
+"geprüft werden. Das installierte Plugin bleibt erhalten."
 
 msgid "The update provider did not return valid update data."
 msgstr "Der Updateanbieter hat keine gültigen Updatedaten geliefert."
@@ -1072,35 +1288,73 @@ msgstr "Der Updateserver ist nicht erreichbar. Versuche es später erneut."
 msgid "The update server returned an unsuccessful HTTP response."
 msgstr "Der Updateserver hat eine HTTP-Fehlerantwort zurückgegeben."
 
-msgid "The watermark appears in the embedded reader only. Original files and downloaded PDFs remain unchanged."
-msgstr "Das Wasserzeichen erscheint nur im eingebetteten Reader. Originaldateien und heruntergeladene PDFs bleiben unverändert."
+msgid ""
+"The watermark appears in the embedded reader only. Original files and "
+"downloaded PDFs remain unchanged."
+msgstr ""
+"Das Wasserzeichen erscheint nur im eingebetteten Reader. Originaldateien und "
+"heruntergeladene PDFs bleiben unverändert."
 
 msgid "These defaults apply wherever no individual override is set."
-msgstr "Diese Vorgaben gelten überall, wo keine individuellen Einstellungen festgelegt sind."
+msgstr ""
+"Diese Vorgaben gelten überall, wo keine individuellen Einstellungen "
+"festgelegt sind."
 
-msgid "These local files provide the on-demand reader. If files are missing, reinstall the complete plugin package. Original PDFs remain available independently."
-msgstr "Diese lokalen Dateien stellen den Reader auf Abruf bereit. Fehlen Dateien, das vollständige Plugin-Paket erneut installieren. Die Original-PDFs bleiben unabhängig davon verfügbar."
+msgid ""
+"These local files provide the on-demand reader. If files are missing, "
+"reinstall the complete plugin package. Original PDFs remain available "
+"independently."
+msgstr ""
+"Diese lokalen Dateien stellen den Reader auf Abruf bereit. Fehlen Dateien, "
+"das vollständige Plugin-Paket erneut installieren. Die Original-PDFs bleiben "
+"unabhängig davon verfügbar."
 
-msgid "This contribution was edited after migration. Explicit overwrite confirmation is required."
-msgstr "Dieser Beitrag wurde nach der Umstellung bearbeitet. Das Überschreiben muss ausdrücklich bestätigt werden."
+msgid ""
+"This contribution was edited after migration. Explicit overwrite "
+"confirmation is required."
+msgstr ""
+"Dieser Beitrag wurde nach der Umstellung bearbeitet. Das Überschreiben muss "
+"ausdrücklich bestätigt werden."
 
 msgid "This document cannot be updated with your permissions."
-msgstr "Die Berechtigungen reichen zum Aktualisieren dieses Dokuments nicht aus."
+msgstr ""
+"Die Berechtigungen reichen zum Aktualisieren dieses Dokuments nicht aus."
 
 msgid "This document is unavailable or requires access to its source post."
-msgstr "Dieses Dokument ist nicht verfügbar oder erfordert Zugriff auf den zugehörigen Beitrag."
+msgstr ""
+"Dieses Dokument ist nicht verfügbar oder erfordert Zugriff auf den "
+"zugehörigen Beitrag."
 
 msgid "This is not a supported settings export. No settings were changed."
-msgstr "Dies ist kein unterstützter Vorgabenexport. Es wurden keine Einstellungen geändert."
+msgstr ""
+"Dies ist kein unterstützter Vorgabenexport. Es wurden keine Einstellungen "
+"geändert."
 
-msgid "This older backup cannot identify later edits. Explicit overwrite confirmation is required."
-msgstr "Diese ältere Sicherung kann spätere Bearbeitungen nicht erkennen. Das Überschreiben muss ausdrücklich bestätigt werden."
+msgid ""
+"This older backup cannot identify later edits. Explicit overwrite "
+"confirmation is required."
+msgstr ""
+"Diese ältere Sicherung kann spätere Bearbeitungen nicht erkennen. Das "
+"Überschreiben muss ausdrücklich bestätigt werden."
 
-msgid "This replaces saved plugin settings. Choose each target content type explicitly. Unmapped types are skipped. Documents and migration recovery data are not changed."
-msgstr "Ersetzt gespeicherte Plugin-Vorgaben. Jeden Ziel-Inhaltstyp ausdrücklich zuordnen; ohne Zuordnung wird er übersprungen. Dokumente und Wiederherstellungsdaten der Migration bleiben unverändert."
+msgid ""
+"This replaces saved plugin settings. Choose each target content type "
+"explicitly. Unmapped types are skipped. Documents and migration recovery "
+"data are not changed."
+msgstr ""
+"Ersetzt gespeicherte Plugin-Vorgaben. Jeden Ziel-Inhaltstyp ausdrücklich "
+"zuordnen; ohne Zuordnung wird er übersprungen. Dokumente und "
+"Wiederherstellungsdaten der Migration bleiben unverändert."
 
-msgid "This tool stays available while a supported source plugin is active, legacy references exist or recovery backups remain. Discovery is cached for five minutes; Check again refreshes it immediately."
-msgstr "Dieses Werkzeug bleibt verfügbar, solange ein unterstütztes Quellplugin aktiv ist, alte Referenzen oder Wiederherstellungssicherungen vorhanden sind. Die Erkennung wird fünf Minuten zwischengespeichert; „Erneut prüfen“ aktualisiert sie sofort."
+msgid ""
+"This tool stays available while a supported source plugin is active, legacy "
+"references exist or recovery backups remain. Discovery is cached for five "
+"minutes; Check again refreshes it immediately."
+msgstr ""
+"Dieses Werkzeug bleibt verfügbar, solange ein unterstütztes Quellplugin "
+"aktiv ist, alte Referenzen oder Wiederherstellungssicherungen vorhanden "
+"sind. Die Erkennung wird fünf Minuten zwischengespeichert; „Erneut prüfen“ "
+"aktualisiert sie sofort."
 
 msgid "Title"
 msgstr "Titel"
@@ -1127,13 +1381,25 @@ msgid "Update stopped at %1$s: %2$s"
 msgstr "Update gestoppt bei %1$s: %2$s"
 
 msgid "Upload failed. Successful files were kept."
-msgstr "Upload fehlgeschlagen. Erfolgreich hochgeladene Dateien bleiben erhalten."
+msgstr ""
+"Upload fehlgeschlagen. Erfolgreich hochgeladene Dateien bleiben erhalten."
 
-msgid "Use PDF document in native post loops, PDF collection for a document library, and PDF filters and search for plugin collections. Reuse configured elements as native Components."
-msgstr "„PDF-Dokument“ in nativen Beitragsschleifen, „PDF-Sammlung“ für Dokumentbibliotheken und „PDF-Filter und Suche“ für Plugin-Sammlungen verwenden. Konfigurierte Elemente lassen sich als native Components wiederverwenden."
+msgid ""
+"Use PDF document in native post loops, PDF collection for a document "
+"library, and PDF filters and search for plugin collections. Reuse configured "
+"elements as native Components."
+msgstr ""
+"„PDF-Dokument“ in nativen Beitragsschleifen, „PDF-Sammlung“ für "
+"Dokumentbibliotheken und „PDF-Filter und Suche“ für Plugin-Sammlungen "
+"verwenden. Konfigurierte Elemente lassen sich als native Components "
+"wiederverwenden."
 
-msgid "Use a unique name, such as newsletters. Enter the same name in PDF filters and search."
-msgstr "Einen eindeutigen Namen wie gemeindebriefe vergeben. Denselben Namen unter „PDF-Filter und Suche“ eintragen."
+msgid ""
+"Use a unique name, such as newsletters. Enter the same name in PDF filters "
+"and search."
+msgstr ""
+"Einen eindeutigen Namen wie gemeindebriefe vergeben. Denselben Namen unter "
+"„PDF-Filter und Suche“ eintragen."
 
 msgid "Use assigned document"
 msgstr "Zugeordnetes Dokument verwenden"
@@ -1165,8 +1431,12 @@ msgstr "Wasserzeichen-Text"
 msgid "Website defaults"
 msgstr "Globale Vorgaben"
 
-msgid "When exceptions are disabled, the template applies to every reader. Editors cannot replace its text or logo."
-msgstr "Sind Ausnahmen deaktiviert, gilt die Vorlage für jeden Reader. Redakteure können Text und Logo nicht ersetzen."
+msgid ""
+"When exceptions are disabled, the template applies to every reader. Editors "
+"cannot replace its text or logo."
+msgstr ""
+"Sind Ausnahmen deaktiviert, gilt die Vorlage für jeden Reader. Redakteure "
+"können Text und Logo nicht ersetzen."
 
 msgid "Working…"
 msgstr "Wird bearbeitet …"
@@ -1184,12 +1454,20 @@ msgid "Zoom out"
 msgstr "Verkleinern"
 
 msgctxt "block description"
-msgid "Present a PDF or a document collection with preview covers, reading and download buttons."
-msgstr "Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und Download-Buttons präsentieren."
+msgid ""
+"Present a PDF or a document collection with preview covers, reading and "
+"download buttons."
+msgstr ""
+"Eine PDF oder Dokumentensammlung mit Vorschaubildern sowie Lesen- und "
+"Download-Buttons präsentieren."
 
 msgctxt "block description"
-msgid "Search titles and file names, sort and filter a named PDF collection. No PDF full-text search."
-msgstr "Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren und filtern. Keine PDF-Volltextsuche."
+msgid ""
+"Search titles and file names, sort and filter a named PDF collection. No PDF "
+"full-text search."
+msgstr ""
+"Eine benannte PDF-Sammlung nach Titeln und Dateinamen durchsuchen, sortieren "
+"und filtern. Keine PDF-Volltextsuche."
 
 msgctxt "block keyword"
 msgid "documents"
@@ -1218,3 +1496,747 @@ msgstr "Builder PDF Presenter"
 msgctxt "block title"
 msgid "PDF filters and search"
 msgstr "PDF-Filter und Suche"
+
+msgid "Invalid package cleanup provider."
+msgstr "Ungültiger Anbieter für die Paketbereinigung."
+
+msgid "Invalid private download limits."
+msgstr "Ungültige Grenzen für private Downloads."
+
+msgid "Safe package cleanup is unavailable for this update provider."
+msgstr "Für diesen Updateanbieter ist keine sichere Paketbereinigung verfügbar."
+
+msgid "The update package identity, version or requirements could not be verified."
+msgstr "Identität, Version oder Anforderungen des Updatepakets konnten nicht bestätigt werden."
+
+msgid "%1$s of %2$s plugins"
+msgstr "%1$s von %2$s Plugins"
+
+msgid "%s is installed but inactive. Activate it first."
+msgstr "%s ist installiert, aber inaktiv. Bitte zuerst aktivieren."
+
+msgid "%s is missing. Install and activate it first."
+msgstr "%s fehlt. Bitte zuerst installieren und aktivieren."
+
+msgid "%s must be network activated first."
+msgstr "%s muss zuerst netzwerkweit aktiviert werden."
+
+msgid "%s supports activation per site only."
+msgstr "%s unterstützt nur die Aktivierung je Website."
+
+msgid "Action cancelled."
+msgstr "Vorgang abgebrochen."
+
+msgid "Activate"
+msgstr "Aktivieren"
+
+msgid "Activate Bricks QuickNav per site after selecting the Bricks parent or child theme."
+msgstr "Bricks QuickNav bitte je Website aktivieren, nachdem das Bricks-Theme oder ein Child-Theme ausgewählt wurde."
+
+msgid "Activating…"
+msgstr "Wird aktiviert…"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Active filters: "
+msgstr "Aktive Filter: "
+
+msgid "Admin"
+msgstr "Administration"
+
+msgid "Affected features remain paused until their requirements are met."
+msgstr "Betroffene Funktionen pausieren, bis ihre Voraussetzungen erfüllt sind."
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Already active"
+msgstr "Bereits aktiv"
+
+msgid "Already up to date."
+msgstr "Bereits aktuell."
+
+msgid "Another action for this plugin is running. Please wait."
+msgstr "Für dieses Plugin läuft bereits eine Aktion. Bitte warten."
+
+msgid "Another component interrupted the request. If Git Updater is active, temporarily deactivate it and retry."
+msgstr "Eine andere Komponente hat die Anfrage unterbrochen. Falls Git Updater aktiv ist, deaktiviere ihn vorübergehend und wiederhole den Vorgang."
+
+msgid "Another updater provides a different release. Refresh updates before continuing."
+msgstr "Ein anderer Updater bietet einen abweichenden Release an. Bitte die Updateinformationen vor dem Fortfahren aktualisieren."
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "April"
+msgstr "April"
+
+msgid "Archive contains too many files."
+msgstr "Das Archiv enthält zu viele Dateien."
+
+msgid "Archive symlinks are not permitted."
+msgstr "Symbolische Verknüpfungen sind im Archiv nicht erlaubt."
+
+msgid "As of "
+msgstr "Stand: "
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "August"
+msgstr "August"
+
+msgid "Back to deckerweb"
+msgstr "Zurück zu deckerweb"
+
+msgid "Builder"
+msgstr "Builder"
+
+msgid "Bundled catalog"
+msgstr "Mitgelieferter Katalog"
+
+msgid "Cached or bundled catalog"
+msgstr "Gespeicherter oder mitgelieferter Katalog"
+
+msgid "Cannot create temporary file."
+msgstr "Temporäre Datei konnte nicht erstellt werden."
+
+msgid "Cannot create verified archive."
+msgstr "Geprüftes Archiv konnte nicht erstellt werden."
+
+msgid "Cannot finalize archive."
+msgstr "Archiv konnte nicht abgeschlossen werden."
+
+msgid "Cannot normalize archive."
+msgstr "Archiv konnte nicht aufbereitet werden."
+
+msgid "Cannot read archive entry."
+msgstr "Archiveintrag konnte nicht gelesen werden."
+
+msgid "Catalog URL"
+msgstr "Katalog-URL"
+
+msgid "Catalog refreshed."
+msgstr "Katalog aktualisiert."
+
+msgid "Catalog retrieval does not limit updates of installed plugins. Those use their normal WordPress update provider."
+msgstr "Der Katalogabruf begrenzt keine Updates installierter Plugins. Diese verwenden ihren normalen WordPress-Updater."
+
+msgid "Catalog verification"
+msgstr "Katalogprüfung"
+
+msgid "Check status"
+msgstr "Status prüfen"
+
+msgid "Checking status…"
+msgstr "Status wird geprüft…"
+
+msgid "Commerce"
+msgstr "Commerce"
+
+msgid "Compatible additions only"
+msgstr "Nur passende Ergänzungen"
+
+msgid "Connection failed. Please try again later."
+msgstr "Die Verbindung ist fehlgeschlagen. Bitte später erneut versuchen."
+
+msgid "Content"
+msgstr "Inhalte"
+
+msgid "Copied."
+msgstr "Kopiert."
+
+msgid "Copy diagnostic information"
+msgstr "Diagnoseinformationen kopieren"
+
+msgid "Dec"
+msgstr "Dez"
+
+msgid "December"
+msgstr "Dezember"
+
+msgid "Delete Library settings when removing the last host plugin"
+msgstr "Library-Einstellungen beim Entfernen des letzten Host-Plugins ebenfalls löschen"
+
+msgid "Details & requirements"
+msgstr "Details & Voraussetzungen"
+
+msgid "Discover more plugins by deckerweb"
+msgstr "Weitere Plugins von deckerweb entdecken"
+
+msgid "Discover randomly"
+msgstr "Zufällig entdecken"
+
+msgid "Dismiss permanently"
+msgstr "Dauerhaft schließen"
+
+msgid "Done. The plugin is active."
+msgstr "Erledigt. Das Plugin ist aktiv."
+
+msgid "Enter a catalog URL first."
+msgstr "Bitte zuerst eine Katalog-URL eintragen."
+
+msgid "Expanded archive is too large."
+msgstr "Das entpackte Archiv ist zu groß."
+
+msgid "F j, Y"
+msgstr "j. F Y"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "February"
+msgstr "Februar"
+
+msgid "Filesystem credentials are required."
+msgstr "Zugangsdaten für das Dateisystem werden benötigt."
+
+msgid "Filesystem credentials are required. Use the catalog with JavaScript enabled or the native Plugins screen."
+msgstr "Dateisystem-Zugangsdaten sind erforderlich. Bitte den Katalog mit aktiviertem JavaScript oder die WordPress-Pluginverwaltung verwenden."
+
+msgid "Filter"
+msgstr "Filtern"
+
+msgid "Fits my installation"
+msgstr "Passt zu meiner Installation"
+
+msgid "Fixed"
+msgstr "Behoben"
+
+msgid "Fri"
+msgstr "Fr"
+
+msgid "Friday"
+msgstr "Freitag"
+
+msgid "GitHub Stars"
+msgstr "GitHub-Sterne"
+
+msgid "Hide catalog"
+msgstr "Katalog ausblenden"
+
+msgid "Improved"
+msgstr "Verbessert"
+
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgid "Install and activate this plugin in the network admin."
+msgstr "Dieses Plugin bitte im Netzwerk-Admin installieren und aktivieren."
+
+msgid "Install deckerweb plugin"
+msgstr "deckerweb-Plugin installieren"
+
+msgid "Install now"
+msgstr "Jetzt installieren"
+
+msgid "Installation cancelled."
+msgstr "Installation abgebrochen."
+
+msgid "Installation failed."
+msgstr "Installation fehlgeschlagen."
+
+msgid "Installed"
+msgstr "Installiert"
+
+msgid "Installed plugin identity does not match the approved release."
+msgstr "Die Identität des installierten Plugins stimmt nicht mit dem freigegebenen Release überein."
+
+msgid "Installed plugins use their normal update provider. Reload the update information and try again."
+msgstr "Installierte Plugins verwenden ihren normalen Updater. Aktualisiere die Updateinformationen und versuche es erneut."
+
+msgid "Installed · inactive"
+msgstr "Installiert · inaktiv"
+
+msgid "Installed: "
+msgstr "Installiert: "
+
+msgid "Installing…"
+msgstr "Wird installiert…"
+
+msgid "Invalid ZIP archive."
+msgstr "Ungültiges ZIP-Archiv."
+
+msgid "Invalid approval flag."
+msgstr "Ungültige Freigabeangabe."
+
+msgid "Invalid catalog field: "
+msgstr "Ungültiges Katalogfeld: "
+
+msgid "Invalid catalog revision."
+msgstr "Ungültiger Katalogstand."
+
+msgid "Invalid catalog schema."
+msgstr "Ungültiges Katalogformat."
+
+msgid "Invalid catalog timestamp."
+msgstr "Ungültiger Katalogzeitpunkt."
+
+msgid "Invalid dependencies."
+msgstr "Ungültige Abhängigkeiten."
+
+msgid "Invalid dependency URL."
+msgstr "Ungültige URL einer Abhängigkeit."
+
+msgid "Invalid dependency metadata."
+msgstr "Ungültige Angaben zu Abhängigkeiten."
+
+msgid "Invalid display field."
+msgstr "Ungültiges Anzeigefeld."
+
+msgid "Invalid icon color."
+msgstr "Ungültige Icon-Farbe."
+
+msgid "Invalid icon label."
+msgstr "Ungültiges Icon-Kürzel."
+
+msgid "Invalid identity or release metadata."
+msgstr "Ungültige Plugin- oder Release-Angaben."
+
+msgid "Invalid local icon."
+msgstr "Ungültiges lokales Icon."
+
+msgid "Invalid network policy."
+msgstr "Ungültige Netzwerkregel."
+
+msgid "Invalid network requirement."
+msgstr "Ungültige Netzwerkanforderung."
+
+msgid "Invalid platform version."
+msgstr "Ungültige Plattformversion."
+
+msgid "Invalid plugin series."
+msgstr "Ungültige Plugin-Serie."
+
+msgid "Invalid sort order."
+msgstr "Ungültige Sortierung."
+
+msgid "Invalid star count."
+msgstr "Ungültige Anzahl der GitHub-Sterne."
+
+msgid "Invalid stars date."
+msgstr "Ungültiges Datum der GitHub-Sterne."
+
+msgid "Invalid status filter."
+msgstr "Ungültiger Statusfilter."
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "January"
+msgstr "Januar"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "July"
+msgstr "Juli"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "June"
+msgstr "Juni"
+
+msgid "Last successful check: "
+msgstr "Zuletzt erfolgreich geprüft: "
+
+msgid "Library"
+msgstr "Library"
+
+msgid "Library changelog"
+msgstr "Library-Änderungsverlauf"
+
+msgid "Library settings"
+msgstr "Library-Einstellungen"
+
+msgid "Library settings saved."
+msgstr "Library-Einstellungen gespeichert."
+
+msgid "Manage Content"
+msgstr "Inhalte verwalten"
+
+msgid "Mar"
+msgstr "Mär"
+
+msgid "March"
+msgstr "März"
+
+msgid "May"
+msgstr "Mai"
+
+msgid "Misc"
+msgstr "Sonstiges"
+
+msgid "Missing display text."
+msgstr "Anzeigetext fehlt."
+
+msgid "Missing plugin header."
+msgstr "Plugin-Header fehlt."
+
+msgid "Mon"
+msgstr "Mo"
+
+msgid "Monday"
+msgstr "Montag"
+
+msgid "More by deckerweb"
+msgstr "Mehr von deckerweb"
+
+msgid "Multisite"
+msgstr "Multisite"
+
+msgid "Name A–Z"
+msgstr "Name A–Z"
+
+msgid "Name Z–A"
+msgstr "Name Z–A"
+
+msgid "Network activate"
+msgstr "Netzwerkweit aktivieren"
+
+msgid "Network active"
+msgstr "Netzwerkweit aktiv"
+
+msgid "Network permission denied."
+msgstr "Keine Berechtigung für das Netzwerk."
+
+msgid "New"
+msgstr "Neu"
+
+msgid "No approved plugins match this selection."
+msgstr "Keine freigegebenen Plugins passen zu dieser Auswahl."
+
+msgid "No update reported."
+msgstr "Kein Update gemeldet."
+
+msgid "Not installed"
+msgstr "Nicht installiert"
+
+msgid "Not installed. You can try again."
+msgstr "Nicht installiert. Ein erneuter Versuch ist möglich."
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "November"
+msgstr "November"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "October"
+msgstr "Oktober"
+
+msgid "Off by default. Applies only when no other host is installed, including inactive hosts. Removes Library settings, installation records and introduction status. Installed plugins, their content and other plugin settings remain unchanged. Network data is shared across sites."
+msgstr "Standardmäßig ausgeschaltet. Gilt nur, wenn kein weiterer Host installiert ist, auch kein deaktivierter. Entfernt Library-Einstellungen, Installationszuordnung und den Status des Einführungshinweises. Installierte Plugins, deren Inhalte und Einstellungen anderer Plugins bleiben erhalten. Netzwerkdaten werden gemeinsam von den Websites genutzt."
+
+msgid "Online catalog"
+msgstr "Online-Katalog"
+
+msgid "Only HTTPS on raw.githubusercontent.com/deckerweb. The server receives the requesting IP address. GitHub is contacted when installing a release."
+msgstr "Nur HTTPS auf raw.githubusercontent.com/deckerweb. Der Server sieht die anfragende IP-Adresse. Beim Installieren eines Releases wird GitHub kontaktiert."
+
+msgid "Only approved releases"
+msgstr "Nur freigegebene Releases"
+
+msgid "Open catalog"
+msgstr "Katalog öffnen"
+
+msgid "Optional. The bundled catalog works immediately. Catalog requests are cached for 24 hours. No site URL, plugin list or usage data is sent."
+msgstr "Optional. Der mitgelieferte Katalog funktioniert sofort. Katalogabfragen werden 24 Stunden zwischengespeichert. Keine Website-URL, Plugin-Liste oder Nutzungsdaten werden übertragen."
+
+msgid "PHP ZIP support is required."
+msgstr "PHP-ZIP-Unterstützung wird benötigt."
+
+msgid "POST required."
+msgstr "Eine POST-Anfrage ist erforderlich."
+
+msgid "Permission denied. Reload the page and check your permissions."
+msgstr "Zugriff verweigert. Lade die Seite neu und prüfe deine Berechtigungen."
+
+msgid "Planned: "
+msgstr "Geplant: "
+
+msgid "Plugin identity or version does not match the catalog."
+msgstr "Plugin oder Version stimmt nicht mit dem Katalog überein."
+
+msgid "Plugin is not installed."
+msgstr "Das Plugin ist nicht installiert."
+
+msgid "Plugin series"
+msgstr "Plugin-Serien"
+
+msgid "Plugin status"
+msgstr "Plugin-Status"
+
+msgid "Product website"
+msgstr "Produktwebsite"
+
+msgid "Recently updated"
+msgstr "Zuletzt aktualisiert"
+
+msgid "Refresh catalog"
+msgstr "Katalog aktualisieren"
+
+msgid "Release 1.0.0 is being prepared. Installation will be available after package verification."
+msgstr "Release 1.0.0 wird vorbereitet. Die Installation ist nach Prüfung des Pakets verfügbar."
+
+msgid "Release checksum is verified before installation. Activation is a separate step."
+msgstr "Vor der Installation wird die Release-Prüfsumme geprüft. Die Aktivierung erfolgt separat."
+
+msgid "Release in preparation"
+msgstr "Release in Vorbereitung"
+
+msgid "Release must contain exactly the approved plugin directory."
+msgstr "Das Release muss genau das freigegebene Plugin-Verzeichnis enthalten."
+
+msgid "Remove filter: "
+msgstr "Filter entfernen: "
+
+msgid "Repository & documentation"
+msgstr "Repository & Dokumentation"
+
+msgid "Requirements shown are preliminary until the stable release is verified."
+msgstr "Die gezeigten Voraussetzungen sind bis zur Prüfung des stabilen Releases vorläufig."
+
+msgid "Requires PHP %s or newer."
+msgstr "Benötigt PHP %s oder neuer."
+
+msgid "Requires WordPress %s or newer."
+msgstr "Benötigt WordPress %s oder neuer."
+
+msgid "Requires a WordPress Multisite network."
+msgstr "Benötigt ein WordPress-Multisite-Netzwerk."
+
+msgid "Reset filters"
+msgstr "Filter zurücksetzen"
+
+msgid "Reset view"
+msgstr "Ansicht zurücksetzen"
+
+msgid "Retrieve approved catalog updates online"
+msgstr "Katalogfreigaben online aktualisieren"
+
+msgid "Sat"
+msgstr "Sa"
+
+msgid "Saturday"
+msgstr "Samstag"
+
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+msgid "Scripts"
+msgstr "Scripte"
+
+msgid "Search this catalog"
+msgstr "Diesen Katalog durchsuchen"
+
+msgid "Select and copy the text."
+msgstr "Text markieren und kopieren."
+
+msgid "Selected by deckerweb · Installed from GitHub releases"
+msgstr "Von deckerweb ausgewählt · Installation aus GitHub-Releases"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "September"
+msgstr "September"
+
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+msgid "Shop"
+msgstr "Shop"
+
+msgid "Show deckerweb under Add Plugins"
+msgstr "deckerweb unter „Plugins hinzufügen“ anzeigen"
+
+msgid "Shows plugins whose platform and dependency requirements are met in this site or network. Without this filter, plugins with missing requirements remain visible."
+msgstr "Zeigt Plugins, deren Plattform- und Abhängigkeitsanforderungen auf dieser Website oder im Netzwerk erfüllt sind. Ohne diesen Filter bleiben Plugins mit fehlenden Voraussetzungen sichtbar."
+
+msgid "Shuffle again"
+msgstr "Neu mischen"
+
+msgid "Small plugins. Practical improvements."
+msgstr "Kleine Plugins. Konkrete Verbesserungen."
+
+msgid "Source: GitHub"
+msgstr "Quelle: GitHub"
+
+msgid "Stage: %1$s. %2$s"
+msgstr "Fehlerstufe: %1$s. %2$s"
+
+msgid "Standard"
+msgstr "Standard"
+
+msgid "Sun"
+msgstr "So"
+
+msgid "Sunday"
+msgstr "Sonntag"
+
+msgid "Technical information"
+msgstr "Technische Informationen"
+
+msgid "The GitHub release could not be downloaded."
+msgstr "Das GitHub-Release konnte nicht heruntergeladen werden."
+
+msgid "The action is still running. Check its status again."
+msgstr "Die Aktion läuft noch. Bitte den Status erneut prüfen."
+
+msgid "The approved package could not be verified."
+msgstr "Das freigegebene Paket konnte nicht geprüft werden."
+
+msgid "The catalog URL is not an allowed first-party HTTPS endpoint."
+msgstr "Die Katalog-URL ist keine erlaubte eigene HTTPS-Quelle."
+
+msgid "The catalog could not be verified. Please try again later."
+msgstr "Der Katalog konnte nicht geprüft werden. Bitte später erneut versuchen."
+
+msgid "The catalog is disabled."
+msgstr "Der Katalog ist deaktiviert."
+
+msgid "The catalog is hidden."
+msgstr "Der Katalog ist ausgeblendet."
+
+msgid "The catalog response is invalid, incompatible or too large."
+msgstr "Die Katalogantwort ist ungültig, inkompatibel oder zu groß."
+
+msgid "The connection timed out. Please try again later."
+msgstr "Die Zeit für die Verbindung wurde überschritten. Bitte später erneut versuchen."
+
+msgid "The deckerweb catalog could not load. Check platform requirements and the complete Library integration in the host plugin."
+msgstr "Der deckerweb-Katalog konnte nicht geladen werden. Bitte PHP-/WordPress-Anforderungen und die vollständige Library-Einbindung im Host-Plugin prüfen."
+
+msgid "The installed plugin identity could not be verified for this catalog update."
+msgstr "Die Identität des installierten Plugins konnte für dieses Katalogupdate nicht bestätigt werden."
+
+msgid "The installed plugin identity could not be verified. Use the Plugins screen to review it."
+msgstr "Die Identität des installierten Plugins konnte nicht geprüft werden. Prüfe es auf der Plugins-Seite."
+
+msgid "The online catalog is unavailable. Showing cached or bundled entries; online approval is checked again before installation."
+msgstr "Der Online-Katalog ist nicht erreichbar. Angezeigt wird der gespeicherte oder mitgelieferte Katalog; vor der Installation wird die Online-Freigabe erneut geprüft."
+
+msgid "The online catalog source is not trusted."
+msgstr "Die Online-Katalogquelle ist nicht vertrauenswürdig."
+
+msgid "The package checksum does not match the approved release. Installation was stopped."
+msgstr "Die Paketprüfsumme stimmt nicht mit der freigegebenen Version überein. Die Installation wurde gestoppt."
+
+msgid "The package did not pass the archive or plugin identity checks. Installation was stopped."
+msgstr "Das Paket hat die Archiv- oder Plugin-Identitätsprüfung nicht bestanden. Die Installation wurde gestoppt."
+
+msgid "The release checksum does not match. Installation stopped."
+msgstr "Die Prüfsumme des Releases stimmt nicht überein. Installation gestoppt."
+
+msgid "The request could not be completed. Check the plugin status before trying again."
+msgstr "Die Anfrage konnte nicht abgeschlossen werden. Vor einem erneuten Versuch den Plugin-Status prüfen."
+
+msgid "The requirements below describe the catalog version for first installation, not an installed-plugin update."
+msgstr "Die folgenden Voraussetzungen beschreiben die Katalogversion für die Erstinstallation, nicht ein Bestandsupdate."
+
+msgid "The requirements below describe the offered release."
+msgstr "Die folgenden Voraussetzungen beziehen sich auf den angebotenen Release."
+
+msgid "The secure connection could not be verified."
+msgstr "Die sichere Verbindung konnte nicht bestätigt werden."
+
+msgid "The server address could not be resolved."
+msgstr "Die Serveradresse konnte nicht aufgelöst werden."
+
+msgid "The server returned HTTP %d. Please try again later."
+msgstr "Der Server hat HTTP %d zurückgegeben. Bitte später erneut versuchen."
+
+msgid "The update has not been confirmed. You can try again."
+msgstr "Die Aktualisierung wurde nicht bestätigt. Du kannst es erneut versuchen."
+
+msgid "These details contain component versions and catalog status, without credentials or site content."
+msgstr "Diese Angaben enthalten Komponentenversionen und den Katalogstatus, keine Zugangsdaten oder Website-Inhalte."
+
+msgid "This catalog requires a newer Library."
+msgstr "Dieser Katalog benötigt eine neuere Library."
+
+msgid "This plugin directory already exists. Use the installed plugin; it will not be overwritten."
+msgstr "Dieses Plugin-Verzeichnis existiert bereits. Bitte das installierte Plugin verwenden; es wird nicht überschrieben."
+
+msgid "This release is no longer approved."
+msgstr "Dieses Release ist nicht mehr freigegeben."
+
+msgid "This release is not approved."
+msgstr "Dieses Release ist nicht freigegeben."
+
+msgid "Thu"
+msgstr "Do"
+
+msgid "Thursday"
+msgstr "Donnerstag"
+
+msgid "Tools"
+msgstr "Werkzeuge"
+
+msgid "Tue"
+msgstr "Di"
+
+msgid "Tuesday"
+msgstr "Dienstag"
+
+msgid "Unsafe archive path."
+msgstr "Unsicherer Archivpfad."
+
+msgid "Untrusted release URL."
+msgstr "Nicht vertrauenswürdige Release-URL."
+
+msgid "Update %1$s to version %2$s or newer."
+msgstr "%1$s bitte auf Version %2$s oder neuer aktualisieren."
+
+msgid "Update available"
+msgstr "Update verfügbar"
+
+msgid "Update available: %s"
+msgstr "Update verfügbar: %s"
+
+msgid "Update failed."
+msgstr "Aktualisierung fehlgeschlagen."
+
+msgid "Update information changed. Reload the page and try again."
+msgstr "Die Updateinformationen haben sich geändert. Lade die Seite neu und versuche es erneut."
+
+msgid "Update to %s"
+msgstr "Auf %s aktualisieren"
+
+msgid "Updated"
+msgstr "Aktualisiert"
+
+msgid "Updating…"
+msgstr "Wird aktualisiert…"
+
+msgid "Use the Plugins screen to manage this installed plugin."
+msgstr "Verwalte dieses installierte Plugin auf der Plugins-Seite."
+
+msgid "Verified first installations · Independent plugin updates"
+msgstr "Geprüfte Erstinstallationen · Unabhängige Pluginupdates"
+
+msgid "View plugins"
+msgstr "Plugins ansehen"
+
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+msgid "Wed"
+msgstr "Mi"
+
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+msgid "WordPress"
+msgstr "WordPress"
+
+msgid "You already use one of my plugins. Find selected additions in the deckerweb tab."
+msgstr "Du nutzt bereits ein Plugin von mir. Ausgewählte Ergänzungen findest du im deckerweb-Tab."
+
+msgid "Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks."
+msgstr "deckerweb Library auf 1.3.0 und Updater auf 2.4.0 aktualisiert: normale Updates unabhängig vom Katalog, begrenzte Downloads und strengere Paketprüfung."

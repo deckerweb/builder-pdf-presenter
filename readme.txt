@@ -4,7 +4,7 @@ Tags: pdf, documents, preview, shortcode, block
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ Fast PDF previews and an on-demand reader. Use one PDF per contribution or an or
 * Three card designs, Block Editor blocks, shortcodes and eight starter patterns.
 * Modal, reader tab and original PDF modes. Local PDF.js assets.
 * Preview recovery and migration from PDF Poster and PDF Embedder with reports and recovery.
-* deckerweb Updater 2.3.0 and Plugin Library 1.2.0 included.
+* deckerweb Updater 2.4.0 and Plugin Library 1.3.0 included.
 
 == Installation ==
 
@@ -59,6 +59,9 @@ Complete FAQ: bundled docs/FAQ.md and the local Documentation link in the plugin
 
 == Changelog ==
 
+= 1.0.1 · 2026-11-09 =
+* Fixed: Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
+
 = 1.0.0 =
 * New: PDF cards with previews, a reader and downloads for individual documents and collections.
 * New: Global defaults and individual settings for any post type.
@@ -70,6 +73,6 @@ Complete FAQ: bundled docs/FAQ.md and the local Documentation link in the plugin
 
 PDF.js 6.5.438 by Mozilla and contributors, https://mozilla.github.io/pdf.js/ and https://github.com/mozilla/pdf.js. Apache-2.0; license and font notices under vendor/pdfjs. Upstream source unmodified. Combined under GPLv3-compatible terms.
 
-deckerweb Updater 2.3.0: https://github.com/deckerweb/deckerweb-updater. Plugin Library 1.2.0: https://github.com/deckerweb/deckerweb-plugin-library. By David Decker – DECKERWEB; included license notices apply. Components can contact their configured GitHub update/catalog providers; viewing PDFs uses local assets.
+deckerweb Updater 2.4.0: https://github.com/deckerweb/deckerweb-updater. Plugin Library 1.3.0: https://github.com/deckerweb/deckerweb-plugin-library. By David Decker – DECKERWEB; included license notices apply. Components can contact their configured GitHub update/catalog providers; viewing PDFs uses local assets.
 
 Tabler file-type-pdf icon: https://github.com/tabler/tabler-icons (MIT). License bundled in vendor/tabler/LICENSE.

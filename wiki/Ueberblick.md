@@ -10,7 +10,7 @@ PDFs mit wenig Aufwand veröffentlichen: leichte Titelbild-Karten zum Stöbern u
 
 **Deine Daten in deinem WordPress. Punkt.** Kostenlos, ohne Werbung, Lesertracking oder Pro-Version.
 
-Version **1.0.0** · WordPress **6.9+** · PHP **8.3+**
+Version **1.0.1** · WordPress **6.9+** · PHP **8.3+**
 
 [Einstieg](#einstieg) · [Anleitung](Anleitung) · [Fragen nach Themen](Fragen) · [Anwendungsbeispiele](Beispiele)
 
@@ -115,6 +115,10 @@ Nein. Es gibt keine Pro-Version, kein Upselling und kein Lesertracking durch das
 [Alle Fragen und Antworten lesen →](Fragen)
 
 ## Änderungsverlauf
+
+### 1.0.1 · 2026-11-09
+
+- **Behoben:** deckerweb Library auf 1.3.0 und Updater auf 2.4.0 aktualisiert: normale Updates unabhängig vom Katalog, begrenzte Downloads und strengere Paketprüfung.
 
 ### 1.0.0 · 2026-11-06
 

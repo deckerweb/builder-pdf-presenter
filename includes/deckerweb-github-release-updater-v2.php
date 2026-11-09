@@ -32,7 +32,7 @@ interface AuthProvider {
 
 }
 
-namespace Deckerweb\GitHubReleaseUpdater\V2\Runtime_2_3_0;
+namespace Deckerweb\GitHubReleaseUpdater\V2\Runtime_2_4_0;
 use Deckerweb\GitHubReleaseUpdater\V2\AuthProvider;
 
 // Different embedded paths may load the same pinned implementation repeatedly.
@@ -73,20 +73,20 @@ final class EnvironmentAuthProvider implements AuthProvider {
 
 /** Connect one host to GitHub releases; preserve native WordPress authorization and lifecycle. */
 final class Updater {
-	public const IMPLEMENTATION_VERSION = '2.3.0';
+	public const IMPLEMENTATION_VERSION = '2.4.0';
 	public const SUPPORTS_PRIVATE_REPOSITORIES = true;
 	public const SUPPORTS_HOST_TRANSLATIONS = true;
-	public const SUPPORTS_CATALOG_PROVIDER = true;
-    public const SUPPORTS_CATALOG_DIAGNOSTICS = true;
-    public const SUPPORTS_NORMALIZED_PACKAGES = true;
-    /** @var \Closure|null Optional request-local diagnosis for the exact provider target. */
-    private ?\Closure $diagnostic_provider = null;
-    /** @var \WP_Error|null Safe error for the latest release-provider call, never persisted. */
-    private ?\WP_Error $catalog_failure = null;
-	/** @var \Closure|null Explicit public release resolver; false selects direct GitHub mode. */
-	private ?\Closure $release_provider = null;
-	/** @var \Closure|null Public package downloader using fresh approval. */
-	private ?\Closure $package_provider = null;
+    /** Legacy adapter compatibility: obsolete provider options remain accepted, never executed. */
+    public const SUPPORTS_CATALOG_PROVIDER = true;
+    public const SUPPORTS_CATALOG_DIAGNOSTICS = false;
+    public const SUPPORTS_NORMALIZED_PACKAGES = false;
+    public const UPDATES_INDEPENDENT_OF_CATALOG = true;
+    /** @var string|null Version bound to this request's exact download operation. */
+    private ?string $candidate_version = null;
+    /** @var int Maximum private ZIP bytes, limited before and after transport. */
+    private int $download_limit = 20971520;
+    /** @var int Total seconds allowed for all private download hops. */
+    private int $download_budget = 60;
 	/** Host-owned translator, evaluated in the current locale at output time. */
 	private ?\Closure $translate;
 	private bool $private;
@@ -154,7 +154,7 @@ final class Updater {
 	 * @param string $name Plugin display name.
 	 * @param string $description Short description for update details.
 	 * @param array  $artwork Optional icons (svg, 1x, 2x, default) and banners (low, high) URL maps.
-	 * @param array  $options Optional private boolean, auth AuthProvider and translate callable(string):string. Optional release_provider and package_provider callables enable an approved public catalog; diagnostic_provider optionally resolves safe target-specific error metadata. Public defaults remain compatible.
+	 * @param array  $options Optional private boolean, auth AuthProvider and translate callable(string):string. Legacy release_provider, package_provider, diagnostic_provider and package_cleanup options are accepted for adapter compatibility but never evaluated. Normal updates are independent of the discovery/install catalog. private_download_limit (1024–104857600 bytes, default 20 MiB) and private_download_budget (1–120 seconds, default 60) bound private transport. Public defaults remain compatible.
 	 * @throws \InvalidArgumentException If the slug or repository URL is invalid.
 	 */
 	public function __construct( string $main_file, string $repository_url, string $name, string $description, array $artwork = array(), array $options = array() ) {
@@ -163,21 +163,15 @@ final class Updater {
 		if ( isset( $options['private'] ) && ! is_bool( $options['private'] ) ) { throw new \InvalidArgumentException( \esc_html( $this->text( 'Private mode must be boolean.' ) ) ); }
 		if ( isset( $options['auth'] ) && ! $options['auth'] instanceof AuthProvider ) { throw new \InvalidArgumentException( \esc_html( $this->text( 'Invalid authentication provider.' ) ) ); }
 		$this->private = $options['private'] ?? false;
-		if ( isset( $options['release_provider'] ) || isset( $options['package_provider'] ) ) {
-			if ( $this->private || ! is_callable( $options['release_provider'] ?? null ) || ! is_callable( $options['package_provider'] ?? null ) ) {
-				throw new \InvalidArgumentException( \esc_html( $this->text( 'Public catalog callbacks require both providers and cannot be used in private mode.' ) ) );
-			}
-			$this->release_provider = \Closure::fromCallable( $options['release_provider'] );
-			$this->package_provider = \Closure::fromCallable( $options['package_provider'] );
-		}
-
-        if ( isset( $options['diagnostic_provider'] ) ) {
-            if ( $this->private || ! $this->release_provider || ! is_callable( $options['diagnostic_provider'] ) ) {
-                throw new \InvalidArgumentException( \esc_html( $this->text( 'Catalog diagnostics require a public catalog provider.' ) ) );
+        // Catalog provider/diagnosis/cleanup options from old host adapters are intentionally inert.
+        // Installed-plugin updates never consult discovery/install catalog authorization.
+        foreach ( array( 'private_download_limit' => array( 1024, 104857600 ), 'private_download_budget' => array( 1, 120 ) ) as $key => $bounds ) {
+            if ( isset( $options[ $key ] ) && ( ! is_int( $options[ $key ] ) || $options[ $key ] < $bounds[0] || $options[ $key ] > $bounds[1] ) ) {
+                throw new \InvalidArgumentException( \esc_html( $this->text( 'Invalid private download limits.' ) ) );
             }
-            $this->diagnostic_provider = \Closure::fromCallable( $options['diagnostic_provider'] );
         }
-
+        $this->download_limit = $options['private_download_limit'] ?? $this->download_limit;
+        $this->download_budget = $options['private_download_budget'] ?? $this->download_budget;
 		$this->auth = $options['auth'] ?? null;
 		$this->file = \plugin_basename( $main_file );
 		$this->slug = \dirname( $this->file );
@@ -254,7 +248,7 @@ final class Updater {
 		\add_filter( 'update_plugins_github.com', array( $this, 'update' ), 10, 4 );
 		\add_filter( 'site_transient_update_plugins', array( $this, 'cached_icons' ) );
 		\add_filter( 'plugins_api', array( $this, 'information' ), 20, 3 );
-		if ( $this->private || $this->release_provider ) { \add_filter( 'upgrader_pre_download', array( $this, 'download' ), 10, 4 ); }
+        \add_filter( 'upgrader_pre_download', array( $this, 'download' ), 10, 4 );
 		\add_filter( 'upgrader_source_selection', array( $this, 'select_source' ), 20, 4 );
 		\add_action( 'admin_notices', array( $this, 'conflict_notice' ) );
 		\add_action( 'network_admin_notices', array( $this, 'conflict_notice' ) );
@@ -329,27 +323,9 @@ final class Updater {
 	 * Fetch the latest published release and choose its installable ZIP.
 	 * Caches successful responses for 30 minutes and failures for 10 minutes.
 	 *
-	 * @param bool $fresh Require fresh catalog approval for a package operation.
 	 * @return array{version:string,package:string,notes:string,published:string}|null
 	 */
-	private function release( bool $fresh = false ): ?array {
-        $this->catalog_failure = null;
-		if ( $this->release_provider ) {
-			try { $release = ( $this->release_provider )( $this->repo, $this->file, $fresh ); }
-			catch ( \Throwable $error ) { $this->catalog_failure = $this->catalog_error( 'catalog', 'content' ); return null; }
-            if ( null === $release ) { $this->catalog_failure = $this->provider_error( 'catalog' ); return null; }
-			if ( false !== $release ) {
-				if ( ! is_array( $release ) || ! is_string( $release['version'] ?? null )
-					|| ! preg_match( '/^[0-9]+\.[0-9]+\.[0-9]+$/D', $release['version'] )
-					|| ! is_string( $release['package'] ?? null ) || ! $this->valid_package_url( $release['package'], $this->repo . '/releases/download/' )
-					|| ! is_string( $release['sha256'] ?? null ) || ! preg_match( '/^[a-f0-9]{64}$/D', $release['sha256'] ) ) { $this->catalog_failure = $this->catalog_error( 'catalog', 'content' ); return null; }
-				foreach ( array( 'notes', 'published', 'requires_wp', 'requires_php' ) as $key ) {
-					if ( isset( $release[ $key ] ) && ! is_string( $release[ $key ] ) ) { $this->catalog_failure = $this->catalog_error( 'catalog', 'content' ); return null; }
-				}
-				return $release + array( 'notes' => '', 'published' => '' );
-			}
-		}
-
+	private function release(): ?array {
 		$auth_headers = $this->auth_headers();
 		if ( $this->private && null === $auth_headers ) { return null; }
 		$cached = \get_site_transient( $this->cache );
@@ -402,12 +378,10 @@ final class Updater {
 				break;
 			}
 		}
-		if ( ! $package ) {
-			$url = \is_string( $data['zipball_url'] ?? null ) ? $data['zipball_url'] : '';
-			if ( $this->valid_package_url( $url, $this->api . '/zipball/' ) && ( ! $this->private || $url === $this->api . '/zipball/' . rawurlencode( $data['tag_name'] ) ) ) {
-				$package = $url;
-			}
-		}
+        $source = $this->api . '/zipball/' . rawurlencode( $data['tag_name'] );
+        if ( ! is_string( $data['zipball_url'] ?? null ) || $data['zipball_url'] !== $source ) { $source = ''; }
+        if ( ! $package ) { $package = $source; }
+
 		if ( ! $package ) {
 			\set_site_transient( $this->cache, array( 'failed' => true ), 10 * MINUTE_IN_SECONDS );
 			return null;
@@ -415,6 +389,8 @@ final class Updater {
 		$release = array(
 			'version'   => $version,
 			'package'   => $package,
+            'release_tag' => $data['tag_name'],
+            'source_package' => $this->private ? '' : $source,
 			'notes'     => \is_string( $data['body'] ?? null ) ? $data['body'] : '',
 			'published' => \is_string( $data['published_at'] ?? null ) ? $data['published_at'] : '',
 		);
@@ -435,6 +411,32 @@ final class Updater {
 			&& ! isset( $parts['user'] ) && ! isset( $parts['pass'] )
 			&& ! isset( $parts['port'] ) && ! isset( $parts['fragment'] ) && ! isset( $parts['query'] );
 	}
+
+    /**
+     * Match the actual normal offer to the selected asset or exact release source.
+     *
+     * An alternative public source needs a matching Core offer and an exact tag
+     * attested by GitHub release metadata. Never accepts arbitrary refs or URLs.
+     * @since 2.4.0
+     * @param mixed $package Requested native package URL.
+     * @param array $release GitHub release metadata from this implementation's cache.
+     * @return bool Whether package and any existing offer preserve this host/version binding.
+     */
+    private function matches_package( $package, array $release ): bool {
+        if ( ! is_string( $package ) ) { return false; }
+        $state = \get_site_transient( 'update_plugins' );
+        $offers = is_object( $state ) && is_array( $state->response ?? null ) ? $state->response : array();
+        $has_offer = array_key_exists( $this->file, $offers );
+        $offer = $offers[ $this->file ] ?? null;
+        if ( $has_offer && ( ! is_object( $offer ) || ( $offer->plugin ?? $this->file ) !== $this->file
+            || ( $offer->new_version ?? '' ) !== $release['version'] || ( $offer->package ?? '' ) !== $package ) ) { return false; }
+        if ( $package === $release['package'] ) { return true; }
+        if ( $this->private || ! $has_offer ) { return false; }
+        $tag = $release['release_tag'] ?? null;
+        if ( ! is_string( $tag ) || ! in_array( $tag, array( $release['version'], 'v' . $release['version'] ), true ) ) { return false; }
+        $source = $this->api . '/zipball/' . rawurlencode( $tag );
+        return ( $release['source_package'] ?? '' ) === $source && $package === $source;
+    }
 
 	/**
 	 * Translate at output time using the host catalog, with a safe English fallback.
@@ -459,172 +461,6 @@ final class Updater {
 	 * @return void Deletes only this repository/mode site transient.
 	 */
 	public function clear_cache(): void { \delete_site_transient( $this->cache ); }
-
-    /**
-     * Build an error exclusively from fixed host-localizable messages and bounded metadata.
-     * @param string $stage Validated failure stage, or empty for the generic fallback.
-     * @param string $cause Validated reason code, never a foreign message.
-     * @param int $status Optional HTTP status, limited to error responses.
-     * @return \WP_Error Safe native-updater error without URLs, paths or provider details.
-     */
-    private function catalog_error( string $stage = '', string $cause = '', int $status = 0 ): \WP_Error {
-        $stages = array(
-            'catalog' => $this->text( 'Catalog approval' ),
-            'package' => $this->text( 'Package download' ),
-            'checksum' => $this->text( 'Checksum verification' ),
-            'archive' => $this->text( 'Archive verification' ),
-        );
-        $causes = array(
-            'network' => $this->text( 'The update server could not be reached. Try again later.' ),
-            'timeout' => $this->text( 'The update request timed out. Try again later.' ),
-            'dns' => $this->text( 'The update server address could not be resolved.' ),
-            'tls' => $this->text( 'The secure connection to the update server failed.' ),
-            'http' => $this->text( 'The update server returned an unsuccessful HTTP response.' ),
-            'content' => $this->text( 'The update provider did not return valid update data.' ),
-            'checksum_mismatch' => $this->text( 'The package does not match the approved checksum. Installation was stopped.' ),
-            'invalid_package' => $this->text( 'The archive or plugin identity could not be verified. Installation was stopped.' ),
-        );
-        if ( ! isset( $stages[ $stage ], $causes[ $cause ] ) ) {
-            return new \WP_Error( 'ddw_ghru_catalog', $this->text( 'The approved release could not be verified.' ) );
-        }
-        $data = array( 'stage' => $stage, 'cause' => $cause );
-        if ( $status >= 400 && $status <= 599 ) { $data['http_status'] = $status; }
-        /* Translators: 1: fixed update stage label, 2: fixed explanation. */
-        $message = sprintf( $this->text( 'Update stopped at %1$s: %2$s' ), $stages[ $stage ], $causes[ $cause ] );
-        if ( isset( $data['http_status'] ) ) {
-            /* Translators: %d is an HTTP error status, not a server message. */
-            $message .= ' ' . sprintf( $this->text( 'HTTP status: %d.' ), $status );
-        }
-        return new \WP_Error( 'ddw_ghru_catalog', \esc_html( $message ), $data );
-    }
-
-    /**
-     * Read optional request-local diagnosis for exactly this provider target.
-     * @param string $operation Failed catalog or package operation.
-     * @param mixed $error Package provider error when supplied; its text is never displayed.
-     * @return \WP_Error Reconstructed safe error, or the unchanged generic fallback.
-     */
-    private function provider_error( string $operation, $error = null ): \WP_Error {
-        if ( $this->diagnostic_provider ) {
-            try { $error = ( $this->diagnostic_provider )( $this->repo, $this->file, $operation ) ?? $error; }
-            catch ( \Throwable $ignored ) { return $this->catalog_error(); }
-        }
-        if ( ! \is_wp_error( $error ) ) { return $this->catalog_error(); }
-        $data = $error->get_error_data();
-        if ( ! is_array( $data ) || ! is_string( $data['stage'] ?? null ) || ! is_string( $data['cause'] ?? null ) ) { return $this->catalog_error(); }
-        $allowed = 'catalog' === $operation ? array( 'catalog' ) : array( 'package', 'checksum', 'archive' );
-        if ( ! in_array( $data['stage'], $allowed, true ) ) { return $this->catalog_error(); }
-        return $this->catalog_error( $data['stage'], $data['cause'], is_int( $data['http_status'] ?? null ) ? $data['http_status'] : 0 );
-    }
-
-    /**
-     * Compare package content independently of ZIP compression and harmless metadata.
-     * @param string $path Local archive to read without extraction.
-     * @param bool $normalized Reject removable metadata in the returned normalized package.
-     * @return array<string,string>|null Path-to-content-digest map, or null for unsafe/oversized ZIPs.
-     */
-    private function archive_manifest( string $path, bool $normalized = false ): ?array {
-        if ( ! class_exists( '\ZipArchive' ) || ! is_file( $path ) || is_link( $path ) || filesize( $path ) > 20971520 ) { return null; }
-        $zip = new \ZipArchive();
-        if ( true !== $zip->open( $path ) ) { return null; }
-        $result = array(); $seen = array(); $expanded = 0; $name_bytes = 0;
-        try {
-            if ( $zip->numFiles > 3000 ) { return null; }
-            for ( $i = 0; $i < $zip->numFiles; ++$i ) {
-                $stat = $zip->statIndex( $i );
-                if ( ! is_array( $stat ) || ! is_string( $stat['name'] ?? null ) || ! is_int( $stat['size'] ?? null ) || $stat['size'] < 0 ) { return null; }
-                $name = $stat['name']; $expanded += $stat['size']; $name_bytes += strlen( $name );
-                if ( strlen( $name ) > 4096 || $name_bytes > 1048576 ) { return null; }
-                if ( $expanded > 83886080 || preg_match( '~[\x00-\x1f\x7f\\\\]|(^|/)\.{1,2}(/|$)|//|^/~', $name ) ) { return null; }
-                $opsys = 0; $attrs = 0;
-                if ( ! $zip->getExternalAttributesIndex( $i, $opsys, $attrs ) ) { return null; }
-                $kind = ( $attrs >> 16 ) & 0170000;
-                if ( ! in_array( $kind, array( 0, 0100000, 0040000 ), true ) ) { return null; }
-                // Match the Library's existing policy: Finder metadata is never installed.
-                if ( str_starts_with( $name, '__MACOSX/' ) || '.DS_Store' === basename( $name ) ) { if ( $normalized ) { return null; } continue; }
-                if ( ! str_starts_with( $name, $this->slug . '/' ) || isset( $seen[ $name ] ) ) { return null; }
-                $seen[ $name ] = true;
-                if ( str_ends_with( $name, '/' ) ) { continue; }
-                // WP_Filesystem cannot read ZipArchive entry streams in bounded chunks.
-                $input = $zip->getStream( $name );
-                if ( ! is_resource( $input ) ) { return null; }
-                $hash = hash_init( 'sha256' ); $read = 0;
-                try {
-                    while ( ! feof( $input ) ) {
-                        $chunk = fread( $input, min( 65536, $stat['size'] - $read + 1 ) );
-                        if ( false === $chunk || ( '' === $chunk && ! feof( $input ) ) ) { return null; }
-                        $read += strlen( $chunk );
-                        if ( $read > $stat['size'] ) { return null; }
-                        hash_update( $hash, $chunk );
-                    }
-                } finally { fclose( $input ); }
-                if ( $read !== $stat['size'] ) { return null; }
-                $result[ $name ] = hash_final( $hash );
-            }
-            if ( ! isset( $result[ $this->file ] ) ) { return null; }
-            ksort( $result );
-            return $result;
-        } finally { $zip->close(); }
-    }
-
-    /**
-     * Verify the approved original and a provider's possibly normalized ZIP in one operation.
-     * @param array $release Fresh approved release metadata including package URL and SHA-256.
-     * @return string|\WP_Error Verified local path or safe error; provider owns its temporary files.
-     */
-    private function catalog_download( array $release ) {
-        $original = null;
-        /**
-         * Observe only this operation's streamed, successful exact package request.
-         * @param mixed $response Native HTTP response or WP_Error.
-         * @param mixed $args Native HTTP request arguments.
-         * @param mixed $url Requested URL, matched byte-for-byte to the approved package.
-         * @return void Computes a bounded in-memory manifest; no HTTP, extraction or persistence.
-         */
-        $capture = function ( $response, $args, $url ) use ( &$original, $release ): void {
-            if ( $url !== $release['package'] || ! is_array( $args ) || empty( $args['stream'] ) || ! is_string( $args['filename'] ?? null )
-                || \is_wp_error( $response ) || 200 !== \wp_remote_retrieve_response_code( $response ) ) { return; }
-            $path = $args['filename'];
-            clearstatcache( true, $path );
-            if ( ! is_file( $path ) || is_link( $path ) || filesize( $path ) > 20971520 ) { return; }
-            if ( ! hash_equals( $release['sha256'], (string) hash_file( 'sha256', $path ) ) ) { return; }
-            $original = $this->archive_manifest( $path );
-        };
-        /**
-         * Observe normal HTTP transports after completion.
-         * @param mixed $response Native response.
-         * @param mixed $context Core diagnostic context.
-         * @param mixed $transport Core transport name.
-         * @param mixed $args Native request arguments.
-         * @param mixed $url Native request URL.
-         * @return void Leaves the response and transport untouched.
-         */
-        $debug = static function ( $response, $context, $transport, $args, $url ) use ( $capture ): void { $capture( $response, $args, $url ); };
-        /**
-         * Also support completed HTTP short-circuits, including local caches and test transports.
-         * @param mixed $response Earlier pre_http_request result.
-         * @param mixed $args Native request arguments.
-         * @param mixed $url Native request URL.
-         * @return mixed Unchanged result; never initiates or overrides a request.
-         */
-        $pre = static function ( $response, $args, $url ) use ( $capture ) { if ( false !== $response ) { $capture( $response, $args, $url ); } return $response; };
-        \add_action( 'http_api_debug', $debug, PHP_INT_MAX, 5 );
-        \add_filter( 'pre_http_request', $pre, PHP_INT_MAX, 3 );
-        try {
-            try { $file = ( $this->package_provider )( $this->repo, $this->file, $release['package'] ); }
-            catch ( \Throwable $ignored ) { return $this->catalog_error( 'package', 'content' ); }
-            if ( \is_wp_error( $file ) ) { return $this->provider_error( 'package', $file ); }
-            if ( ! is_string( $file ) || ! is_file( $file ) || is_link( $file ) ) { return $this->catalog_error( 'archive', 'invalid_package' ); }
-            clearstatcache( true, $file );
-            // Providers returning the unmodified, approved bytes retain the original contract.
-            if ( hash_equals( $release['sha256'], (string) hash_file( 'sha256', $file ) ) ) { return $file; }
-            if ( null !== $original && $original === $this->archive_manifest( $file, true ) ) { return $file; }
-            return $this->catalog_error( 'checksum', 'checksum_mismatch' );
-        } finally {
-            \remove_action( 'http_api_debug', $debug, PHP_INT_MAX );
-            \remove_filter( 'pre_http_request', $pre, PHP_INT_MAX );
-        }
-    }
 
     /**
      * Remove this release's and legacy metadata caches for one exact repository.
@@ -673,7 +509,7 @@ final class Updater {
 	}
 
 	/**
-	 * Stream this host's private offered package; strip credentials on redirects.
+	 * Bind the exact normal offer and stream private packages; strip credentials on redirects.
 	 * @param mixed $reply Earlier download override; preserve when supplied.
 	 * @param mixed $package Requested package URL.
 	 * @param mixed $upgrader Calling upgrader instance.
@@ -681,23 +517,19 @@ final class Updater {
 	 * @return mixed Original override, temporary ZIP path or sanitized WP_Error; failed files are deleted.
 	 */
 	public function download( $reply, $package, $upgrader, $hook_extra ) {
-		if ( ! $this->private && $this->release_provider ) {
-			if ( false !== $reply || ! is_array( $hook_extra ) || ! $this->is_update_context( $upgrader, $hook_extra ) ) { return $reply; }
-			$release = $this->release( true );
-            if ( ! $release ) { return $this->catalog_failure ?? $this->catalog_error(); }
-            if ( isset( $release['sha256'] ) ) {
-                if ( $package !== $release['package'] ) {
-                    return new \WP_Error( 'ddw_ghru_catalog', $this->text( 'The approved release changed. Refresh updates first.' ), array( 'stage' => 'catalog', 'cause' => 'release_changed' ) );
-                }
-                return $this->catalog_download( $release );
-            }
-			return $reply;
-		}
+        if ( ! is_array( $hook_extra ) || ! $this->is_update_context( $upgrader, $hook_extra ) ) { return $reply; }
+        $this->candidate_version = null;
+        if ( false !== $reply ) { return $reply; }
+        $bound = $this->release();
+        if ( $bound && $this->matches_package( $package, $bound ) ) { $this->candidate_version = $bound['version']; }
+        if ( ! $this->private ) {
+            return null !== $this->candidate_version ? false : new \WP_Error( 'ddw_ghru_candidate', $this->text( 'The update package identity, version or requirements could not be verified.' ) );
+        }
 
 		if ( ! $this->private || false !== $reply || ( ! is_array( $hook_extra ) || ! $this->is_update_context( $upgrader, $hook_extra ) ) ) { return $reply; }
 		$release = $this->release();
 		$headers = $this->auth_headers();
-		if ( ! $release || null === $headers || $package !== $release['package'] || ! preg_match( '~^' . preg_quote( $this->api, '~' ) . '/(?:releases/assets/[1-9][0-9]*|zipball/v?[0-9A-Za-z.-]+)$~D', $package ) ) {
+		if ( ! $release || null === $headers || null === $this->candidate_version || $package !== $release['package'] || ! preg_match( '~^' . preg_quote( $this->api, '~' ) . '/(?:releases/assets/[1-9][0-9]*|zipball/v?[0-9A-Za-z.-]+)$~D', $package ) ) {
 			return new \WP_Error( 'ddw_ghru_private', $this->text( 'The private update could not be authorized. Check the repository credentials and refresh updates.' ) );
 		}
 		$file = \wp_tempnam( $this->slug . '.zip' );
@@ -706,20 +538,30 @@ final class Updater {
 		$headers['User-Agent'] = 'DECKERWEB-WordPress-GitHub-Release-Updater';
 		$headers['X-GitHub-Api-Version'] = '2022-11-28';
 		$url = $package;
+        $deadline = microtime( true ) + $this->download_budget;
 		try {
 			for ( $hop = 0; $hop < 4; ++$hop ) {
-				$response = \wp_safe_remote_get( $url, array( 'timeout' => 300, 'redirection' => 0, 'sslverify' => true, 'reject_unsafe_urls' => true, 'stream' => true, 'filename' => $file, 'headers' => $headers ) );
+                $remaining = $deadline - microtime( true );
+                if ( $remaining <= 0 ) { break; }
+				$response = \wp_safe_remote_get( $url, array( 'decompress' => false, 'limit_response_size' => $this->download_limit + 1, 'timeout' => min( 30, $remaining ), 'redirection' => 0, 'sslverify' => true, 'reject_unsafe_urls' => true, 'stream' => true, 'filename' => $file, 'headers' => $headers ) );
 				if ( \is_wp_error( $response ) ) { break; }
 				$code = \wp_remote_retrieve_response_code( $response );
 				clearstatcache( true, $file );
-				if ( 200 === $code && is_file( $file ) && filesize( $file ) > 0 ) { return $file; }
+                $size = is_file( $file ) && ! is_link( $file ) ? filesize( $file ) : false;
+                $length = \wp_remote_retrieve_header( $response, 'content-length' );
+                if ( microtime( true ) > $deadline || false === $size || $size > $this->download_limit
+                    || ( is_scalar( $length ) && ctype_digit( (string) $length ) && (float) $length > $this->download_limit ) ) { break; }
+                if ( 200 === $code && $size > 0 ) {
+                    if ( is_scalar( $length ) && ctype_digit( (string) $length ) && (float) $length !== (float) $size ) { break; }
+                    return $file;
+                }
 				if ( ! in_array( $code, array( 301, 302, 303, 307, 308 ), true ) ) { break; }
 				$next = \wp_remote_retrieve_header( $response, 'location' );
 				$parts = is_string( $next ) ? \wp_parse_url( $next ) : false;
 				if ( ! is_array( $parts ) || ( $parts['scheme'] ?? '' ) !== 'https' || ! in_array( $parts['host'] ?? '', array( 'codeload.github.com', 'release-assets.githubusercontent.com', 'objects.githubusercontent.com' ), true ) || isset( $parts['user'] ) || isset( $parts['pass'] ) || isset( $parts['port'] ) || isset( $parts['fragment'] ) || preg_match( '/[\x00-\x20\x7f]/', $next ) ) { break; }
 				$url = $next;
 				$headers = array( 'Accept' => 'application/octet-stream', 'User-Agent' => 'DECKERWEB-WordPress-GitHub-Release-Updater' );
-				file_put_contents( $file, '' );
+                // The next streaming request truncates this same owned file itself.
 			}
 		} catch ( \Throwable $error ) { /* Do not return HTTP/provider exception data. */ }
 		\wp_delete_file( $file );
@@ -790,6 +632,49 @@ final class Updater {
 		);
 	}
 
+    /**
+     * Enforce identity, exact offered version and platform requirements on extracted bytes.
+     *
+     * @param string $path Candidate main file in Core's extracted update directory.
+     * @return true|\WP_Error True only for a compatible forward update of this exact host.
+     */
+    private function validate_candidate( string $path ) {
+        global $wp_filesystem, $wp_version;
+        $error = new \WP_Error( 'ddw_ghru_candidate', $this->text( 'The update package identity, version or requirements could not be verified.' ) );
+        clearstatcache( true, $path );
+        $size = $wp_filesystem->size( $path );
+        if ( ! is_int( $size ) || $size <= 0 || $size > 1048576 ) { return $error; }
+        $contents = $wp_filesystem->get_contents( $path );
+        if ( ! is_string( $contents ) || strlen( $contents ) !== $size ) { return $error; }
+        $fields = array( 'Name' => 'Plugin Name', 'Version' => 'Version', 'TextDomain' => 'Text Domain', 'UpdateURI' => 'Update URI', 'RequiresWP' => 'Requires at least', 'RequiresPHP' => 'Requires PHP' );
+        $candidate = array();
+        // Same header grammar/8 KiB boundary as Core get_file_data; never execute a candidate.
+        $header = str_replace( "\r", "\n", substr( $contents, 0, 8192 ) );
+        foreach ( $fields as $key => $label ) {
+            $candidate[ $key ] = preg_match( '/^(?:[ \t]*<\?php)?[ \t\/*#@]*' . preg_quote( $label, '/' ) . ':(.*)$/mi', $header, $match )
+                ? trim( preg_replace( '/\s*(?:\*\/|\?>).*/', '', $match[1] ) ) : '';
+        }
+        $installed = \get_file_data( WP_PLUGIN_DIR . '/' . $this->file, $fields, 'plugin' );
+        $release = $this->release();
+        if ( null === $this->candidate_version ) {
+            $offers = \get_site_transient( 'update_plugins' );
+            $offer = is_object( $offers ) ? ( $offers->response[ $this->file ] ?? null ) : null;
+            if ( is_object( $offer ) && $release && $this->matches_package( $offer->package ?? null, $release )
+                && ( $offer->new_version ?? '' ) === $release['version'] ) { $this->candidate_version = $release['version']; }
+        }
+        if ( ! $release || $candidate['Version'] !== $this->candidate_version || empty( $installed['Name'] ) || $candidate['Name'] !== $installed['Name']
+            || $candidate['TextDomain'] !== $this->slug || ( $installed['TextDomain'] ?? '' ) !== $this->slug
+            || $candidate['UpdateURI'] !== $this->repo || ( $installed['UpdateURI'] ?? '' ) !== $this->repo
+            || $candidate['Version'] !== $release['version']
+            || ! version_compare( $candidate['Version'], $installed['Version'] ?? '0', '>' ) ) { return $error; }
+        foreach ( array( 'RequiresWP', 'RequiresPHP' ) as $key ) {
+            if ( ! preg_match( '/^[0-9]+(?:\.[0-9]+){1,2}$/D', $candidate[ $key ] ) ) { return $error; }
+        }
+        if ( version_compare( PHP_VERSION, $candidate['RequiresPHP'], '<' )
+            || ! is_string( $wp_version ) || version_compare( $wp_version, $candidate['RequiresWP'], '<' ) ) { return $error; }
+        return true;
+    }
+
 	/**
 	 * Verify and normalize the extracted plugin directory before installation.
 	 *
@@ -809,17 +694,19 @@ final class Updater {
 		}
 		$root = \untrailingslashit( $source );
 		$main = \basename( $this->file );
-		// Accept an asset's slug folder; a GitHub source ZIP needs renaming.
-		// Refuse archives missing the expected main file before WordPress replaces anything.
-		if ( $wp_filesystem->is_file( $root . '/' . $this->slug . '/' . $main ) ) {
-			return \trailingslashit( $root . '/' . $this->slug );
-		}
-		if ( ! $wp_filesystem->is_file( $root . '/' . $main ) ) {
-			return new \WP_Error( 'ddw_ghru_archive', $this->text( 'GitHub release does not contain the plugin main file.' ) );
-		}
+        // Validate the actual extracted headers before moving or replacing any plugin.
+        if ( $wp_filesystem->is_file( $root . '/' . $this->slug . '/' . $main ) ) {
+            $root .= '/' . $this->slug;
+        }
+        if ( ! $wp_filesystem->is_file( $root . '/' . $main ) ) {
+            return new \WP_Error( 'ddw_ghru_archive', $this->text( 'GitHub release does not contain the plugin main file.' ) );
+        }
+        $valid = $this->validate_candidate( $root . '/' . $main );
+        if ( \is_wp_error( $valid ) ) { return $valid; }
+
 		$target = \dirname( $root ) . '/' . $this->slug;
 		if ( $root === $target ) {
-			return $source;
+			return \trailingslashit( $root );
 		}
 		if ( $wp_filesystem->exists( $target ) || ! $wp_filesystem->move( $root, $target, false ) ) {
 			return new \WP_Error( 'ddw_ghru_rename', $this->text( 'Could not prepare the GitHub release package.' ) );
@@ -836,11 +723,11 @@ namespace Deckerweb\GitHubReleaseUpdater\V2;
 // Legacy hosts retain their published API. Never replace an existing class or
 // migrate another host's hooks, credentials, options or running updater instance.
 if ( ! class_exists( EnvironmentAuthProvider::class, false ) ) {
-    class_alias( Runtime_2_3_0\EnvironmentAuthProvider::class, EnvironmentAuthProvider::class );
+    class_alias( Runtime_2_4_0\EnvironmentAuthProvider::class, EnvironmentAuthProvider::class );
 }
 if ( ! class_exists( Updater::class, false ) ) {
-    class_alias( Runtime_2_3_0\Updater::class, Updater::class );
+    class_alias( Runtime_2_4_0\Updater::class, Updater::class );
 }
 
 // Use require, not require_once: its return value is stable on every include.
-return Runtime_2_3_0\Updater::class;
+return Runtime_2_4_0\Updater::class;
